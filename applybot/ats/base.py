@@ -335,18 +335,23 @@ def _looks_like_cover(label: str) -> bool:
 
 
 def _handle_cover_letter(page, profile, job, report):
-    """Clique 'Enter manually' pour révéler la zone lettre, puis la rédige (IA)."""
-    # 1) révéler le champ si caché derrière un bouton
-    for txt in ("Enter manually", "Enter Manually", "Write cover letter",
-                "Rédiger", "Écrire", "Saisir manuellement"):
-        try:
-            btn = page.query_selector(f'button:has-text("{txt}"), a:has-text("{txt}")')
-            if btn:
-                btn.click()
-                page.wait_for_timeout(700)
-                break
-        except Exception:  # noqa: BLE001
-            continue
+    """Clique 'Enter manually' pour révéler la zone lettre, puis la rédige (IA).
+    Le bouton n'est pas toujours un <button> (souvent un <a>/<div>/<span>)."""
+    # 1) révéler le champ : cliquer n'importe quel élément 'Enter manually'
+    try:
+        page.evaluate(
+            r"""() => {
+              const wanted = ['enter manually','write cover letter','rédiger',
+                              'saisir manuellement','écrire'];
+              const els = [...document.querySelectorAll('button,a,[role=button],div,span,label')];
+              const b = els.find(e => wanted.includes((e.innerText||'').trim().toLowerCase()));
+              if (b) { b.click(); return true; }
+              return false;
+            }"""
+        )
+        page.wait_for_timeout(800)
+    except Exception:  # noqa: BLE001
+        pass
 
     # 2) localiser le textarea de la lettre (révélé ou déjà présent)
     sel = page.evaluate(
@@ -355,6 +360,8 @@ def _handle_cover_letter(page, profile, job, report):
           const kws = ['cover letter','lettre de motivation','motivation letter','covering letter'];
           const tas = [...document.querySelectorAll('textarea')];
           const match = el => {
+            const idn = norm((el.id||'') + ' ' + (el.name||''));
+            if (idn.includes('cover')) return true;
             const box = el.closest('.field,[class*=field],div');
             const ctx = norm((box ? box.innerText : '') + ' ' +
                              (el.getAttribute('aria-label')||'') + ' ' + (el.placeholder||''));

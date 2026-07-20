@@ -149,11 +149,12 @@
   }
 
   // ---------- 5) Lettre de motivation ("Enter manually") ----------
-  for (const txt of ["Enter manually", "Write cover letter", "Rédiger", "Saisir manuellement"]) {
-    const b = [...document.querySelectorAll("button,a")].find((e) => norm(e.innerText).includes(norm(txt)));
-    if (b) { b.click(); await sleep(600); break; }
-  }
+  const wantedBtn = ["enter manually", "write cover letter", "rédiger", "saisir manuellement", "écrire"];
+  const revealBtn = [...document.querySelectorAll("button,a,[role=button],div,span,label")]
+    .find((e) => wantedBtn.includes((e.innerText || "").trim().toLowerCase()));
+  if (revealBtn) { revealBtn.click(); await sleep(700); }
   const coverTa = [...document.querySelectorAll("textarea")].find((t) => {
+    if (norm((t.id || "") + " " + (t.name || "")).includes("cover")) return true;
     const box = t.closest('.field,[class*="field"],div');
     const ctx = norm((box ? box.innerText : "") + " " + (t.getAttribute("aria-label") || "") + " " + (t.placeholder || ""));
     return ["cover letter", "lettre de motivation", "motivation letter"].some((k) => ctx.includes(k));
