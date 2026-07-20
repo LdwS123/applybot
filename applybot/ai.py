@@ -88,10 +88,15 @@ def cover_letter(profile: Profile, job: dict) -> str | None:
         Description (may be partial):
         {(job.get('description') or '')[:1500]}
 
-        Write a 150-200 word cover letter for THIS specific job. Tie 2-3 real
-        achievements to what the role needs. End with genuine, specific motivation
-        for this company. No greeting line placeholders like [Company] — use the
-        real name if given, otherwise write naturally without brackets.
+        Write a genuinely PERSONAL 150-200 word cover letter for THIS specific job.
+        Rules:
+        - Open with something specific about THIS company or role — never a generic
+          "I am writing to apply for..." line.
+        - Tie 2-3 real achievements from the facts to what this role actually needs.
+        - Name the company by its real name where natural. No [brackets], no
+          placeholders, no template feel.
+        - Sound like a real motivated person (warm, direct, confident), not a bot.
+        - End with concrete, sincere motivation for THIS company specifically.
         """
     ).strip()
     return _chat(

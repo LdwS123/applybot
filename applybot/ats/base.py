@@ -172,8 +172,8 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
     fields = page.evaluate(_EXTRACT_JS)
     pending: list[tuple] = []  # champs non reconnus -> classés par l'IA (multilingue)
 
-    # 1) CV : upload sur le premier input file trouvé
-    resume = profile.resume_path()
+    # 1) CV : choisi selon l'intitulé du poste, upload sur le 1er input file
+    resume = profile.resume_for(job.get("title", ""))
     if resume:
         try:
             fh = page.query_selector('input[type="file"]')
@@ -182,6 +182,11 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
                 report.filled.append("CV (upload)")
         except Exception:  # noqa: BLE001
             pass
+
+    # 2) Lettre de motivation : révèle le champ ("Enter manually") et rédige via IA.
+    #    Le textarea révélé n'est pas dans `fields` (extrait avant) -> pas de conflit.
+    if use_ai:
+        _handle_cover_letter(page, profile, job, report)
 
     for f in fields:
         sel = f'[data-applybot-id="{f["id"]}"]'
@@ -206,7 +211,8 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
             if not use_ai:
                 report.unknown.append(label)
                 continue
-            answer = ai.answer_question(profile, job, label) if label else None
+            answer = (ai.cover_letter(profile, job) if _looks_like_cover(label)
+                      else ai.answer_question(profile, job, label)) if label else None
             if answer:
                 _apply(page, sel, f, answer, report, label, is_essay=True)
             else:
@@ -215,7 +221,8 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
 
         # Heuristique : un <textarea> non reconnu = question ouverte -> IA
         if f["tag"] == "textarea" and use_ai and label:
-            answer = ai.answer_question(profile, job, label)
+            answer = (ai.cover_letter(profile, job) if _looks_like_cover(label)
+                      else ai.answer_question(profile, job, label))
             if answer:
                 _apply(page, sel, f, answer, report, label, is_essay=True)
                 continue
@@ -278,6 +285,56 @@ def _resolve_pending_with_ai(page, profile, job, report, pending):
             report.filled.append(f"{label or dec} -> {dec} (IA)")
         else:
             report.unknown.append(label or dec)
+
+
+_COVER_KW = ("cover letter", "lettre de motivation", "motivation letter",
+             "covering letter", "why do you want to work", "carta de presentación")
+
+
+def _looks_like_cover(label: str) -> bool:
+    n = _norm(label)
+    return any(k in n for k in _COVER_KW) or n == "cover" or "cover letter" in n
+
+
+def _handle_cover_letter(page, profile, job, report):
+    """Clique 'Enter manually' pour révéler la zone lettre, puis la rédige (IA)."""
+    # 1) révéler le champ si caché derrière un bouton
+    for txt in ("Enter manually", "Enter Manually", "Write cover letter",
+                "Rédiger", "Écrire", "Saisir manuellement"):
+        try:
+            btn = page.query_selector(f'button:has-text("{txt}"), a:has-text("{txt}")')
+            if btn:
+                btn.click()
+                page.wait_for_timeout(700)
+                break
+        except Exception:  # noqa: BLE001
+            continue
+
+    # 2) localiser le textarea de la lettre (révélé ou déjà présent)
+    sel = page.evaluate(
+        r"""() => {
+          const norm = s => (s||'').toLowerCase();
+          const kws = ['cover letter','lettre de motivation','motivation letter','covering letter'];
+          const tas = [...document.querySelectorAll('textarea')];
+          const match = el => {
+            const box = el.closest('.field,[class*=field],div');
+            const ctx = norm((box ? box.innerText : '') + ' ' +
+                             (el.getAttribute('aria-label')||'') + ' ' + (el.placeholder||''));
+            return kws.some(k => ctx.includes(k));
+          };
+          const el = tas.find(match);
+          if (!el) return null;
+          el.setAttribute('data-applybot-cover', '1');
+          return '[data-applybot-cover="1"]';
+        }"""
+    )
+    if not sel:
+        return  # pas de section lettre sur cette offre
+    letter = ai.cover_letter(profile, job)
+    if letter and _react_fill(page, sel, letter, "cover letter"):
+        report.essays.append("Cover Letter (IA, personnalisée)")
+    else:
+        report.unknown.append("Cover Letter")
 
 
 def _react_combo_labels(page) -> list[dict]:

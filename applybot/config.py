@@ -28,12 +28,34 @@ class Profile:
         with open(path, "r", encoding="utf-8") as f:
             return cls(yaml.safe_load(f))
 
-    def resume_path(self) -> Path | None:
-        raw = self.documents.get("resume_path")
+    def _resolve_doc(self, raw: str | None) -> Path | None:
         if not raw:
             return None
         p = (ROOT / raw).resolve() if not os.path.isabs(raw) else Path(raw)
         return p if p.exists() else None
+
+    # Mots-clés d'intitulé -> quel CV. Édite librement.
+    _SALES_KW = ("sales", "bdr", "sdr", "business development", "account executive",
+                 "account manager", "revenue", "partnership", "commercial")
+    _PM_KW = ("product", "pm", "growth", "product manager", "produit")
+
+    def resume_for(self, job_title: str | None) -> Path | None:
+        """Choisit le CV selon l'intitulé du poste (fallback = resume_default)."""
+        t = (job_title or "").lower()
+        docs = self.documents
+        if any(k in t for k in self._SALES_KW):
+            key = "resume_sales"
+        elif any(k in t for k in self._PM_KW):
+            key = "resume_pm"
+        else:
+            key = "resume_default"
+        return (self._resolve_doc(docs.get(key))
+                or self._resolve_doc(docs.get("resume_default"))
+                or self._resolve_doc(docs.get("resume_pm")))
+
+    def resume_path(self) -> Path | None:
+        """CV par défaut (utilisé par `run.py check`)."""
+        return self.resume_for(None)
 
     def get(self, *keys, default=""):
         """Cherche une valeur dans identity/links/answers par clé, dans l'ordre."""

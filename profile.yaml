@@ -20,9 +20,14 @@ links:
   portfolio: "https://spendexai.com"
   instagram: "https://instagram.com/kokabuildsf"
 
-# Chemin vers ton CV PDF (upload automatique). Mets le vrai chemin.
+# Le bot choisit le CV selon l'intitulé du poste :
+#   titre contenant sales / BDR / business dev / account -> resume_sales
+#   titre contenant product / PM / growth            -> resume_pm
+#   sinon                                            -> resume_default
 documents:
-  resume_path: "./documents/Konstantine_Gugunava_Resume.pdf"
+  resume_pm: "./documents/Konstantine_Gugunava_Resume_PM.pdf"
+  resume_sales: "./documents/Konstantine_Gugunava_Resume(sales).pdf"
+  resume_default: "./documents/Konstantine_Gugunava_Resume_PM.pdf"
   # Laisse vide si tu génères la lettre via l'IA à la volée.
   cover_letter_path: ""
 
