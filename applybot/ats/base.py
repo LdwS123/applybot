@@ -298,21 +298,35 @@ def _press_escape(page):
             pass
 
 
-def _react_fill(page, sel: str, value: str) -> bool:
+def _react_fill(page, sel: str, value: str, label: str = "") -> bool:
     """Écrit dans un input/textarea de façon compatible React (setter natif +
-    event 'input' bubblé), sinon React efface la valeur au re-render."""
+    event 'input' bubblé). Si l'étiquette data-applybot-id a sauté (re-render
+    React sur Ashby & co), re-localise le champ par son `label`."""
     import json as _json
 
     js = (
-        "() => { const el=document.querySelector(%s); if(!el) return false;"
+        "() => {"
+        " const norm=s=>(s||'').toLowerCase().replace(/\\s+/g,' ').trim();"
+        " const wl=norm(%s);"
+        " const labelOf=el=>{"
+        "   if(el.id){const l=document.querySelector('label[for=\"'+CSS.escape(el.id)+'\"]'); if(l&&l.innerText.trim())return l.innerText.trim();}"
+        "   const w=el.closest('label'); if(w&&w.innerText.trim())return w.innerText.trim();"
+        "   const a=el.getAttribute('aria-label'); if(a)return a;"
+        "   const g=el.closest('.field,[class*=field],div'); if(g){const l=g.querySelector('label,legend,.label'); if(l&&l.innerText.trim())return l.innerText.trim();}"
+        "   return el.getAttribute('placeholder')||el.name||'';"
+        " };"
+        " let el=document.querySelector(%s);"
+        " if(!el && wl){ el=[...document.querySelectorAll('input,textarea')].find(e=>{const nl=norm(labelOf(e)); return nl && (nl.includes(wl)||wl.includes(nl));}); }"
+        " if(!el) return false;"
         " el.focus();"
         " const proto = el.tagName==='TEXTAREA'?window.HTMLTextAreaElement.prototype:window.HTMLInputElement.prototype;"
         " const d=Object.getOwnPropertyDescriptor(proto,'value');"
         " (d&&d.set?d.set:function(v){this.value=v;}).call(el,%s);"
         " el.dispatchEvent(new Event('input',{bubbles:true}));"
         " el.dispatchEvent(new Event('change',{bubbles:true}));"
+        " el.blur();"
         " return el.value===%s; }"
-    ) % (_json.dumps(sel), _json.dumps(value), _json.dumps(value))
+    ) % (_json.dumps(label), _json.dumps(sel), _json.dumps(value), _json.dumps(value))
     try:
         return bool(page.evaluate(js))
     except Exception:  # noqa: BLE001
@@ -345,10 +359,15 @@ def _apply(page, sel, f, value, report, label, is_essay=False, ai_ctx=None):
             else:
                 report.unknown.append(label)
         else:
-            if not _react_fill(page, sel, value):
-                page.fill(sel, value)  # repli
-            (report.essays if is_essay else report.filled).append(
-                (label + " (IA)") if is_essay else label
-            )
+            if _react_fill(page, sel, value, label):
+                (report.essays if is_essay else report.filled).append(
+                    (label + " (IA)") if is_essay else label
+                )
+            else:
+                try:
+                    page.fill(sel, value)  # dernier repli
+                    (report.essays if is_essay else report.filled).append(label)
+                except Exception:  # noqa: BLE001
+                    report.unknown.append(label)
     except Exception as e:  # noqa: BLE001
         report.unknown.append(f"{label} [erreur: {e}]")

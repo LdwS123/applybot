@@ -127,6 +127,8 @@ def log():
 
 
 if __name__ == "__main__":
-    print("\n  Dashboard  ->  http://127.0.0.1:8000\n")
+    import os
+    port = int(os.getenv("PORT", "8000"))
+    print(f"\n  Dashboard  ->  http://127.0.0.1:{port}\n")
     # threaded=False : obligatoire pour l'API sync de Rustwright (un seul thread)
-    app.run(host="127.0.0.1", port=8000, threaded=False, debug=False)
+    app.run(host="127.0.0.1", port=port, threaded=False, debug=False)
