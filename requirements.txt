@@ -1,0 +1,6 @@
+openai==2.46.0
+python-dotenv==1.2.2
+PyYAML==6.0.3
+RapidFuzz==3.14.5
+rustwright==0.1.1
+Flask==3.1.3

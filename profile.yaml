@@ -1,0 +1,68 @@
+# =============================================================================
+# TON PROFIL — édite ce fichier librement (pas besoin de toucher au code Python)
+# Le bot lit ces valeurs pour remplir les formulaires de candidature.
+# =============================================================================
+
+identity:
+  first_name: "Konstantine"
+  last_name: "Gugunava"
+  full_name: "Konstantine Gugunava"
+  email: "gugunava.konstantine@gmail.com"
+  phone: "+33 7 78 12 43 05"
+  # Localisation : mets ce qui matche le poste visé. Le bot l'utilise tel quel.
+  location: "San Francisco Bay Area"
+  city: "San Francisco"
+  country: "United States"
+
+links:
+  linkedin: "https://linkedin.com/in/konstantinegugunava"
+  github: "https://github.com/LdwS123"
+  portfolio: "https://spendexai.com"
+  instagram: "https://instagram.com/kokabuildsf"
+
+# Chemin vers ton CV PDF (upload automatique). Mets le vrai chemin.
+documents:
+  resume_path: "./documents/Konstantine_Gugunava_Resume.pdf"
+  # Laisse vide si tu génères la lettre via l'IA à la volée.
+  cover_letter_path: ""
+
+# Réponses toutes prêtes aux questions récurrentes des ATS.
+# Le bot fait un "fuzzy match" entre le label du champ et ces clés.
+standard_answers:
+  work_authorization_us: "No - I will require visa sponsorship"
+  require_sponsorship: "Yes"
+  us_citizen: "No"
+  authorized_to_work_eu: "Yes"
+  years_of_experience: "3"
+  notice_period: "2 weeks"
+  earliest_start_date: "Immediately"
+  salary_expectation: "Open / market rate"
+  willing_to_relocate: "Yes"
+  remote_ok: "Yes"
+  how_did_you_hear: "Company website"
+  gender: "Decline to self-identify"
+  race_ethnicity: "Decline to self-identify"
+  veteran_status: "I am not a protected veteran"
+  disability_status: "I do not wish to answer"
+  pronouns: ""
+
+# Profil "brut" injecté dans le prompt de l'IA pour rédiger lettres / réponses.
+# Plus c'est riche, meilleures sont les réponses générées.
+narrative:
+  headline: "Product Growth · Product Management · Startup Founder"
+  pitch: >
+    Product-minded founder who shipped an AI consumer app (ZYMA) end-to-end solo
+    with AI-assisted development, co-founded Spendex AI (multi-agent orchestration,
+    Founders Inc / Canopy batch), and drove B2B partner-bank acquisition at Raisin.
+    Strong on product discovery, monetization, experimentation and go-to-market.
+  seeking: "Growth PM / Product Growth / Business Development roles at US & EU tech companies"
+  key_achievements:
+    - "Built & launched ZYMA (iOS): 1,000+ downloads, 750+ accounts, 5.0-star rating, zero paid acquisition"
+    - "Designed freemium monetization: Premium at 4.99 EUR/mo, 39.99 EUR/yr"
+    - "Raisin: engaged 200+ financial institutions, 10 qualified opps, 4 banks advanced in pipeline"
+    - "PredicTagAI (UC Berkeley SCET): closed partnership with Pricer's VP of Sales"
+  skills:
+    - "Product discovery, MVP development, roadmapping, A/B testing, monetization & pricing"
+    - "AI-assisted development (Claude, Cursor, ChatGPT), automation (Zapier, Make, n8n)"
+    - "HubSpot, Salesforce, Google Analytics, Tableau, advanced Excel/Sheets"
+  languages: "English (fluent), French (native), Georgian (native), Russian (conversational), Spanish (basic)"

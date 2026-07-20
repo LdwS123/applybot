@@ -1,0 +1,9 @@
+# Entreprises à surveiller. Format:  source:slug
+# Le slug = ce qui apparaît dans l'URL du board carrière de la boîte.
+#   Greenhouse : boards.greenhouse.io/SLUG           -> greenhouse:SLUG
+#   Lever      : jobs.lever.co/SLUG                  -> lever:SLUG
+# Ajoute/enlève des lignes librement. Lignes commençant par # ignorées.
+
+greenhouse:anthropic
+greenhouse:ramp
+lever:netlify
