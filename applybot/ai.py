@@ -223,6 +223,59 @@ def classify_fields(profile: Profile, job: dict, fields: list[dict]) -> dict:
         return {}
 
 
+def verify_application(profile: Profile, job: dict, fields_state: list[dict]) -> dict:
+    """Vérifie qu'une candidature est prête à envoyer (remplace la relecture humaine).
+
+    fields_state : [{"label":str, "value":str, "required":bool}]
+    Retour : {"ready": bool, "issues": [str]}
+    """
+    # 1) Garde-fou déterministe : aucun champ requis vide.
+    empty_required = [
+        f["label"] for f in fields_state
+        if f.get("required") and not str(f.get("value", "")).strip()
+    ]
+    if empty_required:
+        return {"ready": False, "issues": [f"Champ requis vide : {l}" for l in empty_required]}
+
+    # 2) Revue IA : les réponses sont-elles cohérentes / complètes pour cette offre ?
+    client = _client_or_none()
+    if client is None:
+        return {"ready": True, "issues": []}  # pas d'IA -> on se fie au check déterministe
+
+    filled = "\n".join(
+        f'- {f["label"]}: {str(f.get("value",""))[:120]}'
+        for f in fields_state if str(f.get("value", "")).strip()
+    )[:2500]
+    user = textwrap.dedent(
+        f"""
+        A job application form has been auto-filled for this candidate.
+        Job: {job.get('title','')} at {job.get('company','')}
+
+        Filled fields (label: value):
+        {filled}
+
+        Decide if this application is READY to submit. It is NOT ready if:
+        - a clearly required field looks empty or has a placeholder like "Select...";
+        - an answer is obviously wrong, contradictory, or nonsensical for the field;
+        - an open question was left blank.
+        Minor imperfections are acceptable. Do NOT invent problems.
+
+        Reply ONLY as JSON: {{"ready": true/false, "issues": ["..."]}}
+        """
+    ).strip()
+    out = _chat(
+        [{"role": "system", "content": "You QA auto-filled job applications. Output JSON only."},
+         {"role": "user", "content": user}],
+        max_tokens=200,
+    )
+    try:
+        s, e = out.find("{"), out.rfind("}")
+        data = json.loads(out[s:e + 1])
+        return {"ready": bool(data.get("ready")), "issues": data.get("issues", []) or []}
+    except Exception:  # noqa: BLE001
+        return {"ready": True, "issues": []}  # en cas de doute IA, le check déterministe a déjà passé
+
+
 def ping() -> tuple[bool, str]:
     """Vérifie que la clé/modèle fonctionnent. Utilisé par `run.py check`."""
     client = _client_or_none()

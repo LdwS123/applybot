@@ -358,55 +358,84 @@ def _react_combo_labels(page) -> list[dict]:
     )
 
 
-def _fill_react_selects(page, profile, job, report, use_ai):
-    try:
-        combos = _react_combo_labels(page)
-    except Exception:  # noqa: BLE001
-        return
-
-    for c in combos:
-        label = c["label"]
-        # déjà rempli (autre chose que "Select...") -> on ne touche pas
-        if c["current"] and "select" not in _norm(c["current"]):
-            continue
-        sel = f'[data-applybot-combo="{c["id"]}"]'
+def _open_combo_options(page, sel) -> list:
+    """Ouvre un react-select de façon robuste et renvoie ses options."""
+    read = (
+        "() => { const e=[...document.querySelectorAll('.select__option')];"
+        " e.forEach((o,i)=>o.setAttribute('data-applybot-opt',String(i)));"
+        " return e.map(o=>o.innerText.trim()); }"
+    )
+    for attempt in range(3):
         try:
             page.click(sel)
-            page.wait_for_timeout(550)
-            opts = page.evaluate(
-                "() => { const e=[...document.querySelectorAll('.select__option')];"
-                " e.forEach((o,i)=>o.setAttribute('data-applybot-opt',String(i)));"
-                " return e.map(o=>o.innerText.trim()); }"
-            )
-        except Exception:  # noqa: BLE001
-            report.unknown.append(label or "combobox")
-            continue
-
-        if not opts:
-            _press_escape(page)
-            report.unknown.append(label or "combobox (vide)")
-            continue
-
-        # décider la valeur : intention connue, sinon IA
-        target = None
-        kind = classify(label)
-        if kind.startswith("value:"):
-            value = str(profile.get(kind.split(":", 1)[1], default=""))
-            target = _pick_option(value, opts) if value else None
-        if not target and use_ai and label:
-            choice = ai.choose_option(profile, job, label, opts)
-            target = _pick_option(choice, opts) if choice else None
-
-        if target and target in opts:
+            page.wait_for_timeout(500 + attempt * 300)
+            opts = page.evaluate(read)
+            if opts:
+                return opts
+            # 2e tentative : cliquer l'input interne du widget
             try:
-                page.click(f'[data-applybot-opt="{opts.index(target)}"]')
-                report.filled.append(f"{label} -> {target}")
-                page.wait_for_timeout(150)
-                continue
+                page.click(sel + " input")
+                page.wait_for_timeout(500)
+                opts = page.evaluate(read)
+                if opts:
+                    return opts
             except Exception:  # noqa: BLE001
                 pass
-        _press_escape(page)
-        report.unknown.append(label or "combobox")
+            _press_escape(page)
+        except Exception:  # noqa: BLE001
+            _press_escape(page)
+    return []
+
+
+def _fill_react_selects(page, profile, job, report, use_ai, passes: int = 3):
+    """Remplit les react-select. Plusieurs passes : les widgets ratés (timing,
+    menu pas encore chargé) sont retentés tant qu'il en reste des vides."""
+    for _pass in range(passes):
+        try:
+            combos = _react_combo_labels(page)
+        except Exception:  # noqa: BLE001
+            return
+        todo = [c for c in combos
+                if not c["current"] or "select" in _norm(c["current"])]
+        if not todo:
+            return  # tout est rempli
+        progressed = False
+        for c in todo:
+            label = c["label"]
+            sel = f'[data-applybot-combo="{c["id"]}"]'
+            opts = _open_combo_options(page, sel)
+            if not opts:
+                continue  # retenté à la passe suivante
+
+            target = None
+            kind = classify(label)
+            if kind.startswith("value:"):
+                value = str(profile.get(kind.split(":", 1)[1], default=""))
+                target = _pick_option(value, opts) if value else None
+            if not target and use_ai and label:
+                choice = ai.choose_option(profile, job, label, opts)
+                target = _pick_option(choice, opts) if choice else None
+
+            if target and target in opts:
+                try:
+                    page.click(f'[data-applybot-opt="{opts.index(target)}"]')
+                    page.wait_for_timeout(200)
+                    report.filled.append(f"{label} -> {target}")
+                    progressed = True
+                    continue
+                except Exception:  # noqa: BLE001
+                    pass
+            _press_escape(page)
+        if not progressed:
+            break  # plus aucune amélioration possible
+
+    # signaler ce qui reste vide après toutes les passes
+    try:
+        for c in _react_combo_labels(page):
+            if not c["current"] or "select" in _norm(c["current"]):
+                report.unknown.append(c["label"] or "menu (vide)")
+    except Exception:  # noqa: BLE001
+        pass
 
 
 def _press_escape(page):

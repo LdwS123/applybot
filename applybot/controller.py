@@ -10,9 +10,38 @@ import datetime as dt
 
 from .config import Profile
 from .browser import Session
+from . import ai
 from .ats import detect as detectmod
 from .ats import fillers
 from .runner import _job_context, _log, _row
+
+SAFE_AUTO_ATS = {"greenhouse", "lever", "ashby", "gem", "smartrecruiters", "workable"}
+
+_FORM_STATE_JS = r"""() => {
+  const norm = s => (s||'').toLowerCase();
+  const labelOf = el => {
+    if (el.id){const l=document.querySelector('label[for="'+CSS.escape(el.id)+'"]'); if(l&&l.innerText.trim())return l.innerText.trim();}
+    const w=el.closest('label'); if(w&&w.innerText.trim())return w.innerText.trim();
+    const a=el.getAttribute('aria-label'); if(a)return a;
+    const g=el.closest('.field,[class*=field],div'); if(g){const l=g.querySelector('label,legend,.label'); if(l&&l.innerText.trim())return l.innerText.trim();}
+    return el.getAttribute('placeholder')||el.name||'';
+  };
+  const out=[];
+  document.querySelectorAll('input,textarea').forEach(el=>{
+    const t=(el.type||'').toLowerCase();
+    if(['hidden','submit','button','file'].includes(t)) return;
+    const lab=labelOf(el);
+    const req = el.required || el.getAttribute('aria-required')==='true' || /\*/.test(lab);
+    out.push({label:lab.slice(0,80), value:(el.value||'').slice(0,200), required:!!req});
+  });
+  document.querySelectorAll('.select__control').forEach(c=>{
+    const g=c.closest('.field,[class*=field],div'); const l=g&&g.querySelector('label,legend,.label');
+    const lab=(l?l.innerText:'').trim();
+    const txt=(c.innerText||'').trim();
+    out.push({label:lab.slice(0,80), value: norm(txt).includes('select...')?'':txt, required:/\*/.test(lab)});
+  });
+  return out;
+}"""
 
 
 class Controller:
@@ -57,6 +86,7 @@ class Controller:
             else:
                 raise
         self.page.wait_for_timeout(1200)
+        fillers.dive_into_iframe(self.page)  # formulaire dans un iframe ATS ?
         ats = detectmod.detect(url, self.page)
         job = _job_context(self.page, url)
         self.current_ats, self.current_job = ats, job
@@ -94,6 +124,33 @@ class Controller:
             except Exception as e:  # noqa: BLE001
                 return {"ok": False, "message": f"Erreur envoi: {e}"}
         return {"ok": False, "message": "Bouton d'envoi introuvable — clique-le dans le navigateur."}
+
+    def verify(self) -> dict:
+        """ChatGPT + contrôle déterministe : la candidature est-elle prête ?"""
+        try:
+            state = self.page.evaluate(_FORM_STATE_JS)
+        except Exception:  # noqa: BLE001
+            state = []
+        return ai.verify_application(self.profile, self.current_job or {}, state)
+
+    def autostep(self, url: str, auto_submit: bool) -> dict:
+        """Une offre de bout en bout : préparer -> vérifier (IA) -> envoyer si prêt."""
+        rep = self.prepare(url)
+        verdict = self.verify()
+        rep["ready"] = verdict["ready"]
+        rep["issues"] = verdict["issues"]
+        rep["submitted"] = False
+        rep["submit_msg"] = ""
+        if auto_submit and verdict["ready"] and rep["ats"] in SAFE_AUTO_ATS:
+            s = self.submit()
+            rep["submitted"] = bool(s.get("ok"))
+            rep["submit_msg"] = s.get("message", "")
+        elif auto_submit and not verdict["ready"]:
+            _log(_row(url, rep["ats"], "skipped_not_ready", "; ".join(verdict["issues"])[:180]))
+            rep["submit_msg"] = "Non envoyé (IA: pas prêt)"
+        elif auto_submit:
+            rep["submit_msg"] = f"Non envoyé ({rep['ats']} = envoi manuel requis)"
+        return rep
 
     def skip(self) -> dict:
         _log(_row(self.current_url, self.current_ats, "skip",

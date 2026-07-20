@@ -47,7 +47,16 @@ PAGE = """<!doctype html>
   <button class="skip" onclick="skip()">Passer</button>
   <button class="skip" onclick="loadQueue()">📋 Charger jobs.csv</button>
 </div>
+<div class="row" style="align-items:center">
+  <button class="send" onclick="runQueue()">▶️ Lancer l'enchaînement</button>
+  <button class="skip" onclick="stopQueue()">⏹ Stop</button>
+  <label style="font-size:13px;display:flex;align-items:center;gap:6px">
+    <input type="checkbox" id="autosubmit" style="width:auto"> Envoi automatique (Greenhouse/Lever/Ashby/Gem)
+  </label>
+</div>
 <div id="status" class="muted"></div>
+<div id="progress" class="muted" style="margin-top:8px;font-size:13px"></div>
+<div id="qlog"></div>
 <div id="report"></div>
 
 <script>
@@ -84,7 +93,38 @@ async function loadQueue(){
   const r = await fetch('/queue'); const urls = await r.json();
   if(!urls.length){ setStatus('jobs.csv est vide — lance la découverte d\\'offres.','warn'); return; }
   $('url').value = urls.join('\\n');
-  setStatus(`📋 ${urls.length} offres chargées. Clique "Préparer" pour la première.`, 'ok');
+  setStatus(`📋 ${urls.length} offres chargées. Clique "Lancer l'enchaînement".`, 'ok');
+}
+let stopFlag = false;
+function stopQueue(){ stopFlag = true; setStatus('⏹ Arrêt demandé…','warn'); }
+function qlogAdd(txt, cls){ const p=document.createElement('div'); p.className=cls||'muted'; p.style.fontSize='13px'; p.textContent=txt; $('qlog').prepend(p); }
+async function runQueue(){
+  const urls = $('url').value.split('\\n').map(s=>s.trim()).filter(Boolean);
+  if(!urls.length){ setStatus('File vide. Clique 📋 Charger jobs.csv.','warn'); return; }
+  const auto = $('autosubmit').checked;
+  if(auto && !confirm(`Envoi AUTOMATIQUE activé : le bot va envoyer les candidatures prêtes (Greenhouse/Lever/Ashby/Gem) SANS te demander, sur ${urls.length} offres. Continuer ?`)) return;
+  stopFlag = false; $('qlog').innerHTML='';
+  let done=0, sent=0, notready=0, manual=0;
+  for(const url of urls){
+    if(stopFlag){ break; }
+    $('progress').textContent = `⏳ ${done+1}/${urls.length} — ${sent} envoyées, ${notready} pas prêtes, ${manual} manuelles`;
+    let d;
+    try{
+      const r = await fetch('/autostep',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url, auto})});
+      d = await r.json();
+    }catch(e){ qlogAdd('❌ erreur réseau: '+url, 'warn'); done++; continue; }
+    if(d.error){ qlogAdd('❌ '+d.error+' — '+url, 'warn'); done++; continue; }
+    render(d);
+    const name = (d.title||url).slice(0,55);
+    if(d.submitted){ sent++; qlogAdd(`✅ ENVOYÉE — ${name}`, 'ok'); }
+    else if(auto && d.ready===false){ notready++; qlogAdd(`⚠️ pas prête (${(d.issues||[]).slice(0,2).join('; ')}) — ${name}`, 'warn'); }
+    else { manual++; qlogAdd(`📝 préparée (${d.ats}, à envoyer à la main) — ${name}`, 'muted'); }
+    done++;
+    $('url').value = urls.slice(done).join('\\n');
+    await new Promise(r=>setTimeout(r, 1500));
+  }
+  $('progress').textContent = '';
+  setStatus(`Terminé : ${done} traitées · ${sent} envoyées · ${notready} pas prêtes · ${manual} manuelles.`, 'ok');
 }
 function render(d){
   const li = a => a.map(x=>`<li>${x}</li>`).join('');
@@ -118,6 +158,19 @@ def prepare():
 @app.post("/submit")
 def submit():
     return jsonify(controller.submit())
+
+
+@app.post("/autostep")
+def autostep():
+    body = request.get_json(silent=True) or {}
+    url = body.get("url", "").strip()
+    auto = bool(body.get("auto", False))
+    if not url.startswith("http"):
+        return jsonify({"error": "URL invalide"}), 400
+    try:
+        return jsonify(controller.autostep(url, auto))
+    except Exception as e:  # noqa: BLE001
+        return jsonify({"error": str(e)}), 500
 
 
 @app.post("/skip")

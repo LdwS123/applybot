@@ -82,6 +82,7 @@ def run(jobs_file: str, limit: int | None = None) -> None:
                 _log(_row(url, "?", "nav_error", str(e)))
                 continue
 
+            fillers.dive_into_iframe(page)  # formulaire dans un iframe ATS ?
             ats = detectmod.detect(url, page)
             job = _job_context(page, url)
             print(f"   ATS détecté : {ats}  |  {job.get('title','?')[:60]}")

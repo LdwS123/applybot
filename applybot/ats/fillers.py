@@ -10,6 +10,28 @@ from __future__ import annotations
 
 from .base import fill_form, FillReport
 
+def dive_into_iframe(page) -> bool:
+    """Si le formulaire est dans un iframe ATS (Greenhouse/Lever/Ashby embed sur
+    un site carrière type careers.datadoghq.com), navigue directement dessus pour
+    l'avoir en top-level. Retourne True si on a plongé dans l'iframe."""
+    try:
+        src = page.evaluate(
+            "() => { const f=[...document.querySelectorAll('iframe')]"
+            ".find(f => /greenhouse|lever|ashby|myworkdayjobs/.test(f.src||''));"
+            " return f ? f.src : null; }"
+        )
+    except Exception:  # noqa: BLE001
+        return False
+    if not src:
+        return False
+    try:
+        page.goto(src, wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(2000)
+        return True
+    except Exception:  # noqa: BLE001
+        return False
+
+
 _APPLY_TEXTS = [
     "Apply for this job", "Apply Now", "Apply", "Submit application",
     "I'm interested", "Postuler",
