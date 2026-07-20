@@ -48,17 +48,31 @@ SYSTEM_PROMPT = textwrap.dedent(
 
 def _facts_block(profile: Profile) -> str:
     n = profile.narrative
+    a = profile.answers
+    idn = profile.identity
     lines = [
-        f"Name: {profile.identity.get('full_name')}",
+        f"Name: {idn.get('full_name')}",
         f"Headline: {n.get('headline')}",
         f"Seeking: {n.get('seeking')}",
         f"Pitch: {n.get('pitch')}",
         "Achievements:",
-        *[f"  - {a}" for a in n.get("key_achievements", [])],
+        *[f"  - {x}" for x in n.get("key_achievements", [])],
         "Skills:",
-        *[f"  - {s}" for s in n.get("skills", [])],
+        *[f"  - {x}" for x in n.get("skills", [])],
         f"Languages: {n.get('languages')}",
+        # --- PORTRAIT / SITUATION (pour répondre juste aux questions ATS) ---
+        "Situation & constraints (use these to answer application questions correctly):",
+        f"  - Based in Paris, France. Open to relocation: {a.get('willing_to_relocate','Yes')}. Remote-friendly: {a.get('remote_ok','Yes')}.",
+        f"  - EU / France: authorized to work WITHOUT sponsorship ({a.get('authorized_to_work_eu','Yes')}).",
+        f"  - United States: NOT yet authorized — requires visa sponsorship ({a.get('require_sponsorship','Yes')}).",
+        f"  - Availability: {a.get('earliest_start_date','Immediately')}; notice period {a.get('notice_period','2 weeks')}.",
+        f"  - Salary expectation: {a.get('salary_expectation','Open / market rate')}.",
+        f"  - Years of professional experience: {a.get('years_of_experience','3')}.",
+        f"  - Current role: {a.get('current_title','Co-Founder')} at {a.get('current_company','Spendex AI')}.",
+        f"  - Education: {a.get('highest_degree','Masters degree')} — {a.get('university','')}.",
     ]
+    if n.get("portrait"):
+        lines.append(f"  - {n.get('portrait')}")
     return "\n".join(str(x) for x in lines)
 
 

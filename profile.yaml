@@ -93,6 +93,9 @@ narrative:
     Founders Inc / Canopy batch), and drove B2B partner-bank acquisition at Raisin.
     Strong on product discovery, monetization, experimentation and go-to-market.
   seeking: "Growth PM / Product Growth / Business Development roles at US & EU tech companies"
+  # Portrait libre : écris ici, en une phrase, comment tu veux que l'IA te "voie"
+  # (ton, priorités, ce qui te motive). Laissé vide = l'IA se base sur le reste.
+  portrait: ""
   key_achievements:
     - "Built & launched ZYMA (iOS): 1,000+ downloads, 750+ accounts, 5.0-star rating, zero paid acquisition"
     - "Designed freemium monetization: Premium at 4.99 EUR/mo, 39.99 EUR/yr"
