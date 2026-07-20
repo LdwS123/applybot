@@ -9,6 +9,7 @@ _HOST_MAP = {
     "grnh.se": "greenhouse",
     "lever.co": "lever",
     "ashbyhq.com": "ashby",
+    "gem.com": "gem",
     "myworkdayjobs.com": "workday",
     "workday.com": "workday",
     "linkedin.com": "linkedin",

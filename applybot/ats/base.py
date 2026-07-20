@@ -70,7 +70,30 @@ _EXTRACT_JS = r"""
       const lab = grp.querySelector('label, .label, legend');
       if (lab && lab.innerText.trim()) return lab.innerText.trim();
     }
-    return el.getAttribute('placeholder') || el.getAttribute('name') || '';
+    const ph = el.getAttribute('placeholder') || el.getAttribute('name');
+    if (ph) return ph;
+    // DERNIER RECOURS (multilingue) : le texte le plus proche au-dessus/à gauche
+    return nearbyText(el);
+  }
+  // Trouve le libellé visible par proximité géométrique (aucun lien DOM requis).
+  function nearbyText(el) {
+    const r = el.getBoundingClientRect();
+    if (!r.width && !r.height) return '';
+    let best = '', bestDist = 1e9;
+    document.querySelectorAll('label,span,div,p,legend,strong,b,h1,h2,h3,h4,h5').forEach(t => {
+      if (t.querySelector('input,textarea,select')) return;      // pas un conteneur de champ
+      const txt = (t.innerText || '').trim();
+      if (!txt || txt.length > 70) return;
+      const tr = t.getBoundingClientRect();
+      if (!tr.width || !tr.height) return;
+      const above = tr.bottom <= r.top + 6 && (r.top - tr.bottom) < 70 && Math.abs(tr.left - r.left) < 260;
+      const left = tr.right <= r.left + 6 && (r.left - tr.right) < 260 && Math.abs(tr.top - r.top) < 28;
+      if (above || left) {
+        const dist = Math.hypot(tr.left - r.left, tr.top - r.top);
+        if (dist < bestDist) { bestDist = dist; best = txt; }
+      }
+    });
+    return best;
   }
   const out = [];
   let i = 0;
@@ -147,6 +170,7 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
     """Remplit tout ce qui est reconnu. Retourne un rapport."""
     report = FillReport()
     fields = page.evaluate(_EXTRACT_JS)
+    pending: list[tuple] = []  # champs non reconnus -> classés par l'IA (multilingue)
 
     # 1) CV : upload sur le premier input file trouvé
     resume = profile.resume_path()
@@ -208,12 +232,52 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
                 except Exception:  # noqa: BLE001
                     pass
 
-        report.unknown.append(label or f["type"])
+        # Non reconnu par mots-clés -> on tente l'IA multilingue en fin de passe
+        pending.append((sel, f, label))
 
     # Menus react-select (Greenhouse & co : pas de <select> natif)
     _fill_react_selects(page, profile, job, report, use_ai)
 
+    # Filet IA multilingue : classe les champs restants (labels en toute langue)
+    if use_ai and pending:
+        _resolve_pending_with_ai(page, profile, job, report, pending)
+    else:
+        for _sel, f, label in pending:
+            report.unknown.append(label or f["type"])
+
     return report
+
+
+def _resolve_pending_with_ai(page, profile, job, report, pending):
+    payload = [
+        {"idx": i, "context": lbl, "tag": f["tag"], "type": f["type"]}
+        for i, (sel, f, lbl) in enumerate(pending)
+    ]
+    decisions = ai.classify_fields(profile, job, payload)
+    for i, (sel, f, label) in enumerate(pending):
+        dec = decisions.get(str(i)) or decisions.get(i)
+        if not dec or dec == "SKIP":
+            report.unknown.append(label or f["type"])
+            continue
+        if dec == "ESSAY":
+            answer = ai.answer_question(profile, job, label or "Tell us about yourself and your motivation")
+            if answer and (f["tag"] == "textarea" or f["type"] in ("text", "")):
+                if _react_fill(page, sel, answer, label):
+                    report.essays.append((label or "question") + " (IA)")
+                    continue
+            report.unknown.append(label or f["type"])
+            continue
+        # dec = une clé de profil (ex: first_name, email...) dans n'importe quelle langue
+        value = str(profile.get(dec, default="")).strip()
+        if not value:
+            report.unknown.append(label or dec)
+            continue
+        if f["tag"] == "select":
+            _apply(page, sel, f, value, report, label, ai_ctx=(profile, job))
+        elif _react_fill(page, sel, value, label):
+            report.filled.append(f"{label or dec} -> {dec} (IA)")
+        else:
+            report.unknown.append(label or dec)
 
 
 def _react_combo_labels(page) -> list[dict]:

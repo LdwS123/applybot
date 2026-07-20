@@ -161,6 +161,63 @@ def choose_option(profile: Profile, job: dict, question: str, options: list[str]
     return out.strip().lstrip("0123456789. ").strip() if out else None
 
 
+def classify_fields(profile: Profile, job: dict, fields: list[dict]) -> dict:
+    """Classe des champs non reconnus, DANS N'IMPORTE QUELLE LANGUE.
+
+    fields : [{"idx":int, "context":str, "tag":str, "type":str}]
+    Retour : {"<idx>": "<clé_profil>" | "ESSAY" | "SKIP"}
+      - clé_profil : le champ doit recevoir profile.get(clé)
+      - ESSAY : question ouverte -> à rédiger par l'IA
+      - SKIP : mot de passe / captcha / non pertinent -> ne pas toucher
+    """
+    client = _client_or_none()
+    if client is None or not fields:
+        return {}
+
+    catalog = {}
+    for section in (profile.identity, profile.links, profile.answers):
+        for k, v in section.items():
+            if v not in (None, ""):
+                catalog[k] = str(v)[:40]
+    keys_desc = "\n".join(f"  {k}: {v}" for k, v in catalog.items())
+    fields_desc = "\n".join(
+        f'  {f["idx"]}. [{f.get("tag")}/{f.get("type")}] "{f.get("context","")[:70]}"'
+        for f in fields
+    )
+    user = textwrap.dedent(
+        f"""
+        Map each form field to the best profile key. Field labels may be in ANY
+        language (French, German, Spanish, etc.) — understand them regardless.
+
+        AVAILABLE PROFILE KEYS (key: sample value):
+        {keys_desc}
+
+        FIELDS (index. [tag/type] "label or nearby text"):
+        {fields_desc}
+
+        For each field index return exactly one of:
+          - a profile key from the list above (if the field asks for that info)
+          - "ESSAY" if it's an open-ended question needing a written answer
+          - "SKIP" if it's a password, captcha, search box, or irrelevant
+
+        Reply ONLY with a JSON object mapping index (as string) to the choice.
+        Example: {{"0":"first_name","1":"email","2":"ESSAY","3":"SKIP"}}
+        """
+    ).strip()
+    out = _chat(
+        [{"role": "system", "content": "You map form fields to a data schema. Output JSON only."},
+         {"role": "user", "content": user}],
+        max_tokens=300,
+    )
+    if not out:
+        return {}
+    try:
+        start, end = out.find("{"), out.rfind("}")
+        return json.loads(out[start:end + 1]) if start >= 0 else {}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
 def ping() -> tuple[bool, str]:
     """Vérifie que la clé/modèle fonctionnent. Utilisé par `run.py check`."""
     client = _client_or_none()
