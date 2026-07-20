@@ -45,6 +45,7 @@ PAGE = """<!doctype html>
   <button class="prep" onclick="prepare()">1 · Préparer</button>
   <button class="send" id="sendBtn" onclick="send()" disabled>2 · Envoyer</button>
   <button class="skip" onclick="skip()">Passer</button>
+  <button class="skip" onclick="loadQueue()">📋 Charger jobs.csv</button>
 </div>
 <div id="status" class="muted"></div>
 <div id="report"></div>
@@ -78,6 +79,12 @@ async function send(){
 async function skip(){
   const r = await fetch('/skip',{method:'POST'}); const d = await r.json();
   setStatus(d.message,'muted'); $('sendBtn').disabled = true;
+}
+async function loadQueue(){
+  const r = await fetch('/queue'); const urls = await r.json();
+  if(!urls.length){ setStatus('jobs.csv est vide — lance la découverte d\\'offres.','warn'); return; }
+  $('url').value = urls.join('\\n');
+  setStatus(`📋 ${urls.length} offres chargées. Clique "Préparer" pour la première.`, 'ok');
 }
 function render(d){
   const li = a => a.map(x=>`<li>${x}</li>`).join('');
@@ -116,6 +123,15 @@ def submit():
 @app.post("/skip")
 def skip():
     return jsonify(controller.skip())
+
+
+@app.get("/queue")
+def queue():
+    from applybot.runner import load_jobs
+    try:
+        return jsonify(load_jobs("jobs.csv"))
+    except Exception:  # noqa: BLE001
+        return jsonify([])
 
 
 @app.get("/log")
