@@ -24,16 +24,38 @@ class Controller:
         self.current_job = None
         self.current_ats = None
 
-    def _ensure(self):
+    def _ensure(self, force_new: bool = False):
+        if force_new:
+            self.close()
         if self._sess is None:
             self._sess = Session(headed=True).__enter__()
             self.page = self._sess.new_page()
 
+    def _alive(self) -> bool:
+        """Vrai si l'onglet répond encore (sinon la fenêtre a été fermée)."""
+        try:
+            self.page.evaluate("() => 1")
+            return True
+        except Exception:  # noqa: BLE001
+            return False
+
     def prepare(self, url: str) -> dict:
-        """Ouvre l'offre, détecte l'ATS, remplit. Retourne un rapport JSON."""
+        """Ouvre l'offre, détecte l'ATS, remplit. Retourne un rapport JSON.
+
+        Se reconnecte automatiquement si le navigateur a été fermé entre-temps.
+        """
         self._ensure()
+        if not self._alive():
+            self._ensure(force_new=True)  # la fenêtre avait été fermée -> on relance
         self.current_url = url
-        self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        try:
+            self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        except Exception as e:  # noqa: BLE001
+            if "Session" in str(e) or "closed" in str(e) or "Protocol" in str(e):
+                self._ensure(force_new=True)  # relance et une seule nouvelle tentative
+                self.page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            else:
+                raise
         self.page.wait_for_timeout(1200)
         ats = detectmod.detect(url, self.page)
         job = _job_context(self.page, url)
@@ -80,7 +102,10 @@ class Controller:
 
     def close(self):
         if self._sess:
-            self._sess.__exit__(None, None, None)
+            try:
+                self._sess.__exit__(None, None, None)
+            except Exception:  # noqa: BLE001
+                pass
             self._sess = None
             self.page = None
 
