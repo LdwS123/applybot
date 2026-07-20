@@ -17,6 +17,7 @@ from .. import ai
 # routée vers l'IA. "skip" = on ne touche pas (ex: mot de passe).
 # ---------------------------------------------------------------------------
 INTENT_RULES: list[tuple[list[str], str]] = [
+    (["preferred first name", "preferred name", "nickname"], "value:preferred_name"),
     (["first name", "given name", "prénom"], "value:first_name"),
     (["last name", "family name", "surname", "nom de famille"], "value:last_name"),
     (["full name", "your name", "candidate name", "nom complet"], "value:full_name"),
@@ -25,23 +26,49 @@ INTENT_RULES: list[tuple[list[str], str]] = [
     (["linkedin"], "value:linkedin"),
     (["github"], "value:github"),
     (["portfolio", "website", "personal site", "site web"], "value:portfolio"),
+    # --- Autorisation de travail AVANT localisation (sinon "work in the country" matche "country") ---
+    (["sponsor", "require sponsorship", "need sponsorship", "visa sponsorship"], "value:require_sponsorship"),
+    (["authorized to work in the u", "authorized to work in the us", "us work authorization",
+      "eligible to work in the u", "work in the united states"], "value:authorized_to_work_us"),
+    (["authorized to work", "legally authorized", "work authorization", "right to work",
+      "eligible to work", "legally entitled to work", "authorised to work"], "value:authorized_to_work_eu"),
+    (["postal code", "zip", "code postal"], "value:postal_code"),
+    (["street", "address line", "adresse"], "value:address_line"),
     (["city", "ville"], "value:city"),
     (["country", "pays"], "value:country"),
     (["location", "where are you", "localisation", "current location"], "value:location"),
     (["how did you hear", "referral source", "source"], "value:how_did_you_hear"),
-    (["sponsor", "visa", "require sponsorship"], "value:require_sponsorship"),
-    (["authorized to work", "legally authorized", "work authorization"], "value:work_authorization_us"),
-    (["salary", "compensation expectation", "expected pay", "rémunération"], "value:salary_expectation"),
+    (["referral name", "who referred"], "value:referral_name"),
+    (["salary", "compensation expectation", "expected pay", "desired salary", "rémunération"], "value:salary_expectation"),
     (["notice period", "préavis"], "value:notice_period"),
-    (["start date", "available", "disponibilité", "earliest start"], "value:earliest_start_date"),
+    (["cities are you available", "available to work", "which cities", "work location", "cities available"], "value:location"),
+    (["start date", "earliest start", "when can you start", "date de début", "availability date"], "value:earliest_start_date"),
     (["relocate", "relocation", "déménager"], "value:willing_to_relocate"),
+    (["work onsite", "on-site", "in-person", "in office", "in-office"], "value:willing_to_work_onsite"),
     (["remote"], "value:remote_ok"),
-    (["years of experience", "years experience"], "value:years_of_experience"),
+    (["years of experience", "years experience", "années d'expérience"], "value:years_of_experience"),
+    (["highest degree", "level of education", "education level", "diplôme"], "value:highest_degree"),
+    (["university", "school", "college", "établissement", "université"], "value:university"),
+    (["field of study", "major", "domaine d'étude"], "value:field_of_study"),
+    (["graduation year", "year of graduation", "année d'obtention"], "value:graduation_year"),
+    (["gpa"], "value:gpa"),
+    (["current company", "current employer", "entreprise actuelle"], "value:current_company"),
+    (["current title", "current role", "job title", "poste actuel"], "value:current_title"),
+    (["18 years", "over 18", "at least 18", "legal age", "majeur"], "value:over_18"),
+    (["criminal", "convicted", "casier"], "value:criminal_record"),
+    (["security clearance", "clearance"], "value:security_clearance"),
+    (["previously employed", "worked here before", "former employee", "déjà travaillé"], "value:previously_employed_here"),
+    (["non-compete", "non compete", "clause de non-concurrence"], "value:non_compete"),
+    (["references", "référence"], "value:references_available"),
+    (["consent", "gdpr", "data processing", "privacy policy", "consentement",
+      "i certify", "certify", "i agree", "i acknowledge", "i understand",
+      "true and correct", "terms and conditions", "agree to the"], "value:consent_data_processing"),
     (["pronoun"], "value:pronouns"),
-    (["gender"], "value:gender"),
-    (["race", "ethnicity", "hispanic"], "value:race_ethnicity"),
+    (["gender", "genre"], "value:gender"),
+    (["hispanic", "latino"], "value:hispanic_latino"),
+    (["race", "ethnicity", "ethnie"], "value:race_ethnicity"),
     (["veteran"], "value:veteran_status"),
-    (["disability"], "value:disability_status"),
+    (["disability", "handicap"], "value:disability_status"),
     # Questions ouvertes -> IA
     (["why do you want", "why are you interested", "why this", "why us",
       "cover letter", "tell us about", "what interests you", "motivation",
@@ -118,6 +145,17 @@ _EXTRACT_JS = r"""
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").lower()).strip()
+
+
+def _resolve_value(profile: Profile, job: dict, key: str) -> str:
+    """Valeur d'une clé de profil, avec ajustements selon l'offre :
+    localisation dynamique + autorisation de travail selon le pays."""
+    if key in ("location", "city", "country"):
+        loc = profile.location_for(job)
+        return loc.get("city" if key in ("location", "city") else "country", "")
+    if key == "authorized_to_work_eu":
+        return "No" if profile.location_for(job)["country"] == "United States" else "Yes"
+    return str(profile.get(key, default="")).strip()
 
 
 def classify(label: str) -> str:
@@ -199,7 +237,7 @@ def fill_form(page, profile: Profile, job: dict, use_ai: bool = True) -> FillRep
 
         if kind.startswith("value:"):
             key = kind.split(":", 1)[1]
-            value = str(profile.get(key, default="")).strip()
+            value = _resolve_value(profile, job, key)
             if not value:
                 report.unknown.append(label)
                 continue
@@ -410,7 +448,7 @@ def _fill_react_selects(page, profile, job, report, use_ai, passes: int = 3):
             target = None
             kind = classify(label)
             if kind.startswith("value:"):
-                value = str(profile.get(kind.split(":", 1)[1], default=""))
+                value = _resolve_value(profile, job, kind.split(":", 1)[1])
                 target = _pick_option(value, opts) if value else None
             if not target and use_ai and label:
                 choice = ai.choose_option(profile, job, label, opts)

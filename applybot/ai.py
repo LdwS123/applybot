@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 import textwrap
 
-from .config import OPENAI_API_KEY, OPENAI_MODEL, Profile
+from .config import OPENAI_API_KEY, OPENAI_MODEL, OPENAI_VERIFY_MODEL, Profile
 
 _client = None
 
@@ -62,12 +62,12 @@ def _facts_block(profile: Profile) -> str:
     return "\n".join(str(x) for x in lines)
 
 
-def _chat(messages, max_tokens=350):
+def _chat(messages, max_tokens=350, model=None):
     client = _client_or_none()
     if client is None:
         return None
     resp = client.chat.completions.create(
-        model=OPENAI_MODEL,
+        model=model or OPENAI_MODEL,
         messages=messages,
         temperature=0.4,
         max_tokens=max_tokens,
@@ -266,7 +266,8 @@ def verify_application(profile: Profile, job: dict, fields_state: list[dict]) ->
     out = _chat(
         [{"role": "system", "content": "You QA auto-filled job applications. Output JSON only."},
          {"role": "user", "content": user}],
-        max_tokens=200,
+        max_tokens=250,
+        model=OPENAI_VERIFY_MODEL,  # agent de vérification = modèle fort (gpt-4o)
     )
     try:
         s, e = out.find("{"), out.rfind("}")

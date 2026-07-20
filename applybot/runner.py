@@ -32,8 +32,10 @@ def _job_context(page, url: str) -> dict:
               const meta = n => (document.querySelector(`meta[property="${n}"], meta[name="${n}"]`)||{}).content || '';
               const title = (document.querySelector('h1')||{}).innerText || document.title || '';
               const company = meta('og:site_name') || '';
+              const locEl = document.querySelector('.location, [class*="location"], [class*="Location"]');
+              const location = locEl ? (locEl.innerText||'').trim().slice(0,80) : '';
               const body = (document.body ? document.body.innerText : '').slice(0, 2500);
-              return { title: title.trim(), company: company.trim(), description: body };
+              return { title: title.trim(), company: company.trim(), location: location, description: body };
             }"""
         )
     except Exception:  # noqa: BLE001

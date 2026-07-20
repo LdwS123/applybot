@@ -7,12 +7,15 @@ identity:
   first_name: "Konstantine"
   last_name: "Gugunava"
   full_name: "Konstantine Gugunava"
+  preferred_name: "Konstantine"
   email: "gugunava.konstantine@gmail.com"
-  phone: "+33 7 78 12 43 05"
-  # Localisation : mets ce qui matche le poste visé. Le bot l'utilise tel quel.
-  location: "San Francisco Bay Area"
-  city: "San Francisco"
-  country: "United States"
+  phone: "+33778124305"
+  # Localisation : le bot la choisit selon la ville de l'offre (voir location_for).
+  location: "Paris"
+  city: "Paris"
+  country: "France"
+  address_line: ""            # rue (optionnel — laisse vide si tu ne veux pas)
+  postal_code: ""
 
 links:
   linkedin: "https://linkedin.com/in/konstantinegugunava"
@@ -31,22 +34,51 @@ documents:
   # Laisse vide si tu génères la lettre via l'IA à la volée.
   cover_letter_path: ""
 
-# Réponses toutes prêtes aux questions récurrentes des ATS.
-# Le bot fait un "fuzzy match" entre le label du champ et ces clés.
+# Réponses toutes prêtes aux questions récurrentes des ATS (expert ATS/RH).
+# Le bot fait un "fuzzy match" (toutes langues via l'IA) entre le label et ces clés.
 standard_answers:
+  # --- Autorisation de travail ---
   work_authorization_us: "No - I will require visa sponsorship"
   require_sponsorship: "Yes"
   us_citizen: "No"
+  authorized_to_work_us: "No"
   authorized_to_work_eu: "Yes"
+  authorized_to_work_france: "Yes"
+  visa_status: "Will require visa sponsorship for the US; authorized to work in the EU"
+  # --- Logistique ---
   years_of_experience: "3"
   notice_period: "2 weeks"
   earliest_start_date: "Immediately"
+  availability: "Immediately / 2 weeks notice"
   salary_expectation: "Open / market rate"
+  desired_salary: "Open / market rate"
   willing_to_relocate: "Yes"
   remote_ok: "Yes"
+  willing_to_work_onsite: "Yes"
+  # --- Sourcing ---
   how_did_you_hear: "Company website"
+  referral_name: ""
+  # --- Formation ---
+  highest_degree: "Master's degree"
+  university: "SKEMA Business School (MiM & MSc Entrepreneurship); UC Berkeley (SCET)"
+  field_of_study: "Entrepreneurship & Startup Management"
+  graduation_year: "2025"
+  gpa: ""
+  # --- Expérience actuelle ---
+  current_company: "Spendex AI"
+  current_title: "Co-Founder"
+  # --- Screening ---
+  over_18: "Yes"
+  criminal_record: "No"
+  security_clearance: "No"
+  previously_employed_here: "No"
+  non_compete: "No"
+  references_available: "Available upon request"
+  consent_data_processing: "Yes"
+  # --- Démographie EEO (toujours décliner par défaut) ---
   gender: "Decline to self-identify"
   race_ethnicity: "Decline to self-identify"
+  hispanic_latino: "Decline to self-identify"
   veteran_status: "I am not a protected veteran"
   disability_status: "I do not wish to answer"
   pronouns: ""

@@ -57,6 +57,23 @@ class Profile:
         """CV par défaut (utilisé par `run.py check`)."""
         return self.resume_for(None)
 
+    def location_for(self, job: dict) -> dict:
+        """Localisation à afficher selon la ville de l'offre.
+        US -> ville US de l'offre ; sinon Paris (là où il vit)."""
+        blob = " ".join(str(job.get(k, "")) for k in ("location", "title", "description")).lower()
+        if any(k in blob for k in ("new york", "nyc", ", ny")):
+            return {"city": "New York", "country": "United States", "location": "New York, NY"}
+        if any(k in blob for k in ("san francisco", "bay area", ", ca", "sf,")):
+            return {"city": "San Francisco", "country": "United States", "location": "San Francisco, CA"}
+        if any(k in blob for k in ("london", "united kingdom", ", uk")):
+            return {"city": "London", "country": "United Kingdom", "location": "London, UK"}
+        if any(k in blob for k in ("berlin", "germany")):
+            return {"city": "Berlin", "country": "Germany", "location": "Berlin, Germany"}
+        if any(k in blob for k in ("paris", "france")):
+            return {"city": "Paris", "country": "France", "location": "Paris, France"}
+        # Défaut : là où il vit
+        return {"city": "Paris", "country": "France", "location": "Paris, France"}
+
     def get(self, *keys, default=""):
         """Cherche une valeur dans identity/links/answers par clé, dans l'ordre."""
         for section in (self.identity, self.links, self.answers):
@@ -69,7 +86,10 @@ class Profile:
 # --- Environnement -----------------------------------------------------------
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+# Modèle "rapide/pas cher" pour rédiger (remplissage).
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip()
+# Modèle "fort" pour l'agent de vérification (juge la complétion/cohérence).
+OPENAI_VERIFY_MODEL = os.getenv("OPENAI_VERIFY_MODEL", "gpt-4o").strip()
 HEADED = os.getenv("HEADED", "true").strip().lower() in ("1", "true", "yes")
 
 RUNS_DIR = ROOT / "runs"

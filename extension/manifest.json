@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "ApplyBot — remplissage de candidatures",
+  "version": "1.0",
+  "description": "Remplit les formulaires de candidature (CV à part) + lettre IA + vérif GPT-4o. Cerveau = serveur local.",
+  "action": { "default_popup": "popup.html" },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "background": { "service_worker": "background.js" }
+}
