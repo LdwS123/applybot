@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job Radar — offres startups & tech</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --line:#21262d; --txt:#e6edf3; --dim:#8b949e;
+    --accent:#2f81f7; --new:#f7b32f; --green:#3fb950;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--txt)}
+  header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);
+         padding:14px 20px}
+  h1{margin:0 0 2px;font-size:19px;display:flex;align-items:center;gap:8px}
+  .meta{color:var(--dim);font-size:13px}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  input,select,button{background:var(--card);color:var(--txt);border:1px solid var(--line);
+       border-radius:8px;padding:8px 11px;font-size:14px}
+  input[type=search]{flex:1;min-width:180px}
+  button{cursor:pointer}
+  button.on{border-color:var(--accent);color:var(--accent)}
+  .wrap{max-width:1100px;margin:0 auto;padding:16px 20px}
+  .job{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+       margin-bottom:8px;display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit}
+  .job:hover{border-color:var(--accent)}
+  .job .t{font-weight:600;margin:0}
+  .job .sub{color:var(--dim);font-size:13px;margin-top:2px}
+  .tags{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11px;padding:2px 7px;border-radius:999px;background:#21262d;color:var(--dim)}
+  .tag.lv{color:var(--accent)}
+  .tag.ro{color:var(--green);background:rgba(63,185,80,.12)}
+  .right{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+  .badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;
+         background:rgba(247,179,47,.15);color:var(--new);border:1px solid rgba(247,179,47,.4)}
+  .badge.dot::before{content:"📌 "}
+  .apply{font-size:12px;font-weight:600;padding:6px 12px;border-radius:7px;white-space:nowrap;
+         background:var(--accent);color:#fff;border:1px solid var(--accent)}
+  .apply:hover{filter:brightness(1.1)}
+  .closed{opacity:.5}
+  .empty{text-align:center;color:var(--dim);padding:40px}
+  footer{color:var(--dim);text-align:center;padding:24px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="padding:0">
+    <h1>🛰️ Job Radar <span class="meta" id="stamp"></span></h1>
+    <div class="meta" id="counts">Chargement…</div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Rechercher (titre, boîte)…">
+      <select id="role"><option value="">Tous rôles</option></select>
+      <select id="level"><option value="">Tous niveaux</option></select>
+      <select id="city"><option value="">Toutes villes</option></select>
+      <select id="source"><option value="">Toutes sources</option></select>
+      <button id="target">🎯 Mes rôles</button>
+      <button id="newOnly">📌 Nouvelles</button>
+      <button id="openOnly" class="on">Ouvertes</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap"><div id="list"></div></div>
+<footer>Généré automatiquement chaque jour · <span id="total"></span> offres</footer>
+
+<script>
+const LV = {intern:"Intern",entry:"Entry",junior:"Junior",mid:"Mid",senior:"Senior",
+            staff:"Staff",manager:"Manager",exec:"Exec"};
+const RO = {product:"Product",growth:"Growth",bizdev:"Biz Dev",sales:"Sales",
+            marketing:"Marketing",operations:"Ops",data:"Data",engineering:"Eng",
+            design:"Design",finance:"Finance",people:"People",other:"Autre"};
+const TARGET = new Set(["product","growth","bizdev","sales","marketing","operations"]);
+let JOBS = [], state = {q:"",role:"",level:"",city:"",source:"",target:false,newOnly:false,openOnly:true};
+
+function opts(sel, values){
+  values.forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;sel.appendChild(o)});
+}
+function uniq(key){return [...new Set(JOBS.map(j=>j[key]).filter(Boolean))].sort()}
+
+function render(){
+  const s=state, list=document.getElementById("list");
+  const rows = JOBS.filter(j=>{
+    if(s.newOnly && !j.new) return false;
+    if(s.openOnly && !j.open) return false;
+    if(s.target && !TARGET.has(j.ro)) return false;
+    if(s.role && j.ro!==s.role) return false;
+    if(s.level && j.lv!==s.level) return false;
+    if(s.city && j.ci!==s.city) return false;
+    if(s.source && j.s!==s.source) return false;
+    if(s.q){const q=s.q.toLowerCase(); if(!((j.t||"").toLowerCase().includes(q)||(j.co||"").toLowerCase().includes(q))) return false;}
+    return true;
+  });
+  document.getElementById("counts").textContent =
+    `${rows.length} affichées · ${JOBS.filter(j=>j.new).length} 🆕 nouvelles · ${JOBS.filter(j=>j.open).length} ouvertes`;
+  if(!rows.length){list.innerHTML='<div class="empty">Aucune offre pour ces filtres.</div>';return;}
+  list.innerHTML = rows.slice(0,600).map(j=>`
+    <div class="job ${j.open?'':'closed'}">
+      <div style="flex:1">
+        <p class="t">${esc(j.t)}</p>
+        <div class="sub">${esc(j.co)} · ${esc(j.ci)}${j.cy&&j.cy!=='Unknown'?', '+esc(j.cy):''}</div>
+        <div class="tags">
+          ${j.ro&&j.ro!=='other'?`<span class="tag ro">${RO[j.ro]||j.ro}</span>`:''}
+          <span class="tag lv">${LV[j.lv]||j.lv}</span>
+          ${j.rm==='yes'?'<span class="tag">🌍 Remote</span>':''}
+          <span class="tag">${esc(j.s)}</span>
+          ${!j.open?'<span class="tag">expirée ?</span>':''}
+        </div>
+      </div>
+      <div class="right">
+        ${j.new?'<span class="badge dot">NEW</span>':''}
+        <a class="apply" href="${j.u}" target="_blank" rel="noopener">Postuler ↗</a>
+      </div>
+    </div>`).join("") +
+    (rows.length>600?`<div class="empty">+${rows.length-600} autres — affine les filtres</div>`:"");
+}
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+fetch("offers.json").then(r=>r.json()).then(d=>{
+  JOBS = d.jobs;
+  document.getElementById("stamp").textContent = "· maj "+d.updated;
+  document.getElementById("total").textContent = d.count;
+  opts(document.getElementById("level"), Object.keys(LV).filter(k=>JOBS.some(j=>j.lv===k)));
+  document.querySelectorAll("#level option").forEach(o=>{if(LV[o.value])o.textContent=LV[o.value]});
+  opts(document.getElementById("role"), Object.keys(RO).filter(k=>JOBS.some(j=>j.ro===k)));
+  document.querySelectorAll("#role option").forEach(o=>{if(RO[o.value])o.textContent=RO[o.value]});
+  opts(document.getElementById("city"), uniq("ci").slice(0,120));
+  opts(document.getElementById("source"), uniq("s"));
+  render();
+}).catch(e=>{document.getElementById("list").innerHTML='<div class="empty">offers.json introuvable — lance <code>python run.py discover</code>.</div>'});
+
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render()});
+document.getElementById("role").addEventListener("change",e=>{state.role=e.target.value;render()});
+document.getElementById("level").addEventListener("change",e=>{state.level=e.target.value;render()});
+document.getElementById("city").addEventListener("change",e=>{state.city=e.target.value;render()});
+document.getElementById("source").addEventListener("change",e=>{state.source=e.target.value;render()});
+document.getElementById("target").addEventListener("click",e=>{state.target=!state.target;e.target.classList.toggle("on",state.target);render()});
+document.getElementById("newOnly").addEventListener("click",e=>{state.newOnly=!state.newOnly;e.target.classList.toggle("on",state.newOnly);render()});
+document.getElementById("openOnly").addEventListener("click",e=>{state.openOnly=!state.openOnly;e.target.classList.toggle("on",state.openOnly);render()});
+</script>
+</body>
+</html>

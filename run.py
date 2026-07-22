@@ -31,8 +31,9 @@ def cmd_discover(args):
     from applybot.discovery import discover
 
     keywords = [k for k in (args.keywords or "").split(",") if k.strip()]
-    print(f"Découverte via {args.companies} (mots-clés: {keywords or 'tous'})")
-    discover(args.companies, keywords, args.out)
+    print(f"Découverte via {args.companies} + agrégateurs (mots-clés: {keywords or 'tous'})")
+    discover(args.companies, keywords,
+             use_key_sources=not args.no_keys, include_yc=not args.no_yc)
 
 
 def cmd_apply(args):
@@ -47,10 +48,11 @@ def main():
 
     sub.add_parser("check", help="Vérifie la config").set_defaults(func=cmd_check)
 
-    d = sub.add_parser("discover", help="Trouve des offres via API Greenhouse/Lever")
-    d.add_argument("keywords", nargs="?", default="", help='ex: "growth,product,business"')
+    d = sub.add_parser("discover", help="Scrape multi-sources (ATS + agrégateurs), classe par ville/niveau")
+    d.add_argument("keywords", nargs="?", default="", help='ex: "growth,product,business" (vide = TOUT)')
     d.add_argument("--companies", default="companies.txt")
-    d.add_argument("--out", default="jobs.csv")
+    d.add_argument("--no-keys", action="store_true", help="ignore Adzuna/The Muse (sources à clé API)")
+    d.add_argument("--no-yc", action="store_true", help="saute la découverte startups YC (~1-2 min de moins)")
     d.set_defaults(func=cmd_discover)
 
     a = sub.add_parser("apply", help="Postule aux offres de jobs.csv (semi-auto)")

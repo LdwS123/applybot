@@ -1,9 +1,60 @@
-# Entreprises à surveiller. Format:  source:slug
+# Entreprises à surveiller pour la découverte par ATS.  Format:  ats:slug
 # Le slug = ce qui apparaît dans l'URL du board carrière de la boîte.
-#   Greenhouse : boards.greenhouse.io/SLUG           -> greenhouse:SLUG
-#   Lever      : jobs.lever.co/SLUG                  -> lever:SLUG
-# Ajoute/enlève des lignes librement. Lignes commençant par # ignorées.
+#   Greenhouse     : boards.greenhouse.io/SLUG          -> greenhouse:SLUG
+#   Lever          : jobs.lever.co/SLUG                 -> lever:SLUG
+#   Ashby          : jobs.ashbyhq.com/SLUG              -> ashby:SLUG
+#   SmartRecruiters: jobs.smartrecruiters.com/SLUG      -> smartrecruiters:SLUG
+#   Workable       : apply.workable.com/SLUG            -> workable:SLUG
+#   Recruitee      : SLUG.recruitee.com                 -> recruitee:SLUG
+#
+# Les slugs morts / déplacés renvoient une erreur -> ignorés automatiquement.
+# Ajoute/enlève librement. Les agrégateurs (Remotive, Adzuna, HN…) tournent
+# de toute façon sans slug et ramènent des milliers d'offres d'autres boîtes.
 
+# --- Greenhouse ---
 greenhouse:anthropic
+greenhouse:stripe
+greenhouse:databricks
+greenhouse:gitlab
+greenhouse:coinbase
+greenhouse:robinhood
+greenhouse:dropbox
+greenhouse:doordash
+greenhouse:instacart
+greenhouse:brex
+greenhouse:figma
+greenhouse:discord
+greenhouse:reddit
+greenhouse:pinterest
+greenhouse:lyft
+greenhouse:benchling
+greenhouse:gusto
+greenhouse:checkr
+greenhouse:flexport
+greenhouse:affirm
+greenhouse:airtable
+greenhouse:asana
+greenhouse:cloudflare
+greenhouse:samsara
 greenhouse:ramp
+
+# --- Lever ---
 lever:netlify
+lever:aircall
+
+# --- Ashby ---
+ashby:openai
+ashby:linear
+ashby:vanta
+ashby:posthog
+ashby:replit
+ashby:clay
+ashby:perplexityai
+ashby:cognition
+
+# --- SmartRecruiters ---
+smartrecruiters:Visa
+smartrecruiters:Bosch
+
+# --- Recruitee ---
+recruitee:recruitee

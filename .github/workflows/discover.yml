@@ -1,0 +1,49 @@
+name: Job Radar — découverte quotidienne
+
+# Tourne tous les jours à 06:00 UTC (~08h Paris) + bouton manuel.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+# Autorise le workflow à committer les nouvelles offres dans le repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: job-radar
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  # récupère offers.db (l'historique) du dernier run
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install python-dotenv PyYAML
+
+      - name: Scraper toutes les sources + classer
+        env:
+          # Clés API stockées dans Settings > Secrets and variables > Actions.
+          # discover() n'utilise PAS OpenAI, donc pas besoin de la clé ici.
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
+        run: python run.py discover
+
+      - name: Committer les nouvelles offres
+        run: |
+          git config user.name  "job-radar-bot"
+          git config user.email "actions@github.com"
+          git add offers.db offers.csv jobs.csv docs/offers.json
+          if git diff --staged --quiet; then
+            echo "Aucun changement aujourd'hui."
+          else
+            git commit -m "Radar: mise à jour offres $(date -u +%Y-%m-%d)"
+            git push
+          fi
