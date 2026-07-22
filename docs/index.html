@@ -55,7 +55,7 @@
       <select id="level"><option value="">Tous niveaux</option></select>
       <select id="city"><option value="">Toutes villes</option></select>
       <select id="source"><option value="">Toutes sources</option></select>
-      <button id="target">🎯 Mes rôles</button>
+      <button id="target" class="on">🎯 Mes rôles</button>
       <button id="newOnly">📌 Nouvelles</button>
       <button id="openOnly" class="on">Ouvertes</button>
     </div>
@@ -72,7 +72,7 @@ const RO = {product:"Product",growth:"Growth",bizdev:"Biz Dev",sales:"Sales",
             marketing:"Marketing",operations:"Ops",data:"Data",engineering:"Eng",
             design:"Design",finance:"Finance",people:"People",other:"Autre"};
 const TARGET = new Set(["product","growth","bizdev","sales","marketing","operations"]);
-let JOBS = [], state = {q:"",role:"",level:"",city:"",source:"",target:false,newOnly:false,openOnly:true};
+let JOBS = [], state = {q:"",role:"",level:"",city:"",source:"",target:true,newOnly:false,openOnly:true};
 
 function opts(sel, values){
   values.forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;sel.appendChild(o)});

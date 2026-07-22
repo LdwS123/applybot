@@ -21,7 +21,7 @@ from collections import Counter
 from pathlib import Path
 
 from . import sources
-from .classify import classify, LEVEL_ORDER
+from .classify import classify, LEVEL_ORDER, TARGET_ROLES
 
 DB_FILE = "offers.db"
 OFFERS_CSV = "offers.csv"
@@ -190,12 +190,15 @@ def _write_csvs(rows: list[dict]) -> None:
                     "Source", "Localisation", "Lien", "Vue le", "Vue dernière"])
         for r in rows:
             w.writerow([r[c] for c in _ALL_COLS])
-    # jobs.csv : URL en 1ʳᵉ colonne pour la phase apply (offres encore ouvertes)
+    # jobs.csv : flux pour la phase apply. On NE garde QUE les rôles ciblés
+    # (product/growth/bizdev/sales/marketing/ops) et les offres encore ouvertes,
+    # pour que l'agent ne postule jamais à un poste d'ingé/data/etc.
     with open(JOBS_CSV, "w", encoding="utf-8") as f:
-        f.write("# url, title, company, level, city  (généré par discovery)\n")
+        f.write("# url, title, company, role, level, city  (rôles ciblés uniquement)\n")
         for r in rows:
-            if r["last_seen"] == TODAY:
-                f.write(f'{r["url"]}, {r["title"]}, {r["company"]}, {r["level"]}, {r["city"]}\n')
+            if r["last_seen"] == TODAY and r.get("role") in TARGET_ROLES:
+                f.write(f'{r["url"]}, {r["title"]}, {r["company"]}, '
+                        f'{r["role"]}, {r["level"]}, {r["city"]}\n')
 
 
 def _write_json(rows: list[dict]) -> None:

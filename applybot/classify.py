@@ -80,7 +80,8 @@ _ROLE_PATTERNS: list[tuple[str, re.Pattern]] = [
     ("bizdev", re.compile(r"\b(business development|partnerships?|alliances?|"
                           r"go-?to-?market|gtm|strategic partner)\b", re.I)),
     ("sales", re.compile(r"\b(sales|bdr|sdr|account executive|account manager|"
-                         r"revenue|quota|solutions consultant)\b", re.I)),
+                         r"account director|customer success|customer experience|"
+                         r"client success|revenue|quota|solutions consultant)\b", re.I)),
     ("marketing", re.compile(r"\b(marketing|brand|content|seo|social media|"
                              r"communications|community|pr manager)\b", re.I)),
     ("operations", re.compile(r"\b(operations|\bops\b|program manager|project manager|"
