@@ -118,6 +118,30 @@ def recruitee(slug: str) -> list[dict]:
     ]
 
 
+def bamboohr(slug: str) -> list[dict]:
+    data = _get_json(f"https://{slug}.bamboohr.com/careers/list")
+    out = []
+    for j in data.get("result", []):
+        loc = j.get("atsLocation") or {}
+        location = ", ".join(x for x in (loc.get("city"), loc.get("country")) if x) \
+            or ("Remote" if j.get("isRemote") else "")
+        out.append(_row(j.get("jobOpeningName"), slug, location,
+                        f"https://{slug}.bamboohr.com/careers/{j.get('id')}", "bamboohr"))
+    return out
+
+
+def breezy(slug: str) -> list[dict]:
+    data = _get_json(f"https://{slug}.breezy.hr/json")
+    out = []
+    for j in data:
+        loc = j.get("location") or {}
+        country = loc.get("country")
+        country = country.get("name") if isinstance(country, dict) else country
+        location = ", ".join(x for x in (loc.get("city"), country) if x)
+        out.append(_row(j.get("name"), slug, location, j.get("url"), "breezy"))
+    return out
+
+
 # Table de dispatch : préfixe dans companies.txt -> fonction
 ATS = {
     "greenhouse": greenhouse,
@@ -126,6 +150,8 @@ ATS = {
     "smartrecruiters": smartrecruiters,
     "workable": workable,
     "recruitee": recruitee,
+    "bamboohr": bamboohr,
+    "breezy": breezy,
 }
 
 
@@ -314,9 +340,12 @@ _BOARD_RE = re.compile(
     r"|(?:boards|job-boards)\.greenhouse\.io/(?!embed)([a-z0-9_-]+)"
     r"|jobs\.lever\.co/([a-z0-9_-]+)"
     r"|jobs\.ashbyhq\.com/([a-z0-9._-]+)"
-    r"|apply\.workable\.com/([a-z0-9_-]+)", re.I)
+    r"|apply\.workable\.com/([a-z0-9_-]+)"
+    r"|(?!www\.)([a-z0-9-]+)\.bamboohr\.com"
+    r"|(?!www\.)([a-z0-9-]+)\.breezy\.hr", re.I)
 
-_BOARD_ATS = ["greenhouse", "greenhouse", "lever", "ashby", "workable"]
+_BOARD_ATS = ["greenhouse", "greenhouse", "lever", "ashby", "workable",
+              "bamboohr", "breezy"]
 
 
 def _detect_board(website: str | None) -> tuple[str, str] | None:
