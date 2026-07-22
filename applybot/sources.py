@@ -36,6 +36,13 @@ def _get_json(url: str, timeout: int = 25):
         return json.loads(r.read().decode("utf-8"))
 
 
+def _get_text(url: str, timeout: int = 7, cap: int = 500_000) -> str:
+    """Récupère du HTML (borné à `cap` octets pour éviter les pages géantes)."""
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read(cap).decode("utf-8", "ignore")
+
+
 def _row(title, company, location, url, source) -> dict:
     return {
         "title": (title or "").strip(),
@@ -299,28 +306,75 @@ AGGREGATORS_KEY = {
 YC_DIRECTORY = "https://yc-oss.github.io/api/companies/all.json"
 
 
-def _yc_probe(slug: str) -> list[dict]:
-    """Essaie greenhouse, puis ashby, puis lever avec ce slug. 1ᵉʳ hit gagne."""
+# Détecte le vrai board carrière dans le HTML d'un site (slug custom, embed…).
+# Ordre des groupes capturants = greenhouse(embed for=), greenhouse(boards/slug),
+# lever, ashby, workable.
+_BOARD_RE = re.compile(
+    r"greenhouse\.io/embed/job_board\?for=([a-z0-9_-]+)"
+    r"|(?:boards|job-boards)\.greenhouse\.io/(?!embed)([a-z0-9_-]+)"
+    r"|jobs\.lever\.co/([a-z0-9_-]+)"
+    r"|jobs\.ashbyhq\.com/([a-z0-9._-]+)"
+    r"|apply\.workable\.com/([a-z0-9_-]+)", re.I)
+
+_BOARD_ATS = ["greenhouse", "greenhouse", "lever", "ashby", "workable"]
+
+
+def _detect_board(website: str | None) -> tuple[str, str] | None:
+    """Suit le site de la boîte et détecte (ats, slug) depuis les liens carrière."""
+    if not website:
+        return None
+    base = website.rstrip("/")
+    for path in ("", "/careers", "/jobs"):
+        try:
+            html = _get_text(base + path)
+        except Exception:  # noqa: BLE001 — site down/timeout/redirect
+            continue
+        m = _BOARD_RE.search(html)
+        if m:
+            for i, g in enumerate(m.groups()):
+                if g:
+                    return (_BOARD_ATS[i], g)
+    return None
+
+
+def _yc_probe(company: dict) -> list[dict]:
+    """1) slug direct sur greenhouse/ashby/lever ; 2) sinon, détection via le
+    site web (rattrape les slugs custom type 'apollo-graphql'). 1ᵉʳ hit gagne."""
+    slug = company["slug"]
     for fn in (greenhouse, ashby, lever):
         try:
             jobs = fn(slug)
-        except Exception:  # noqa: BLE001 — 404 = pas ce ATS, on continue
+        except Exception:  # noqa: BLE001
             continue
         if jobs:
             for j in jobs:
-                j["source"] = "yc"  # marque l'origine "découverte YC"
+                j["source"] = "yc"
             return jobs
+    # fallback : détection du board dans le site web
+    board = _detect_board(company.get("website"))
+    if board:
+        fn = ATS.get(board[0])
+        if fn:
+            try:
+                jobs = fn(board[1])
+            except Exception:  # noqa: BLE001
+                jobs = []
+            if jobs:
+                for j in jobs:
+                    j["source"] = "yc"
+                return jobs
     return []
 
 
 def ycombinator(limit: int | None = None, workers: int = 24) -> list[dict]:
-    """Toutes les startups YC en train de recruter, board carrière résolu."""
+    """Toutes les startups YC en train de recruter, board carrière résolu
+    (slug direct + détection web pour les slugs custom)."""
     data = _get_json(YC_DIRECTORY, timeout=40)
-    slugs = [c["slug"] for c in data if c.get("isHiring") and c.get("slug")]
+    companies = [c for c in data if c.get("isHiring") and c.get("slug")]
     if limit:
-        slugs = slugs[:limit]
+        companies = companies[:limit]
     out: list[dict] = []
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        for jobs in ex.map(_yc_probe, slugs):
+        for jobs in ex.map(_yc_probe, companies):
             out.extend(jobs)
     return out
