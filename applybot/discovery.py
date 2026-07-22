@@ -50,7 +50,7 @@ def _read_companies(path: str) -> list[tuple[str, str]]:
 # --- fetch de toutes les sources ---------------------------------------------
 
 def _fetch_all(companies_file: str, query: str, use_key_sources: bool,
-               include_yc: bool) -> list[dict]:
+               include_yc: bool, yc_hiring_only: bool = False) -> list[dict]:
     rows: list[dict] = []
 
     # 1. ATS par entreprise
@@ -75,11 +75,12 @@ def _fetch_all(companies_file: str, query: str, use_key_sources: bool,
         except Exception as e:  # noqa: BLE001
             print(f"   ⚠️  {name} -> {type(e).__name__} (ignoré)")
 
-    # 3. Y Combinator : découverte automatique de startups (peut prendre ~1-2 min)
+    # 3. Y Combinator : découverte automatique de startups (peut prendre ~10 min)
     if include_yc:
         try:
-            print("   [YC] découverte des startups qui recrutent (probe des boards)...")
-            got = sources.ycombinator()
+            scope = "1500 isHiring" if yc_hiring_only else "~6000 boîtes"
+            print(f"   [YC] découverte des startups ({scope}, probe des boards)...")
+            got = sources.ycombinator(hiring_only=yc_hiring_only)
             rows.extend(got)
             print(f"   [YC] -> {len(got)} offres de startups YC")
         except Exception as e:  # noqa: BLE001
@@ -235,13 +236,14 @@ def _summary(rows: list[dict]) -> None:
 
 
 def discover(companies_file: str = "companies.txt", keywords: list[str] | None = None,
-             use_key_sources: bool = True, include_yc: bool = True) -> int:
+             use_key_sources: bool = True, include_yc: bool = True,
+             yc_hiring_only: bool = False) -> int:
     """Scrape toutes les sources, classe, stocke. Renvoie le nb d'offres."""
     kws = [k.lower().strip() for k in (keywords or []) if k.strip()]
     query = " ".join(kws)
 
     print("Scraping multi-sources...\n")
-    raw = _fetch_all(companies_file, query, use_key_sources, include_yc)
+    raw = _fetch_all(companies_file, query, use_key_sources, include_yc, yc_hiring_only)
     print(f"\n{len(raw)} offres brutes récupérées. Classement + dédup...")
 
     fresh = [classify(r) for r in _dedupe(raw)]

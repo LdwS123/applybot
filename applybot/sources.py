@@ -367,8 +367,9 @@ def _detect_board(website: str | None) -> tuple[str, str] | None:
 
 
 def _yc_probe(company: dict) -> list[dict]:
-    """1) slug direct sur greenhouse/ashby/lever ; 2) sinon, détection via le
-    site web (rattrape les slugs custom type 'apollo-graphql'). 1ᵉʳ hit gagne."""
+    """1) slug direct sur greenhouse/ashby/lever (pour TOUTE boîte) ; 2) si la
+    boîte est marquée isHiring et rate, détection via le site web (coûteux, donc
+    borné aux boîtes qui se déclarent en recrutement). 1ᵉʳ hit gagne."""
     slug = company["slug"]
     for fn in (greenhouse, ashby, lever):
         try:
@@ -379,27 +380,33 @@ def _yc_probe(company: dict) -> list[dict]:
             for j in jobs:
                 j["source"] = "yc"
             return jobs
-    # fallback : détection du board dans le site web
-    board = _detect_board(company.get("website"))
-    if board:
-        fn = ATS.get(board[0])
-        if fn:
-            try:
-                jobs = fn(board[1])
-            except Exception:  # noqa: BLE001
-                jobs = []
-            if jobs:
-                for j in jobs:
-                    j["source"] = "yc"
-                return jobs
+    # fallback web : seulement pour les isHiring (borne le coût des fetch de sites)
+    if company.get("isHiring"):
+        board = _detect_board(company.get("website"))
+        if board:
+            fn = ATS.get(board[0])
+            if fn:
+                try:
+                    jobs = fn(board[1])
+                except Exception:  # noqa: BLE001
+                    jobs = []
+                if jobs:
+                    for j in jobs:
+                        j["source"] = "yc"
+                    return jobs
     return []
 
 
-def ycombinator(limit: int | None = None, workers: int = 24) -> list[dict]:
-    """Toutes les startups YC en train de recruter, board carrière résolu
-    (slug direct + détection web pour les slugs custom)."""
+def ycombinator(limit: int | None = None, workers: int = 24,
+                hiring_only: bool = False) -> list[dict]:
+    """Startups YC avec board carrière résolu. Par défaut on probe les ~6000
+    boîtes (pas juste les 1500 isHiring, ce flag étant souvent périmé) → attrape
+    des centaines de startups obscures qui recrutent sans l'avoir déclaré.
+    hiring_only=True limite aux isHiring (plus rapide)."""
     data = _get_json(YC_DIRECTORY, timeout=40)
-    companies = [c for c in data if c.get("isHiring") and c.get("slug")]
+    companies = [c for c in data if c.get("slug")]
+    if hiring_only:
+        companies = [c for c in companies if c.get("isHiring")]
     if limit:
         companies = companies[:limit]
     out: list[dict] = []
