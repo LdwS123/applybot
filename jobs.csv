@@ -53,8 +53,8 @@ https://job-boards.greenhouse.io/anthropic/jobs/5097490008, Product Manager, Saf
 https://job-boards.greenhouse.io/anthropic/jobs/5179891008, Product Operations Manager, Embedded, anthropic, operations, manager, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5096878008, Research Product Manager, Labs, anthropic, product, manager, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5287327008, Salesforce Developer, Partnerships, anthropic, bizdev, mid, San Francisco
-https://job-boards.greenhouse.io/anthropic/jobs/5221916008, Sales Manager, Nonprofit & Education, EMEA, anthropic, sales, manager, London
-https://job-boards.greenhouse.io/anthropic/jobs/5223750008, Sales Manager, Nonprofit & Education, EMEA, anthropic, sales, manager, London
+https://job-boards.greenhouse.io/anthropic/jobs/5221916008, Sales Manager, Nonprofit, EMEA, anthropic, sales, manager, London
+https://job-boards.greenhouse.io/anthropic/jobs/5223750008, Sales Manager, Nonprofit, EMEA, anthropic, sales, manager, London
 https://job-boards.greenhouse.io/anthropic/jobs/5309917008, Staff Engineer, Datacenter Server Lifecycle, anthropic, growth, staff, Sydney
 https://job-boards.greenhouse.io/anthropic/jobs/5139038008, Staff Engineer, Datacenter Server Lifecycle, anthropic, growth, staff, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5363469008, Staff Software Engineer, Growth, anthropic, growth, staff, San Francisco
@@ -114,7 +114,6 @@ https://stripe.com/jobs/search?gh_jid=8052814, Customer Success Manager, Revenue
 https://stripe.com/jobs/search?gh_jid=8074199, Customer Success Manager, Metronome, stripe, sales, manager, London
 https://stripe.com/jobs/search?gh_jid=7440963, Data Science Manager, Finance and Strategy, stripe, operations, manager, Seattle
 https://stripe.com/jobs/search?gh_jid=8043052, Data Scientist, Global Growth, stripe, growth, mid, Singapore
-https://stripe.com/jobs/search?gh_jid=7908925, Enterprise Account Executive, Iberia, stripe, sales, mid, Madrid
 https://stripe.com/jobs/search?gh_jid=7617049, Enterprise Paid Digital Marketing Manager, stripe, marketing, manager, Us: Sf Bay Area
 https://stripe.com/jobs/search?gh_jid=7634113, Field Marketing Manager, SMB and Mid-Market - EMEA, stripe, marketing, manager, Dublin
 https://stripe.com/jobs/search?gh_jid=7463755, Finance and Strategy Partner, stripe, operations, exec, Chicago
@@ -187,6 +186,7 @@ https://stripe.com/jobs/search?gh_jid=7974209, Risk Operations Analyst, Financia
 https://stripe.com/jobs/search?gh_jid=7964759, Risk Operations Analyst - SSO, stripe, operations, mid, Singapore
 https://stripe.com/jobs/search?gh_jid=7862938, Sales Compensation Design Lead, stripe, sales, mid, Dublin
 https://stripe.com/jobs/search?gh_jid=7953987, Sales Development Change Management Specialist, stripe, sales, mid, Chi And Dub
+https://stripe.com/jobs/search?gh_jid=6470774, Sales Development Representative, stripe, sales, mid, Bangalore
 https://stripe.com/jobs/search?gh_jid=8074892, Sales Development Representative, AUNZ, stripe, sales, mid, Sydney
 https://stripe.com/jobs/search?gh_jid=8017084, Sanctions, Operations Associate(CDMX), stripe, operations, junior, Mexico City
 https://stripe.com/jobs/search?gh_jid=7325566, SDC Operations Manager, Financial Crimes (AML), stripe, operations, manager, Bangalore
@@ -201,7 +201,6 @@ https://stripe.com/jobs/search?gh_jid=7517535, Staff Product Manager, ML Foundat
 https://stripe.com/jobs/search?gh_jid=7819059, Staff Product Manager, Payments, stripe, product, manager, San Francisco
 https://stripe.com/jobs/search?gh_jid=7920219, Staff Product Manager, Support Experience, stripe, product, manager, San Francisco
 https://stripe.com/jobs/search?gh_jid=7977676, Strategic Programs Lead, New Markets, stripe, operations, mid, Singapore
-https://stripe.com/jobs/search?gh_jid=7813411, Strategy and Analytics Business Partner, stripe, operations, exec, Bangalore
 https://stripe.com/jobs/search?gh_jid=8044391, Strategy and Operations Lead, Deal Pricing, stripe, operations, mid, New York
 https://stripe.com/jobs/search?gh_jid=8044158, Technical Account Manager, stripe, sales, manager, Sydney
 https://stripe.com/jobs/search?gh_jid=7918088, Technical Account Manager, AI User Segment, stripe, sales, manager, San Francisco
@@ -393,7 +392,7 @@ https://job-boards.greenhouse.io/gitlab/jobs/8631153002, Commercial Account Exec
 https://job-boards.greenhouse.io/gitlab/jobs/8632005002, Senior Hyperscaler Operations Manager, gitlab, operations, manager, Remote
 https://job-boards.greenhouse.io/gitlab/jobs/8613199002, Manager, Customer Success Managers, EMEA, gitlab, sales, manager, Remote
 https://job-boards.greenhouse.io/gitlab/jobs/8604996002, Senior Customer Success Operations Manager, gitlab, sales, manager, Remote
-https://job-boards.greenhouse.io/gitlab/jobs/8626740002, Manager, Engineering, Git & Gitaly Operations, gitlab, operations, manager, Remote
+https://job-boards.greenhouse.io/gitlab/jobs/8626740002, Engineering Manager - Git & Gitaly Operations, gitlab, operations, manager, Bangalore
 https://job-boards.greenhouse.io/gitlab/jobs/8639170002, Manager, Strategic Finance, gitlab, operations, manager, Remote
 https://job-boards.greenhouse.io/gitlab/jobs/8564957002, Principal Product Manager, AI Custom Models, gitlab, product, manager, Remote
 https://job-boards.greenhouse.io/gitlab/jobs/8597813002, Principal Product Manager, Engineering Intelligence & Insights, gitlab, product, manager, Remote
@@ -837,6 +836,7 @@ https://boards.greenhouse.io/cloudflare/jobs/8067630?gh_jid=8067630, Senior Name
 https://boards.greenhouse.io/cloudflare/jobs/7421718?gh_jid=7421718, Senior Named Account Executive, Japan, cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8037985?gh_jid=8037985, Senior Named Account Executive, Melbourne, cloudflare, sales, senior, Remote
 https://boards.greenhouse.io/cloudflare/jobs/8024272?gh_jid=8024272, Senior Named Account Executive, Montreal, cloudflare, sales, senior, Remote
+https://boards.greenhouse.io/cloudflare/jobs/7272028?gh_jid=7272028, Senior Digital Native  Account Executive, Spain, cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/7981489?gh_jid=7981489, Senior Partner Account Manager, Japan (Based in Tokyo), cloudflare, sales, exec, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8024849?gh_jid=8024849, Senior Principal, Sales Compensation Design & Strategy, cloudflare, sales, staff, Remote
 https://boards.greenhouse.io/cloudflare/jobs/8007326?gh_jid=8007326, Senior Product Manager - Ad Fraud and Identity Solutions, cloudflare, product, manager, Unknown
@@ -845,7 +845,6 @@ https://boards.greenhouse.io/cloudflare/jobs/8064473?gh_jid=8064473, Senior Prod
 https://boards.greenhouse.io/cloudflare/jobs/7830335?gh_jid=7830335, Senior Territory Account Executive, Digital Native (Hong Kong), cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8042843?gh_jid=8042843, Senior Territory Account Executive, iGaming (ASEAN), cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8027747?gh_jid=8027747, Territory Account Executive, Korea, cloudflare, sales, mid, Unknown
-https://boards.greenhouse.io/cloudflare/jobs/8012884?gh_jid=8012884, Senior Territory Account Executive - North China, cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/7782141?gh_jid=7782141, Senior Territory Account Executive (NY), cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/7804941?gh_jid=7804941, Territory Account Executive, Central Canada, cloudflare, sales, mid, Remote
 https://boards.greenhouse.io/cloudflare/jobs/7972135?gh_jid=7972135, Territory Account Executive, Digital Native (Hong Kong), cloudflare, sales, mid, Unknown
@@ -1022,6 +1021,7 @@ https://jobs.ashbyhq.com/openai/4d104ebe-64ff-4421-94c3-03a8982b19ea, Facilities
 https://jobs.ashbyhq.com/openai/98eec6be-1d69-406d-88ba-3cb43f3fcbd7, Developer Marketing Lead, APAC, openai, marketing, mid, Singapore
 https://jobs.ashbyhq.com/openai/f4720507-3c44-4162-af21-206ac3a78007, Compensation Business Partner, GTM, openai, bizdev, exec, San Francisco
 https://jobs.ashbyhq.com/openai/7e0c1731-a24a-4a75-9cda-2a0502f8e152, Operations Program Manager - Robotics Data Acquisition, openai, operations, manager, San Francisco
+https://jobs.ashbyhq.com/openai/4e51e1ac-3fe0-46b5-b036-6143826ecfa5, Account Director, Digital Natives - Nordics, openai, sales, exec, Stockholm
 https://jobs.ashbyhq.com/openai/b09b4216-426d-443c-9b87-23570fd9a694, Strategic Finance, Partnerships, openai, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/openai/cffa3a8d-918a-4e91-a1c6-3fa84a454408, Technical Program Manager, Applied API & Product, openai, operations, manager, San Francisco
 https://jobs.ashbyhq.com/openai/4d5a6ca9-5fe0-4d4c-bbc4-ffa8fef33915, Account Director, GSIs & Consulting, openai, sales, exec, Us
@@ -1052,7 +1052,6 @@ https://jobs.ashbyhq.com/openai/dc503400-f7a8-4ad4-b50b-b33d2d12cc2d, Growth Mar
 https://jobs.ashbyhq.com/openai/56e699e0-421f-40d1-aad1-20cf6609794f, Strategic Finance, B2B Partnerships, openai, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/openai/2e127590-8604-4901-ac38-8dfd8e9e255f, B2B Marketing Lead, India, openai, marketing, mid, India
 https://jobs.ashbyhq.com/openai/7caca966-29a4-4175-af15-359eda38ebc6, Treasury Manager, Global Cash & Operations, openai, operations, manager, San Francisco
-https://jobs.ashbyhq.com/openai/37d6637c-48aa-48c7-8665-ec5abfcf32d0, Product Manager, Cyber Defense and Blue Team, openai, product, manager, San Francisco
 https://jobs.ashbyhq.com/openai/d7dc62fc-e7ce-4f58-a912-4b62b65c7eb6, Academic Research Partnerships & Programs Lead, openai, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/openai/88b93f91-7548-42a1-8d5b-7d37090e480f, Brand Protection Manager, openai, marketing, manager, San Francisco
 https://jobs.ashbyhq.com/openai/43c9fed6-4eb2-4db6-afc5-cd804279779b, Site Operations Technician, openai, operations, mid, San Francisco
@@ -1425,7 +1424,6 @@ https://jobs.ashbyhq.com/eightsleep/05a32566-9806-44e4-81d4-e61434554f30, Full S
 https://jobs.ashbyhq.com/eightsleep/8f2d0aa2-ddb7-431e-b607-07b0e08b0f4b, Growth Marketing Manager, eightsleep, growth, manager, San Francisco
 https://jobs.ashbyhq.com/eightsleep/da0f9483-e9a5-4fb9-8867-1da6d03bf90c, Growth Engineer (Milan), eightsleep, growth, mid, Milan
 https://jobs.ashbyhq.com/eightsleep/658cd12c-130b-4133-82e9-2d300235d654, International Performance Marketing Manager (Milan), eightsleep, marketing, manager, Milan
-https://jobs.ashbyhq.com/eightsleep/ffc6db02-7b50-466a-b0d2-8341952fb651, Business Development Representative | B2B, eightsleep, bizdev, mid, Remote Global
 https://jobs.ashbyhq.com/eightsleep/99c69848-1531-4cd1-afc1-053ccd850a9e, Amazon Channel Program Manager, eightsleep, operations, manager, New York
 https://jobs.ashbyhq.com/eightsleep/c007651e-f62d-4a72-a092-fbe84106b3f3, Director of Medical Operations, eightsleep, operations, exec, San Francisco
 https://job-boards.greenhouse.io/humaninterest/jobs/8025140, Account Executive - New York, humaninterest, sales, mid, United States
@@ -1460,17 +1458,14 @@ https://jobs.ashbyhq.com/deepgram/98150e77-5458-4382-9575-ac3a3ab1e205, EMEA Acc
 https://jobs.ashbyhq.com/deepgram/7ced4c1f-4126-44fe-9cf1-da427a9e4e3e, ML Ops Infrastructure Engineer, deepgram, operations, mid, Usa
 https://jobs.ashbyhq.com/deepgram/f904ff60-f5d1-45c7-8fa2-8456c47b4204, Pre-Sales Solutions Engineer (San Francisco, CA), deepgram, sales, mid, San Francisco
 https://jobs.ashbyhq.com/deepgram/e90eefc1-88ec-4d3c-948b-b21c57ef6b18, Engineering Manager, Console Team (Product-Led Growth Strategy), deepgram, growth, manager, Usa
-https://jobs.ashbyhq.com/deepgram/f924e637-6bfa-46fc-a05a-b4bcdb176f78, German Speaking- Sales Development Representative, EMEA, deepgram, sales, mid, Remote
 https://jobs.ashbyhq.com/deepgram/623dcf1a-becc-4cab-85a3-eb7ebe37e3c0, Strategic Partner Director, deepgram, bizdev, exec, Usa
 https://jobs.ashbyhq.com/deepgram/aafbab17-4caa-4b87-811c-21acfc566cf4, APAC Partner Business Development Manager, deepgram, bizdev, exec, Singapore
 https://jobs.ashbyhq.com/deepgram/f5aeae73-25db-4a2d-b5e3-6b43cf2e2ed5, Senior Strategic Renewals Manager, deepgram, operations, manager, Usa
 https://jobs.ashbyhq.com/deepgram/0d90a2af-50f6-47b1-aea8-51f6f08122cb, Senior Technical Program Manager (Engineering), deepgram, operations, manager, Usa
 https://jobs.ashbyhq.com/deepgram/1c34f6ba-6998-447c-9485-d4cf56db42de, Senior Technical Program Manager (Engineering) - AI Tooling & Systems, deepgram, operations, manager, Usa
 https://jobs.ashbyhq.com/deepgram/fea36d64-10f4-4531-bfa9-a917118a570b, VP of Demand Generation, deepgram, growth, exec, Usa
-https://jobs.ashbyhq.com/deepgram/a0188b8a-d580-4f13-8925-13f41a84aa8c, Customer Success Engineer - German Speaker (Switzerland), deepgram, sales, mid, Switzerland
 https://jobs.ashbyhq.com/deepgram/a7073f3a-69b4-4351-b733-ded45e9ef710, Senior Full-stack Engineer, Console Team (Product-Led Growth Strategy), deepgram, growth, senior, Usa
 https://jobs.ashbyhq.com/deepgram/8cd2cf6b-ec99-4747-bb0a-06c149a628f0, Senior Frontend Engineer, Console Team (Product-Led Growth Strategy), deepgram, growth, senior, Usa
-https://jobs.ashbyhq.com/deepgram/da0ec864-10e8-4b1b-abd3-b6c15b3b111c, Sales Country Leader (India), deepgram, sales, mid, India
 https://jobs.ashbyhq.com/deepgram/02b34c52-9d44-415d-affe-80f4bb016f90, Account Executive (Singapore), deepgram, sales, mid, Singapore
 https://jobs.ashbyhq.com/deepgram/94443791-d22f-4f63-a4dd-fd3efb3fc82e, Account Executive (Korean Speaking), deepgram, sales, mid, Singapore
 https://job-boards.greenhouse.io/truebill/jobs/7726429003, Creative Project Manager, truebill, operations, manager, New York
@@ -1775,7 +1770,6 @@ https://job-boards.greenhouse.io/aclu/jobs/8631854002, Senior Project Manager, N
 https://job-boards.greenhouse.io/aclu/jobs/8497100002, Technical Project Manager (Term-Limited), aclu, operations, manager, New York
 https://jobs.ashbyhq.com/upcodes/f5ef9345-a8f3-48f4-820b-8e3e138e6e6e, Senior Account Executive, upcodes, sales, senior, North America
 https://jobs.ashbyhq.com/upcodes/f468c2aa-a15a-4273-b6b6-53638d28f791, Account Executive, upcodes, sales, mid, North America
-https://job-boards.greenhouse.io/roofr/jobs/4714786005, Senior Manager, Revenue Operations, roofr, sales, manager, Remote
 https://jobs.ashbyhq.com/prelim/6df5b191-1b12-4f6e-a978-30e3954ac2c9, Business Operations Lead, prelim, operations, mid, San Francisco
 https://jobs.lever.co/pyka/1c8c2a63-7d0a-4a6a-8369-d43a7901a2ff, Senior Account Executive (Brazil), pyka, sales, senior, Mato Grosso
 https://jobs.ashbyhq.com/headstart/5890a597-f72d-4968-9a54-397bff0c0c9b, Staff Product Manager, headstart, product, manager, New York
@@ -1881,7 +1875,6 @@ https://jobs.ashbyhq.com/mutiny/b1d69184-0117-432d-96bf-3fafd6bf26f2, Head of GT
 https://jobs.ashbyhq.com/mutiny/f1deb97a-c077-47c0-ae71-fc2705d0560e, Executive Assistant and Operations Manager, mutiny, operations, manager, In Person In New York City
 https://job-boards.greenhouse.io/enveritas/jobs/5151074008, Ops Manager (India), enveritas, operations, manager, Remote
 https://jobs.ashbyhq.com/overview/91219c61-9b19-4ddd-b050-738a9e08aba5, Vision Sales Engineer - San Francisco, overview, sales, mid, San Francisco
-https://jobs.ashbyhq.com/overview/7e7a94f1-6e83-4983-b154-7d6052ec8b41, AI GTM Operations Lead, overview, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/overview/827eabc8-7c28-4e9b-952d-1db108600096, Vision Sales Engineer - México, overview, sales, mid, Monterrey
 https://jobs.ashbyhq.com/overview/c597579f-4ad1-41d2-9c30-a981d295fcbd, Vision Sales Engineer (U.S. – Expansion), overview, sales, mid, Remote
 https://jobs.ashbyhq.com/overview/f85a167a-4624-4e7e-873a-b4b6e7aa8616, Business Development Representative, overview, bizdev, mid, Remote
@@ -2173,10 +2166,10 @@ https://jobs.ashbyhq.com/omni/e9fabee1-1634-4922-b2ad-30adcc9e44d4, Mid-Market A
 https://jobs.ashbyhq.com/omni/4f242509-c483-46c4-b637-8e4508a8dfd9, Strategic Enterprise Account Executive, omni, sales, mid, United States
 https://jobs.ashbyhq.com/omni/d83518af-522e-4202-ac56-e926e0c6cc54, Enterprise Account Executive, omni, sales, mid, United States
 https://jobs.ashbyhq.com/omni/d296cd2a-0db9-4db7-834e-3d06f40c932c, Mid-Market Account Executive, German-Speaking; DACH Market, omni, sales, mid, Dublin
-https://jobs.ashbyhq.com/omni/621778d1-e247-455b-a7e2-37dd7cae0341, Solutions Engineer I (Pre-Sales), omni, sales, mid, San Francisco
-https://jobs.ashbyhq.com/omni/e8f225fd-6e48-4693-acf3-f49594abc8a0, Staff Solutions Engineer  (Pre-Sales), omni, sales, staff, United States
-https://jobs.ashbyhq.com/omni/b7b60407-17e5-4b25-855d-6667c9fc15b3, Solutions Engineer II (Pre-Sales), omni, sales, mid, San Francisco
-https://jobs.ashbyhq.com/omni/6f7d41f0-c449-44be-845c-2fbdf226d0fa, Senior Solutions Engineer  (Pre-Sales); EMEA, omni, sales, senior, Dublin
+https://jobs.ashbyhq.com/omni/621778d1-e247-455b-a7e2-37dd7cae0341, Solutions Engineer, Pre-Sales, omni, sales, mid, San Francisco
+https://jobs.ashbyhq.com/omni/e8f225fd-6e48-4693-acf3-f49594abc8a0, Staff Solutions Engineer, Pre-Sales, omni, sales, staff, United States
+https://jobs.ashbyhq.com/omni/b7b60407-17e5-4b25-855d-6667c9fc15b3, Solutions Engineer II, Pre-Sales, omni, sales, mid, San Francisco
+https://jobs.ashbyhq.com/omni/6f7d41f0-c449-44be-845c-2fbdf226d0fa, Senior Solutions Engineer, Pre-Sales (EMEA), omni, sales, senior, Dublin
 https://jobs.ashbyhq.com/omni/ea5d36b5-5b55-4fec-b3fa-54f2bacc0cba, Enterprise Account Executive, Hebrew-Speaking; Israel Market, omni, sales, mid, Dublin
 https://jobs.lever.co/doola/f172ed34-fd5a-4970-86a5-6ee61017b9df, SEO/GEO Specialist, doola, marketing, mid, Remote In Latin America
 https://jobs.ashbyhq.com/atomic/478b1563-9b92-4797-9299-ddca512a0c6b, Growth Marketing Manager, atomic, growth, manager, Remote
@@ -2190,7 +2183,6 @@ https://jobs.ashbyhq.com/yotta/30e75db2-14e2-433c-bdf6-cec7334615f0, Sales Manag
 https://jobs.ashbyhq.com/notabene/1d111452-1b10-43ed-8bc2-c807d0983976, Enterprise Account Executive, Americas, notabene, sales, mid, New York
 https://jobs.ashbyhq.com/notabene/43c9ebe2-f242-4df1-8e2d-bcd83c7a601a, Business Development Representative, notabene, bizdev, mid, New York
 https://jobs.ashbyhq.com/flint/2d5e060c-58c1-4b04-a058-7e9df3181d8a, Business Operations, flint, operations, mid, San Francisco
-https://jobs.ashbyhq.com/flint/8a104066-aab7-408b-9848-112e553a720f, Founding Account Executive, flint, sales, mid, San Francisco
 https://jobs.lever.co/skio/ad232e1d-9e74-48c8-a502-65c003c6a9f6, Partnerships Manager, skio, bizdev, manager, Remote
 https://jobs.ashbyhq.com/farel/a18867ab-ebd9-41ee-be33-4f430a1a35e2, Account Executive, NAM, farel, sales, mid, Vancouver
 https://jobs.ashbyhq.com/cohere/98f69f63-2f54-4813-86ea-13d67336326e, Senior Account Executive - US Public Sector (Civilian and Federal), cohere, sales, senior, Washington
@@ -2219,7 +2211,6 @@ https://jobs.ashbyhq.com/formal/644ac896-4320-4157-b20e-7484ab8ee5c9, Product Ma
 https://jobs.ashbyhq.com/formal/f0a7bfc0-fe66-4377-9609-4f1b2ef25bfb, Executive Assistant & Business Operations, formal, operations, mid, San Francisco
 https://jobs.ashbyhq.com/arketa/75812e23-3bda-4df5-8fdd-96c6b6893568, Growth Marketing Lead, arketa, growth, mid, New York
 https://jobs.ashbyhq.com/arketa/1a2ad2e4-9262-4082-b28c-ac975a8c9e0b, Sales Development Representative, arketa, sales, mid, United States
-https://job-boards.greenhouse.io/carbonchain/jobs/5656648004, Events Marketing Manager, carbonchain, marketing, manager, London
 https://jobs.ashbyhq.com/supabase/4859464f-afab-4409-b295-4f4cbbfc41eb, Account Executive  (APAC), supabase, sales, mid, Remote
 https://jobs.ashbyhq.com/supabase/b8010a28-109c-46a9-b8b7-c7f9b24077fa, Product Manager - Security & Trust (EMEA/AMER), supabase, product, manager, Remote
 https://jobs.ashbyhq.com/supabase/47bcfdb8-b954-423e-8a9e-85256434575c, Product Manager - Infrastructure, supabase, product, manager, Remote
@@ -2531,20 +2522,17 @@ https://jobs.ashbyhq.com/happl/207cbb34-d9e4-4c65-92cd-fb1ab12577a5, Business De
 https://jobs.ashbyhq.com/happl/1a13b433-71c5-4be9-b6e1-53fa1e92a6e1, Sales Development Representative, happl, sales, mid, London
 https://jobs.ashbyhq.com/lancedb/52bee912-0a16-4815-bc3d-9bf14cf6e372, Senior Customer Success Engineer, lancedb, sales, senior, United States
 https://jobs.ashbyhq.com/bifrost/88acbd9e-48f1-4df9-950c-93861c3f5080, Founder's Office - Strategy Analyst Internship (6 Months), bifrost, operations, intern, Singapore
-https://jobs.ashbyhq.com/flagright.com/af432a74-d646-49d3-a27a-e0ba32b437d3, Performance Marketing Manager - US, flagright.com, marketing, manager, Usa
 https://jobs.ashbyhq.com/flagright.com/95acbb39-e7ad-4f5a-824c-222be79eba71, Senior Business Development Representative - US, flagright.com, bizdev, senior, Usa
-https://jobs.ashbyhq.com/flagright.com/c59399a3-ee0c-4e86-b2f6-9fa922e6012d, Senior Enterprise Business Development Representative - London, flagright.com, bizdev, senior, London
+https://jobs.ashbyhq.com/flagright.com/c59399a3-ee0c-4e86-b2f6-9fa922e6012d, Senior Business Development Representative - EMEA, flagright.com, bizdev, senior, London
 https://jobs.ashbyhq.com/flagright.com/e06aef39-fdaf-44d5-8283-dbe3d8fb5c69, Customer Success Manager - EMEA, flagright.com, sales, manager, United Kingdom
-https://jobs.ashbyhq.com/flagright.com/d4535cae-daa7-4014-b32b-4101c37900db, Head of Partnerships - San Francisco Bay Area, flagright.com, bizdev, exec, San Francisco
-https://jobs.ashbyhq.com/flagright.com/fbf53610-57bd-4d9c-b939-d21ee9e9f82a, Senior Field Marketing Manager - London, flagright.com, marketing, manager, London
-https://jobs.ashbyhq.com/flagright.com/110a2849-d50a-4ad6-9d89-62113a32034a, Head of Partnerships - New York, flagright.com, bizdev, exec, New York
-https://jobs.ashbyhq.com/flagright.com/071886d3-0cfe-4731-8775-243c2060076b, Partnerships Manager - London, flagright.com, bizdev, manager, London
-https://jobs.ashbyhq.com/flagright.com/e9e2b593-e21d-42b7-b502-cec4f4616f4e, (Sr) Enterprise Account Executive - London, flagright.com, sales, senior, London
+https://jobs.ashbyhq.com/flagright.com/d4535cae-daa7-4014-b32b-4101c37900db, Head of Partnerships, flagright.com, bizdev, exec, San Francisco
+https://jobs.ashbyhq.com/flagright.com/fbf53610-57bd-4d9c-b939-d21ee9e9f82a, Senior Field Marketing Manager - EMEA, flagright.com, marketing, manager, London
+https://jobs.ashbyhq.com/flagright.com/e9e2b593-e21d-42b7-b502-cec4f4616f4e, Senior Enterprise Account Executive - EMEA, flagright.com, sales, senior, London
 https://jobs.ashbyhq.com/flagright.com/06c4f617-331e-4b2a-a675-58aa54c76782, Customer Success Manager - APAC, flagright.com, sales, manager, Singapore
-https://jobs.ashbyhq.com/flagright.com/05872eb1-a0f9-44a8-bf3c-745ced82d7dd, Marketing Associate - Singapore, flagright.com, marketing, junior, Singapore
-https://jobs.ashbyhq.com/flagright.com/934237f3-622e-42ee-9b47-a8e8b8c84e35, Field Marketing Manager - APAC, flagright.com, marketing, manager, Singapore
-https://jobs.ashbyhq.com/flagright.com/60f470f2-295a-448c-8801-424bf085a400, Senior Account Executive - US, flagright.com, sales, senior, Usa
-https://jobs.ashbyhq.com/flagright.com/fdf096bd-98af-4522-a868-83e319f9be12, Sr Midmarket Account Executive - APAC, flagright.com, sales, senior, Singapore
+https://jobs.ashbyhq.com/flagright.com/05872eb1-a0f9-44a8-bf3c-745ced82d7dd, Marketing Associate, flagright.com, marketing, junior, Singapore
+https://jobs.ashbyhq.com/flagright.com/934237f3-622e-42ee-9b47-a8e8b8c84e35, Senior Field Marketing Manager - APAC, flagright.com, marketing, manager, Singapore
+https://jobs.ashbyhq.com/flagright.com/60f470f2-295a-448c-8801-424bf085a400, Senior Enterprise Account Executive - US, flagright.com, sales, senior, Usa
+https://jobs.ashbyhq.com/flagright.com/fdf096bd-98af-4522-a868-83e319f9be12, Senior Enterprise Account Executive - APAC, flagright.com, sales, senior, Singapore
 https://jobs.ashbyhq.com/flagright.com/d5994aa5-f839-4a81-92e0-ae08bc4d081e, Founding Business Development Manager, flagright.com, bizdev, manager, London
 https://jobs.ashbyhq.com/sphere/2e159b02-536e-4ce8-932a-0280af46a95d, Account Executive (Europe), sphere, sales, mid, Europe
 https://jobs.ashbyhq.com/sphere/52104e06-f4b8-43c3-8591-ac9a7ab56ac1, Founding Growth Lead, sphere, growth, mid, San Francisco
@@ -3148,7 +3136,7 @@ https://jobs.ashbyhq.com/auctor/89ac2222-83be-4bd5-9f61-741ed22def45, Founding P
 https://jobs.ashbyhq.com/claim-health/bb76582b-fe73-48d5-8897-a863bfd88013, Operations Associate, claim-health, operations, junior, New York
 https://jobs.ashbyhq.com/claim-health/08f325db-b705-4359-b5b9-84d5660ceac6, Content Marketing Intern, claim-health, marketing, intern, New York
 https://jobs.ashbyhq.com/sim/c14029e5-0d1a-4574-a441-6269e5569fb4, Founding GTM Engineer, sim, bizdev, mid, San Francisco
-https://jobs.ashbyhq.com/lucis/20ea31ea-9a67-4c24-8a7c-925cb92200d7, Medical ops lead, lucis, operations, mid, Paris
+https://jobs.ashbyhq.com/lucis/20ea31ea-9a67-4c24-8a7c-925cb92200d7, Medical Ops Lead, lucis, operations, mid, Paris
 https://jobs.ashbyhq.com/sygaldry-technologies/5310e30c-f16e-4ebc-889c-86e007d8760c, Business Development & Partnerships, sygaldry-technologies, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/halluminate/f83da050-4fa8-42f4-9649-0a277d85985f, Strategic Project Lead, halluminate, operations, mid, San Francisco
 https://jobs.ashbyhq.com/agentmail/0f25ff04-0250-4c8c-b9a6-00b164f1f19a, GTM Engineer, agentmail, bizdev, mid, San Francisco
@@ -3266,7 +3254,6 @@ https://www.themuse.com/jobs/ulineinc/product-management-analyst-97ebc3, Product
 https://www.themuse.com/jobs/coxcommunications/sr-manager-direct-sales-new-business-rapidscale-091659, Sr Manager, Direct Sales New Business (RapidScale), Cox Communications, sales, manager, Plant City
 https://www.themuse.com/jobs/advantagesolutions/store-sales-merchandiser-911ad9, Store Sales Merchandiser, Advantage Solutions, sales, mid, Warminster
 https://www.themuse.com/jobs/securitasinc/business-development-manager-security-services-015b29, Business Development Manager - Security Services, Securitas Inc., bizdev, manager, San Jose
-https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-operations-team-lead-payment-operations, Assistant Vice President - Operations Team Lead - Payment Operations, Bank of America, operations, exec, Bonifacio Global City
 https://www.themuse.com/jobs/securitasinc/oustide-sales-representative, Oustide Sales Representative, Securitas Inc., sales, mid, Santa Clara
 https://www.themuse.com/jobs/teleperformanceusa/social-media-content-moderator-spanish-bilingual-onsite-c8cd26, Social Media Content Moderator - Spanish Bilingual- Onsite, Teleperformance USA, marketing, mid, Port St. Lucie
 https://www.themuse.com/jobs/flexport/assistant-manager-ocean-operations-chennai, Assistant Manager, Ocean Operations (Chennai), Flexport, operations, manager, Hinganghāt
@@ -3383,9 +3370,7 @@ https://jobs.ashbyhq.com/telli/f2001cd3-e786-49ae-b170-0f786f07ed16, GTM Intern,
 https://job-boards.greenhouse.io/osmosis/jobs/7814677003, Medical Assessment and Content Editors, osmosis, marketing, mid, Northeastern Usa
 https://jobs.ashbyhq.com/hexa/575cd947-65bc-4ca2-a8f1-74ef2555de0d, Founding Partnership, hexa, bizdev, mid, New York
 https://jobs.ashbyhq.com/hexa/e24e6a42-613b-46cb-b2a7-c12aa44fa1a4, Product Lead @Panora, hexa, product, mid, Paris
-https://www.themuse.com/jobs/unifirst/outside-sales-representative-lake-charles-la-lafayette-4dd761, Outside Sales Representative - Lake Charles, LA (Lafayette), UniFirst, sales, mid, Sulphur
 https://job-boards.greenhouse.io/anthropic/jobs/5176201008, Brand Marketing Lead, Enterprise, anthropic, marketing, mid, San Francisco
-https://job-boards.greenhouse.io/anthropic/jobs/5115051008, Product Finance & Strategy, Monetization, anthropic, operations, mid, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5370615008, Technical Documentation and Content Engineer, Claude Docs, anthropic, marketing, mid, San Francisco
 https://stripe.com/jobs/search?gh_jid=8082149, Lifecycle Marketing Manager, Capital, stripe, growth, manager, Remote
 https://stripe.com/jobs/search?gh_jid=7773461, Product Marketing, Data Products, stripe, marketing, mid, Us
@@ -3413,7 +3398,6 @@ https://job-boards.greenhouse.io/affirm/jobs/7808384003, Senior Software Enginee
 https://job-boards.greenhouse.io/affirm/jobs/7808386003, Senior Software Engineer, Backend (PBA - Growth), affirm, growth, senior, Remote Canada
 https://www.asana.com/jobs/apply/8077240?gh_jid=8077240, Pre-sales Engineer (DACH), asana, sales, mid, Munich
 https://boards.greenhouse.io/cloudflare/jobs/7807860?gh_jid=7807860, Senior Territory Account Executive, Seattle, cloudflare, sales, senior, Unknown
-https://boards.greenhouse.io/cloudflare/jobs/8082742?gh_jid=8082742, Senior Named Account Executive, Minneapolis, cloudflare, sales, senior, Remote
 https://www.samsara.com/company/careers/roles/7729297?gh_jid=7729297, Product Operations Manager, samsara, operations, manager, Remote
 https://jobs.ashbyhq.com/openai/83b3ef17-5211-403d-b763-850e1c60faa0, Product Manager, Legal, openai, product, manager, San Francisco
 https://jobs.ashbyhq.com/openai/19e39227-f105-48fa-85d2-59814d4537ed, Senior Lifecycle Strategist, openai, growth, senior, San Francisco
@@ -3463,6 +3447,7 @@ https://www.themuse.com/jobs/spacex/starlink-enterprise-account-director-aviatio
 https://www.themuse.com/jobs/equitylifestyleproperties/administrative-assistant-sales-4c6490, Administrative Assistant - Sales, Equity Lifestyle Properties, sales, mid, Ocala
 https://www.themuse.com/jobs/spacex/sr-enterprise-account-manager-aviation-64c539, Sr. Enterprise Account Manager, Aviation, SpaceX, sales, manager, El Segundo
 https://www.themuse.com/jobs/equitylifestyleproperties/sales-rental-associate-a09ea7, Sales & Rental Associate, Equity Lifestyle Properties, sales, junior, St. Augustine
+https://jobicy.com/jobs/149756-customer-success-associate-2, Customer Success Associate, AlphaSense, sales, junior, Usa
 https://stripe.com/jobs/search?gh_jid=8068744, Account Executive, Product Sales-  Money Management ANZ, stripe, sales, mid, Sydney
 https://stripe.com/jobs/search?gh_jid=8068746, Account Executive, Product Sales - Money Management  APAC, stripe, sales, mid, Singapore
 https://job-boards.greenhouse.io/flexport/jobs/8080155, Sales Development Representative (Flemish speaking), flexport, sales, mid, Antwerpen
@@ -3481,7 +3466,6 @@ https://jobs.ashbyhq.com/salespatriot/de5a8b74-af59-47a0-9c66-b000dcd6062f, Fiel
 https://stripe.com/jobs/search?gh_jid=8075473, Account Executive, Enterprise Platforms, Tier 2 Grower, stripe, sales, mid, San Francisco
 https://stripe.com/jobs/search?gh_jid=8081423, Product Strategy & Operations APAC, stripe, operations, mid, Singapore
 https://stripe.com/jobs/search?gh_jid=8081754, Program Manager, Card Network Office (Card Networks), stripe, operations, manager, Us-Sf
-https://databricks.com/company/careers/open-positions/job?gh_jid=8638640002, Field Marketing Manager - France, Middle East & Africa, databricks, marketing, manager, Paris
 https://databricks.com/company/careers/open-positions/job?gh_jid=8074772002, Manager, Sales Development, databricks, sales, manager, Chicago
 https://databricks.com/company/careers/open-positions/job?gh_jid=8643998002, Partner Sales & Pre-sales Enablement Lead, databricks, sales, exec, United States
 https://databricks.com/company/careers/open-positions/job?gh_jid=8569633002, Solutions Architect - Communications, Media, Entertainment and Games, databricks, marketing, staff, Colorado
@@ -3530,7 +3514,6 @@ https://jobs.ashbyhq.com/onebrief/526b8a62-69d3-4e00-b68f-17ac49b26cdf, Senior M
 https://jobs.ashbyhq.com/float/fc6e6394-d936-4b55-9933-d6ee166fe8d5, Bilingual Account Executive, float, sales, mid, Toronto
 https://jobs.ashbyhq.com/exa/62864919-a97a-457c-baf1-8facb31f98f8, Head of Marketing Operations, exa, marketing, exec, San Francisco
 https://jobs.ashbyhq.com/sieve/7928c223-1fde-4b2b-bffe-a29ffda17533, Growth Associate, sieve, growth, junior, India
-https://jobs.ashbyhq.com/flagright.com/1d84e756-3dd7-4b60-842e-42eefe7df8a1, Senior Partnerships Manager, flagright.com, bizdev, manager, New York
 https://jobs.ashbyhq.com/voize/b82045ef-2867-4e86-8ea2-4960f3f53d6f, Technical Account Manager - US, voize, sales, manager, New York
 https://jobs.ashbyhq.com/voize/6be506cc-141f-404e-8de8-1322bd147104, Founding Technical Account Manager  (French Speaking) m/f/d, voize, sales, manager, Berlin
 https://jobs.ashbyhq.com/boostly/3984ce9f-a067-4ed4-bab6-18611e0fc185, Sales Development Representative, boostly, sales, mid, Main
@@ -3554,7 +3537,6 @@ https://stripe.com/jobs/search?gh_jid=8078168, Growth Marketing Manager, Greater
 https://stripe.com/jobs/search?gh_jid=7230921, Risk Operations Analyst, stripe, operations, mid, Remote
 https://stripe.com/jobs/search?gh_jid=8078333, Risk Partnerships Manager, Stablecoin, stripe, bizdev, manager, Us-San Francisco
 https://stripe.com/jobs/search?gh_jid=7454647, Payment Advisory Partnerships Lead- EMEA, stripe, bizdev, mid, London
-https://databricks.com/company/careers/open-positions/job?gh_jid=8653573002, Field Marketing Manager - France, Middle East & Africa, databricks, marketing, manager, London
 https://databricks.com/company/careers/open-positions/job?gh_jid=8639997002, Partner Sales Director, Manufacturing & Energy, databricks, sales, exec, United States
 https://databricks.com/company/careers/open-positions/job?gh_jid=8643831002, Startup Hunter Account Executive, databricks, sales, mid, Ontario
 https://databricks.com/company/careers/open-positions/job?gh_jid=8652590002, Strategic  Account Executive, Public Sector, databricks, sales, mid, Montréal
@@ -3724,6 +3706,7 @@ https://jobs.ashbyhq.com/tremendous/8a841f62-dad1-4e6d-98f6-6bcd7f98a9a2, Sales 
 https://jobs.ashbyhq.com/tremendous/0c41437d-e37d-4d76-8b13-1b3a7c3a9b63, Sales Development Representative, Outbound, tremendous, sales, mid, United States
 https://jobs.ashbyhq.com/docker/ec1eeb85-73bd-4956-bb67-93e0c42958e2, Senior Principal Product Manager, AI & Agent Platform, docker, product, manager, United States
 https://job-boards.greenhouse.io/webflow/jobs/8097749, Senior Product Manager, AI, webflow, product, manager, Ca Remote (Bc & On Only)
+https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4719358005, Senior Analyst, Business Operations, razorpaysoftwareprivatelimited, operations, senior, Bangalore
 https://bitmovin.com/careers/8485251002?gh_jid=8485251002, VP Sales & Customer Growth, bitmovin, growth, exec, Remote
 https://job-boards.greenhouse.io/instawork/jobs/4701137006, Field Operations Executive, instawork, operations, mid, Bangalore
 https://jobs.ashbyhq.com/deepgram/d9d5aa44-b675-46e9-b596-45c1c5dca858, Customer Success Engineer ( London), deepgram, sales, mid, London
@@ -3831,7 +3814,6 @@ https://jobs.ashbyhq.com/flai/59385fbc-008d-48b3-af2d-222e0c6d77d1, Customer Suc
 https://job-boards.greenhouse.io/axial/jobs/5375723008, Account Executive / Account Manager, Go-to-Market, axial, bizdev, manager, Latam (Argentina And Colombia)
 https://dispatch.me/about/careers/apply-now?gh_jid=6132133004, Business Development Representative, dispatch, bizdev, mid, Boston
 https://www.kkr.com/careers/career-opportunities/post?gh_jid=5595689004, Operations - Portfolio Monitoring Unit (Private Markets)- Analyst, stage, operations, mid, Gurugram
-https://www.adzuna.sg/details/5754885690?utm_medium=api&utm_source=ff3fb262, ASEAN Service Growth Manager, Smith & Nephew, growth, manager, Singapore
 https://www.themuse.com/jobs/thecocacolacompany/director-strategic-growth-1ede6e, Director, Strategic Growth, The Coca-Cola Company, growth, exec, Tokyo
 https://apply.workable.com/j/51FEFA2136, Customer Success Specialist, weekday-1, sales, mid, Bangalore
 https://job-boards.greenhouse.io/trident/jobs/4251882008, Marketing Assistant, trident, marketing, mid, Trident Ja
@@ -3931,7 +3913,6 @@ https://www.asana.com/jobs/apply/8075573?gh_jid=8075573, Corporate Account Execu
 https://www.asana.com/jobs/apply/8100429?gh_jid=8100429, Manager, Enterprise Sales, asana, sales, manager, Munich
 https://www.samsara.com/company/careers/roles/8104994?gh_jid=8104994, Entry Level Tech Sales - UK&I Market, samsara, sales, entry, London
 https://jobs.ashbyhq.com/openai/c827056e-308c-4cd1-9bd3-bb7c4c3a4dae, Employer Brand Manager, openai, marketing, manager, San Francisco
-https://jobs.ashbyhq.com/openai/e4b92c0d-67c1-4147-a408-be4fe806be99, International Strategy & Operations Lead, openai, operations, mid, San Francisco
 https://jobs.ashbyhq.com/openai/ba36fd95-2474-4986-98a6-5280c4e41bd3, Strategic Sourcing Lead, Professional Services, openai, operations, mid, San Francisco
 https://jobs.ashbyhq.com/vanta/45c0d131-1fa2-4885-8135-81e6c3f5f6d4, Strategic Channel Manager - EMEA, vanta, operations, manager, London
 https://job-boards.greenhouse.io/clutch/jobs/6134129004, Line Lead, Lot Operations, clutch, operations, mid, Mississauga
@@ -3973,6 +3954,7 @@ https://jobs.ashbyhq.com/legora/653c680a-c195-4dc2-a1f7-8a815e52ab0f, Engagement
 https://jobs.ashbyhq.com/greenboard/893d9a82-1801-4d38-8c2c-4e4e44b79aee, Customer Success Manager, greenboard, sales, manager, New York
 https://jobs.ashbyhq.com/moss/f5516914-6d26-463c-9a6d-1097fbd99f4e, Customer Success Manager (f/m/d), moss, sales, manager, London
 https://www.kkr.com/careers/career-opportunities/post?gh_jid=6123358004, Principal, Corporate Communications, Insurance Lead, stage, marketing, staff, New York
+https://www.adzuna.sg/details/5826364198?utm_medium=api&utm_source=ff3fb262, Deputy CIO: AI-Driven IT Strategy & Transformation, Nanyang Technological University Singapore, operations, mid, Singapore
 https://job-boards.greenhouse.io/anthropic/jobs/5380379008, Technical Program Manager, Hardware Systems, anthropic, operations, manager, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5380327008, Technical Program Manager, RL Research, anthropic, operations, manager, San Francisco
 https://stripe.com/jobs/search?gh_jid=8097047, GTM Business Value Specialist, stripe, bizdev, mid, Chicago
@@ -4006,8 +3988,6 @@ https://jobs.ashbyhq.com/openai/07fb9365-8e80-48fe-86df-08d60dd46f43, Account Di
 https://jobs.ashbyhq.com/openai/103d7043-28ec-4639-9c8d-0910083a1755, Senior Manager, Order to Cash — AI Products & Cloud Partnerships, openai, bizdev, manager, San Francisco
 https://jobs.ashbyhq.com/openai/b5ede8ec-8c71-4155-ace1-1a7be9b26f83, Business Development Lead, Compute Strategy, openai, bizdev, mid, Us
 https://jobs.ashbyhq.com/cognition/d2f6813a-9a17-40be-84aa-df17201e4367, Payroll Operations Manager, cognition, operations, manager, San Francisco
-https://jobicy.com/jobs/144825-sales-manager-calabria-e-sicilia, Sales Manager Calabria e Sicilia, QuidelOrtho, sales, manager, Italy
-https://jobicy.com/jobs/145049-partner-account-executive-m-f, Partner Account Executive (M/F), Akamai Technologies, sales, exec, France
 https://jobs.ashbyhq.com/docker/4bda5b22-8cd9-49a8-8ba3-8fc456eea2bd, Customer Experience Engineer, CXE-T (EMEA), docker, sales, mid, England
 https://careers.airbnb.com/positions/8104444?gh_jid=8104444, Product Manager, Search, airbnb, product, manager, San Francisco
 https://jobs.ashbyhq.com/benchling/874062e7-7903-4fd3-9930-ea538a4cac1e, Product Marketing Manager, benchling, marketing, manager, San Francisco
@@ -4093,11 +4073,8 @@ https://jobs.ashbyhq.com/replit/9398cc6a-8e30-4bfe-a6c3-59e8b384a848, Brand Desi
 https://jobs.ashbyhq.com/replit/88119b4c-3782-455b-a6fa-b002210c714b, Strategic Finance, replit, operations, mid, Foster City
 https://remotive.com/remote-jobs/sales/sales-jedi-2091088, Sales Jedi, Creative Force, sales, mid, Europe
 https://jobicy.com/jobs/150291-strategic-customer-success-manager-7, Strategic Customer Success Manager, DocuSign, sales, manager, Singapore
-https://jobicy.com/jobs/150290-fbs-product-analyst-customer-retention, FBS Product Analyst Customer Retention, Capgemini, growth, mid, Mexico
 https://jobicy.com/jobs/150289-customer-success-architect-ceur, Customer Success Architect, CEUR, GitLab, sales, staff, Germany
 https://jobicy.com/jobs/150288-senior-customer-technical-program-manager-data-center, Senior Customer Technical Program Manager - Data Center, NVIDIA, operations, manager, Japan
-https://jobicy.com/jobs/150286-customer-success-engineer-with-portuguese, Customer Success Engineer with Portuguese, Infotree Global Solutions, sales, mid, Portugal
-https://jobicy.com/jobs/150280-sr-customer-success-engineer, Sr. Customer Success Engineer, Veeam Software, sales, senior, Usa
 https://jobicy.com/jobs/147131-customer-success-manager-corporate-2, Customer Success Manager, Corporate, AlphaSense, sales, manager, Usa
 https://jobicy.com/jobs/145224-pensions-project-manager, Pensions Project Manager, WTW, operations, manager, Uk
 https://jobicy.com/jobs/148688-senior-solutions-architect-i-pre-sales-south-korea-defense-intelligence, Senior Solutions Architect I, Pre-Sales - South Korea Defense & Intelligence, Planet Labs Inc., sales, staff, Remote
@@ -4194,6 +4171,11 @@ https://www.samsara.com/company/careers/roles/8112836?gh_jid=8112836, Senior Pro
 https://jobs.ashbyhq.com/openai/f8f026e4-043d-40d1-ae45-d97b0a460ee7, Product Marketing Lead, Consumer Subscriptions, openai, marketing, mid, San Francisco
 https://jobs.ashbyhq.com/openai/66b7c776-aa50-4e86-aec1-5c8e07868522, Support Program Manager, Partnerships, openai, bizdev, manager, San Francisco
 https://jobs.ashbyhq.com/cognition/05ded615-e35d-4e2f-bdda-f6defbdac3b7, GTM Operations - Europe, cognition, bizdev, mid, London
+https://jobicy.com/jobs/145123-product-marketing-lead-core-banking, Product Marketing Lead, Core Banking, Monzo, marketing, mid, Uk
+https://jobicy.com/jobs/148783-manager-customer-success-managers-emea, Manager, Customer Success Managers, EMEA, GitLab, sales, manager, Austria
+https://jobicy.com/jobs/148814-marketing-manager, Marketing Manager, Canonical, marketing, manager, Remote
+https://jobicy.com/jobs/148785-customer-success-manager-2, Customer Success Manager, Double, sales, manager, Usa
+https://jobicy.com/jobs/148827-account-executive-canada-enterprise, Account Executive - Canada - Enterprise, Elevenlabs, sales, mid, Canada
 https://job-boards.greenhouse.io/mixpanel/jobs/8107411, Procurement Operations Lead, mixpanel, operations, mid, New York
 https://job-boards.greenhouse.io/mixpanel/jobs/8114354, Procurement Operations Lead, mixpanel, operations, mid, San Francisco
 https://job-boards.greenhouse.io/mixpanel/jobs/8107402, Startup Program Manager, mixpanel, operations, manager, San Francisco
@@ -4209,6 +4191,7 @@ https://bitmovin.com/careers/8161751002?gh_jid=8161751002, Sales Executive (USA)
 https://job-boards.greenhouse.io/bird/jobs/7836198003, Operations Partner -  Los Angeles, CA, bird, operations, exec, Los Angeles
 https://job-boards.greenhouse.io/maymobility/jobs/8460226002, Director, Platform Operations, maymobility, operations, exec, Ann Arbor
 https://job-boards.greenhouse.io/papa/jobs/5207024007, Senior Backend Engineer (Community), papa, marketing, senior, San Francisco
+https://jobs.ashbyhq.com/verto/7eaa0acc-9dbb-44c2-804f-a3e65fd29bd3, Growth & Marketing Manager, verto, growth, manager, Dubai 🇦🇪
 https://job-boards.eu.greenhouse.io/prolific/jobs/4948331101, Senior Product Manager - AI, prolific, product, manager, Uk
 https://job-boards.greenhouse.io/hightouch/jobs/6138802004, Sales Development Representative (East), hightouch, sales, mid, New York
 https://jobs.ashbyhq.com/nomic/5dd4fd7a-4bf7-4a53-843c-3f8de123340d, Profiling Lab Operations Associate, nomic, operations, junior, Montreal
@@ -4354,7 +4337,6 @@ https://stripe.com/jobs/search?gh_jid=8108891, Account Executive - SEA, Platform
 https://stripe.com/jobs/search?gh_jid=8110416, Head of Startup Sales (Grower) - AMER, stripe, sales, exec, San Francisco
 https://stripe.com/jobs/search?gh_jid=8111799, Legal Operations Team Lead, stripe, operations, manager, Bangalore
 https://stripe.com/jobs/search?gh_jid=8042309, Program Manager, GTM Strategic Programs, stripe, bizdev, manager, Us-Remote
-https://stripe.com/jobs/search?gh_jid=8115908, Risk Operations Associate, User Policy Operations, stripe, operations, junior, Mexico City
 https://stripe.com/jobs/search?gh_jid=8106775, Sales Strategy & Operations Business Partner, stripe, sales, exec, Sydney
 https://job-boards.greenhouse.io/gitlab/jobs/8673657002, Commercial Account Executive, Southern Cone, gitlab, sales, mid, Remote
 https://job-boards.greenhouse.io/gitlab/jobs/8684071002, Commercial Account Executive, Northern Cone, gitlab, sales, mid, Remote
@@ -4499,11 +4481,9 @@ https://job-boards.greenhouse.io/anthropic/jobs/5388719008, Head of Community, E
 https://job-boards.greenhouse.io/anthropic/jobs/5388667008, Partner Marketing Manager, Launches, anthropic, marketing, exec, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5390022008, Strategic Partner Development, Data & Product Partnerships – Beneficial Deployments, anthropic, bizdev, exec, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5390028008, Strategic Partner Development, Product Partnerships – Semiconductors, anthropic, bizdev, exec, New York
-https://stripe.com/jobs/search?gh_jid=8121419, Account Executive, Funded Startups — Hunter, Italy, stripe, sales, mid, Milan
 https://stripe.com/jobs/search?gh_jid=8128634, Head of AEO & SEO, stripe, marketing, exec, Us Remote
 https://stripe.com/jobs/search?gh_jid=8069943, Marketing Services Program Manager, stripe, marketing, manager, Bangalore
 https://stripe.com/jobs/search?gh_jid=5423044, Risk Operations Associate, stripe, operations, junior, Bangalore
-https://stripe.com/jobs/search?gh_jid=8007639, Strategy & Transformation Advisor (Growth & Monetization specialization), stripe, growth, mid, London
 https://stripe.com/jobs/search?gh_jid=8120185, Workplace Operations Manager - Dublin, stripe, operations, manager, Dublin
 https://databricks.com/company/careers/open-positions/job?gh_jid=8707779002, Geo Core Account Executive, Central America & Caribbean, databricks, sales, mid, Florida
 https://databricks.com/company/careers/open-positions/job?gh_jid=8610773002, Sr. Alliance Director, databricks, bizdev, exec, San Francisco
@@ -4569,7 +4549,7 @@ https://jobs.ashbyhq.com/reducto/2fbc6baf-f04e-4f87-be5c-6293a9bb708c, Strategic
 https://jobs.ashbyhq.com/raindrop/16d03300-0511-4b00-8f60-d603b78cf2d9, Sales Development Representative, raindrop, sales, mid, San Francisco
 https://jobs.ashbyhq.com/raindrop/aa2a6bb0-0f7c-4dd5-bd9e-ad86d7222cc9, Founding Account Executive, raindrop, sales, mid, San Francisco
 https://jobs.ashbyhq.com/mangodesk/e7e44d99-2f5d-49fe-ba2b-6bdab912f944, Strategic Projects Lead, mangodesk, operations, mid, San Francisco
-https://jobs.ashbyhq.com/fulcrum/d34d99c6-f619-4436-9145-466cdb4812f1, Audience Marketing Manager, fulcrum, marketing, manager, Canberra
+https://jobs.ashbyhq.com/fulcrum/d34d99c6-f619-4436-9145-466cdb4812f1, Lifecycle Marketing Manager, fulcrum, growth, manager, Canberra
 https://jobs.lever.co/sila/5f4194a0-18f9-4a62-a565-8c4aa10e6354, Operations Manager, sila, operations, manager, Beltsville
 https://www.kkr.com/careers/career-opportunities/post?gh_jid=6119767004, Investment Operations Analyst, stage, operations, mid, San Francisco
 https://job-boards.greenhouse.io/nex/jobs/5289228008, Frontend Engineer - Marketing & Digital Experience (Contract), nex, marketing, mid, Remote Us
@@ -4727,7 +4707,7 @@ https://job-boards.greenhouse.io/mixpanel/jobs/8138334, Account Executive, LATAM
 https://job-boards.greenhouse.io/mixpanel/jobs/8132162, Senior Customer Strategy & Operations Manager, mixpanel, operations, manager, London
 https://careers.airbnb.com/positions/7982715?gh_jid=7982715, Community Engagement Lead, Spain and Portugal, airbnb, marketing, mid, Barcelona
 https://www.fivetran.com/careers/job?gh_jid=7885745003, Business Development Representative, fivetran, bizdev, mid, Dublin
-https://www.fivetran.com/careers/job?gh_jid=7868539003, Technical Program Manager, fivetran, operations, manager, Bangalore
+https://www.fivetran.com/careers/job?gh_jid=7868539003, Staff Technical Program Manager, fivetran, operations, manager, Bangalore
 https://www.fivetran.com/careers/job?gh_jid=7859686003, Staff Technical Program Manager, fivetran, operations, manager, Novi Sad
 https://job-boards.greenhouse.io/fetch/jobs/4372609009, Business Development Associate - Breeders, fetch, bizdev, junior, Remote
 https://jobs.ashbyhq.com/deepgram/b74b4d59-5b3e-46ac-9928-a5c8f6b7d321, Executive Assistant, Marketing, deepgram, marketing, mid, Usa
@@ -4921,6 +4901,7 @@ https://boards.greenhouse.io/figma/jobs/6132643004?gh_jid=6132643004, Account Ex
 https://boards.greenhouse.io/figma/jobs/6142782004?gh_jid=6142782004, Inside Sales Representative (Singapore), figma, sales, mid, Singapore
 https://boards.greenhouse.io/figma/jobs/6144522004?gh_jid=6144522004, Strategic Program Manager, Information Security, figma, operations, manager, San Francisco
 https://job-boards.greenhouse.io/reddit/jobs/8125836, Senior Principal Program Manager, GTM Excellence, reddit, bizdev, manager, Chicago
+https://www.pinterestcareers.com/jobs/?gh_jid=8135500, Client Account Manager, Enterprise Sales - Italian Market, pinterest, sales, manager, Dublin
 https://www.pinterestcareers.com/jobs/?gh_jid=8081452, Sr. Client Account Manager, Home Retail, pinterest, sales, manager, New York
 https://www.pinterestcareers.com/jobs/?gh_jid=8082033, Staff Product Manager, Applied Science, pinterest, product, manager, San Francisco
 https://job-boards.greenhouse.io/gusto/jobs/7899871, AI Operations Program Manager, Benefits, gusto, operations, manager, Denver
@@ -4934,6 +4915,7 @@ https://boards.greenhouse.io/cloudflare/jobs/8136547?gh_jid=8136547, Principal I
 https://www.samsara.com/company/careers/roles/8140386?gh_jid=8140386, Senior Executive Assistant - Customer Success & Services, samsara, sales, senior, Remote
 https://jobs.ashbyhq.com/openai/d49e3abe-0d02-4b73-a5b2-cc7f1414c1e8, Lead, Corporate Technical Accounting and Strategic Transactions, openai, operations, mid, San Francisco
 https://jobs.ashbyhq.com/openai/c18cb478-c0ab-447e-bc80-079f3bc00b0b, Tax Director, Business Advisory and Strategic Finance, openai, operations, exec, San Francisco
+https://jobicy.com/jobs/151135-customer-success-australia-clients, Customer Success - Australia Clients, Sleek, sales, mid, Philippines
 https://job-boards.greenhouse.io/hackerrank/jobs/8141681, Senior Brand Designer, hackerrank, marketing, senior, In Bangalore
 https://job-boards.greenhouse.io/pagerduty/jobs/6144822004, Business Development Representative - London - German Speaker, pagerduty, bizdev, mid, London
 https://job-boards.greenhouse.io/mixpanel/jobs/8142181, Account Executive, DACH, mixpanel, sales, mid, London
@@ -4983,7 +4965,6 @@ https://jobs.ashbyhq.com/humaans/b593f5cd-c8f9-41c4-b819-3bfc5863028f, AI Soluti
 https://apply.workable.com/j/22F5EB23F8, Account Director (Enterprise), weekday-1, sales, exec, Dubai
 https://apply.workable.com/j/2F0944A8EF, Technical Program Manager (PM), weekday-1, product, manager, Chennai
 https://www.prospa.com/about-us/careers?gh_jid=8143278, Sales Development Representative, prospa, sales, mid, Sydney
-https://www.prospa.com/about-us/careers?gh_jid=8143269, Sales Consultant, prospa, sales, mid, Sydney
 https://jobs.ashbyhq.com/confido/ba89efef-fbef-4297-9dfb-956de57d4867, People Operations Manager, confido, operations, manager, New York
 https://jobs.lever.co/mable/39d19efb-29f8-4c08-935c-3a7ff9f86eed, Marketing Tracking & Measurement Manager, mable, marketing, manager, Sydney
 https://jobs.lever.co/mable/355cff08-eaf1-457c-90ee-3c4cce2b7095, Senior Manager, Brand (12-month fixed term), mable, marketing, manager, Sydney
@@ -5142,10 +5123,10 @@ https://www.asana.com/jobs/apply/8123067?gh_jid=8123067, GTM Systems and Busines
 https://boards.greenhouse.io/cloudflare/jobs/8078674?gh_jid=8078674, Senior Territory Account Executive, Taiwan, cloudflare, sales, senior, Unknown
 https://jobs.ashbyhq.com/openai/2e035bad-8691-4efc-839e-a21b41b7e6fc, Consumer Marketing Lead, Korea, openai, marketing, mid, Seoul
 https://jobs.ashbyhq.com/openai/ac0922d9-4731-40a1-b8a3-17b912e1a13b, Account Director, Startups (Mandarin-Speaking), openai, sales, exec, Singapore
-https://jobs.ashbyhq.com/openai/0f78e08a-669d-4d87-960f-518c649e6700, Technical Operations Analyst, User Safety & Risk, openai, operations, mid, London
 https://jobs.ashbyhq.com/openai/cc0d0d86-eb9d-44a0-a6a4-42bbb6066b4b, Product Manager, Youth, openai, product, manager, San Francisco
 https://jobs.ashbyhq.com/openai/9c990e11-a5fb-4c6d-ab83-ede32839e78e, Product Marketing Manager, Cybersecurity, openai, marketing, manager, San Francisco
 https://jobs.ashbyhq.com/vanta/94ac5ae9-c749-468c-99d6-935267a25883, Operations Manager, Signal Systems, vanta, operations, manager, Remote U.S.
+https://jobicy.com/jobs/149449-senior-customer-experience-manager-central, Senior Customer Experience Manager (Central), Wiz, sales, manager, Usa
 https://job-boards.greenhouse.io/clutch/jobs/6150211004, Technical Program Manager, clutch, operations, manager, Mississauga
 https://job-boards.greenhouse.io/mixpanel/jobs/8148613, Delivery Engineer II (GTM), mixpanel, bizdev, mid, San Francisco
 https://job-boards.greenhouse.io/mixpanel/jobs/8142656, Delivery Engineer II (GTM), mixpanel, bizdev, mid, New York
@@ -5155,7 +5136,6 @@ https://job-boards.greenhouse.io/twitch/jobs/8739355002, Partnerships Associate,
 https://job-boards.greenhouse.io/twitch/jobs/8739354002, Partnerships Associate, twitch, bizdev, junior, Seattle
 https://job-boards.greenhouse.io/twitch/jobs/8739325002, Partnerships Associate, twitch, bizdev, junior, San Francisco
 https://job-boards.greenhouse.io/twitch/jobs/8739356002, Partnerships Associate, twitch, bizdev, junior, New York
-https://jobs.ashbyhq.com/paid/be394cb1-b4e9-4d61-b45e-5dd6bcca32f1, Operations Associate, paid, operations, junior, London
 https://jobs.ashbyhq.com/deepgram/b856d0c2-df8e-492a-9044-62b0fd3c30b6, Customer Success Engineer (Scaled), deepgram, sales, mid, Usa
 https://jobs.ashbyhq.com/deepgram/4bfadd29-fa58-4e06-bbf0-7b5dbc41a621, Forward-Deployed Engineer (FDE), Strategic Accounts, deepgram, operations, mid, San Francisco
 https://job-boards.greenhouse.io/truebill/jobs/7929222003, Legal Project Manager, truebill, operations, manager, San Francisco
@@ -5241,7 +5221,6 @@ https://job-boards.greenhouse.io/checkr/jobs/8145302, Strategic Finance Senior A
 https://job-boards.greenhouse.io/flexport/jobs/8146839, Senior Manager, Financial Operations, flexport, operations, manager, Shenzhen
 https://job-boards.greenhouse.io/affirm/jobs/7860703003, Operations Enablement Lead, affirm, operations, mid, Remote Us
 https://job-boards.greenhouse.io/affirm/jobs/7860705003, Operations Enablement Lead, affirm, operations, mid, Remote Canada
-https://www.samsara.com/company/careers/roles/8132327?gh_jid=8132327, Enterprise Customer Success Manager, samsara, sales, manager, Remote
 https://www.samsara.com/company/careers/roles/8142214?gh_jid=8142214, Partner Marketing Manager - Insurance and Strategic Partnerships, samsara, bizdev, exec, Remote
 https://www.samsara.com/company/careers/roles/8148274?gh_jid=8148274, Sales Engineer - Mid Market - Southeast, samsara, sales, mid, Remote
 https://www.samsara.com/company/careers/roles/8148328?gh_jid=8148328, Sales Engineer - Mid Market - West, samsara, sales, mid, Remote
@@ -5314,7 +5293,6 @@ https://jobs.lever.co/distro/a80519fa-80ab-4bfc-bbd6-7ec35d99a34f, Vice Presiden
 https://jobs.lever.co/unusual/33a052ad-40a7-47b7-9a3c-cd409404367e, Founding Growth Lead, unusual, growth, mid, New York
 https://www.themuse.com/jobs/spacex/supervisor-test-operations-starlink-e609df, Supervisor, Test Operations (Starlink), SpaceX, operations, mid, Redmond
 https://job-boards.greenhouse.io/anthropic/jobs/5390966008, AI Engineer, GTM Claudification, anthropic, bizdev, mid, Remote-Friendly (Travel-Required)
-https://job-boards.greenhouse.io/anthropic/jobs/5391219008, AWS Partnerships Lead, DACH, anthropic, bizdev, mid, Munich
 https://job-boards.greenhouse.io/anthropic/jobs/5391499008, Canada Public Sector Account Executive, anthropic, sales, mid, Ontario
 https://job-boards.greenhouse.io/anthropic/jobs/5400362008, Discovery Operations Lead, Litigation & Regulatory, anthropic, operations, mid, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5225003008, Enterprise Account Executive - Energy & Utilities, anthropic, sales, mid, London
@@ -5378,7 +5356,6 @@ https://www.veriff.com/careers/position/8725220002?gh_jid=8725220002, Senior Pro
 https://jobs.ashbyhq.com/overview/2ed8ea22-9a3c-4ad1-a7e6-4114f52cc00c, Business Development Representative, overview, bizdev, mid, Bogota
 https://job-boards.greenhouse.io/nabis/jobs/6162339004, Brand Partnerships Associate, nabis, bizdev, junior, New York Remote
 https://jobs.ashbyhq.com/ashby/1290fe74-72f6-4544-ad7d-562f89ecd780, Sr. Product Marketing Manager, Enterprise, ashby, marketing, manager, Remote
-https://jobs.ashbyhq.com/ashby/07201b7e-a581-46a6-bbd3-432824bd761f, Principal PMM, Brand Narrative & Keynote, ashby, marketing, staff, Remote
 https://job-boards.greenhouse.io/alpaca/jobs/6146873004, Head of Business Development - Middle East, alpaca, bizdev, exec, Dubai
 https://jobs.ashbyhq.com/trm-labs/b6ced85a-a8e1-4da7-b065-188edb77ca9e, Marketing Technology Engineer, trm-labs, marketing, mid, United States
 https://job-boards.greenhouse.io/hightouch/jobs/6161297004, Sales Recruiter, hightouch, sales, mid, San Francisco
@@ -5434,7 +5411,6 @@ https://www.themuse.com/jobs/thecocacolacompany/junior-buyer-strategic-sourcing-
 https://www.themuse.com/jobs/celonis/portfolio-scale-account-executive, Portfolio (Scale) Account Executive, Celonis, sales, mid, Tokyo
 https://job-boards.greenhouse.io/anthropic/jobs/5391184008, AWS GTM Partnership Lead, Global System Integrators, anthropic, bizdev, mid, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5391293008, Enterprise Account Executive, Automotive, anthropic, sales, mid, Paris
-https://job-boards.greenhouse.io/anthropic/jobs/5393268008, Finance & Strategy GTM, EMEA, anthropic, bizdev, mid, Dublin
 https://job-boards.greenhouse.io/anthropic/jobs/5390980008, GTM Programs Manager, AMER, anthropic, bizdev, manager, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5390976008, Head of GTM Programs, anthropic, bizdev, exec, Remote-Friendly (Travel Required)
 https://job-boards.greenhouse.io/anthropic/jobs/5390939008, Head of Central Sales Strategy, anthropic, sales, exec, San Francisco
@@ -5511,12 +5487,14 @@ https://jobs.ashbyhq.com/zapier/7dd68291-3696-4fd0-a5d0-24ab73d22fff, Manager, G
 https://jobs.ashbyhq.com/benchling/d0b3c752-1f78-4de2-84bf-6008a4a190f5, Head of Strategic Finance, benchling, operations, exec, San Francisco
 https://www.fivetran.com/careers/job?gh_jid=7818286003, Senior Product Manager - Adapters, fivetran, product, manager, Oakland
 https://www.fivetran.com/careers/job?gh_jid=7818336003, Senior Strategic Finance Analyst, fivetran, operations, senior, Oakland
+https://www.fivetran.com/careers/job?gh_jid=7735295003, Staff Product Manager, Connectors, fivetran, product, manager, Bangalore
 https://jobs.ashbyhq.com/cambly/17aea1df-e148-48e7-a153-5cb75ad2b891, Sales Development Representative, cambly, sales, mid, Istanbul
 https://jobs.ashbyhq.com/alchemy/b6b29a64-508c-4712-9b0f-08a5ff0ddb2d, Product Lead, Developer Experience, alchemy, product, mid, San Francisco
 https://jobs.ashbyhq.com/alchemy/fc162906-baf9-4eba-a684-a9bbff2b5cd8, Senior Product Manager - Ecosystem, alchemy, product, manager, San Francisco
 https://jobs.ashbyhq.com/alchemy/94dead82-dffe-43e9-a2d5-3bcc656e19fd, Senior Product Manager - Developer Platform, alchemy, product, manager, San Francisco
 https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4727238005, Manager, Banking Alliances, razorpaysoftwareprivatelimited, bizdev, manager, Bangalore
 https://job-boards.greenhouse.io/flip/jobs/5399905008, Event Marketing Manager, flip, marketing, manager, New York
+https://jobs.ashbyhq.com/shapescale/effc8283-634c-4e5f-8f1a-6da174ccf4d4, Founding Sales Rep (Full-Cycle), shapescale, sales, mid, Remote
 https://bitmovin.com/careers/8729522002?gh_jid=8729522002, Customer Technical Account Manager – OTT Cloud Streaming, bitmovin, sales, manager, Middle East
 https://jobs.ashbyhq.com/deepgram/c8799e26-121b-47be-8bc4-7b342fa32275, GM, Sales (EMEA), deepgram, sales, mid, London
 https://jobs.lever.co/emburse/2aa442cf-9a63-471e-8cc2-263b7a952c91, Director of HR Operations, emburse, operations, exec, Addison
@@ -5571,7 +5549,6 @@ https://www.themuse.com/jobs/flexport/technical-program-manager-842d5f, Technica
 https://www.themuse.com/jobs/flexport/sales-development-representative-flemish-speaking-0b3514, Sales Development Representative (Flemish speaking), Flexport, sales, mid, Antwerpen
 https://job-boards.greenhouse.io/anthropic/jobs/5409008008, Applied AI Architect, Strategic Enterprise Tech, anthropic, operations, staff, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5219967008, Enterprise Account Executive - Retail / CPG / Trading, anthropic, sales, mid, Tokyo
-https://job-boards.greenhouse.io/anthropic/jobs/5409108008, Finance & Strategy GTM, EMEA, anthropic, bizdev, mid, London
 https://job-boards.greenhouse.io/anthropic/jobs/5407337008, Product Manager, Beneficial Deployments (Labs), anthropic, product, manager, San Francisco
 https://job-boards.greenhouse.io/anthropic/jobs/5391199008, Reseller Operations Manager, Japan & Korea, anthropic, operations, manager, Tokyo
 https://job-boards.greenhouse.io/anthropic/jobs/5358104008, Strategic Deals Lead, Cloud Compute, anthropic, operations, mid, San Francisco
@@ -5614,7 +5591,6 @@ https://jobs.ashbyhq.com/openai/6c21e5e0-a41c-4936-a278-dd7d2c88f25c, Marketing 
 https://jobs.ashbyhq.com/vanta/53859b64-23ad-45c1-a8c1-d7ed3ae00266, French Speaking Account Executive, Early Stage - EMEA, vanta, sales, intern, Dublin
 https://jobs.ashbyhq.com/vanta/be485e4d-d874-41fa-9de8-34102977d34e, Product Marketing Lead - EMEA, vanta, marketing, mid, London
 https://jobs.ashbyhq.com/vanta/9dbd2b25-0735-43db-87b4-6acbbf012a1c, Product Marketing Lead - EMEA, vanta, marketing, mid, Dublin
-https://jobicy.com/jobs/151870-account-executive-mid-market-italy, Account Executive Mid-Market - Italy, Alma, sales, mid, Italy
 https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169, Programmatic Campaign Operations Specialist Trader, VirtuHire, operations, mid, Remote
 https://job-boards.greenhouse.io/amplitude/jobs/8760524002, Senior Sales Engineer  - Sao Paulo / LATAM, amplitude, sales, senior, Sao Paulo
 https://job-boards.greenhouse.io/clutch/jobs/6173442004, Customer Experience & Vehicle Intake Coordinator, clutch, sales, mid, Calgary
@@ -5647,7 +5623,6 @@ https://job-boards.eu.greenhouse.io/super/jobs/4963556101, Strategy Analyst Inte
 https://jobs.ashbyhq.com/skydropx/813b299d-eb80-4317-bb7d-696203d87c9e, Strategy Associate, skydropx, operations, junior, México
 https://jobs.ashbyhq.com/ashby/ae0bf8c6-f327-48de-9902-9f509667d02d, Snr. Marketing Manager, Enterprise ABM EMEA, ashby, marketing, manager, Remote
 https://jobs.ashbyhq.com/ashby/6f9d632f-5d3b-4c5e-8893-6e4a1cb2778f, Sales Recruiter, ashby, sales, mid, Ireland
-https://job-boards.greenhouse.io/alpaca/jobs/6161891004, Trading Operations Associate - America, alpaca, operations, junior, Remote
 https://jobs.ashbyhq.com/trm-labs/05e0bd56-3b47-41b8-85fe-b883c1b62d2d, Senior Sales Recruiter, trm-labs, sales, senior, United States
 https://jobs.ashbyhq.com/trm-labs/b6994b6a-0b46-4311-b0f6-3b71d9b5ded9, Senior International Sales Recruiter, UK/EMEA, trm-labs, sales, senior, United Kingdom
 https://job-boards.greenhouse.io/hightouch/jobs/6167563004, Customer Success Engineer, hightouch, sales, mid, New York
@@ -5710,7 +5685,6 @@ https://job-boards.greenhouse.io/assemblyai/jobs/4728788005, Senior GTM Engineer
 https://job-boards.greenhouse.io/pelago/jobs/5225625007, Lifecycle Marketing Manager, pelago, growth, manager, New York
 https://jobs.ashbyhq.com/revenuecat/43196e25-6385-4087-a842-39002a4e9cf3, Head of Sales, revenuecat, sales, exec, Remote
 https://jobs.ashbyhq.com/revenuecat/40a49a4f-962f-4a38-85b1-4dbc5082f4b1, Head of Customer Growth, revenuecat, growth, exec, Remote
-https://jobs.ashbyhq.com/ashby/3a8c6941-7e0d-4953-8967-a59a10a73cc1, Recruiting Operations Consultant, ashby, operations, mid, Remote
 https://job-boards.greenhouse.io/caribou/jobs/7980303003, Director, Lifecycle Marketing, caribou, growth, exec, Chicago
 https://job-boards.greenhouse.io/alpaca/jobs/6172681004, Corporate Operations Lead, alpaca, operations, mid, Remote
 https://job-boards.greenhouse.io/hightouch/jobs/5379538004, Enterprise Account Executive- New York, NY, hightouch, sales, mid, New York
@@ -5798,7 +5772,6 @@ https://www.fivetran.com/careers/job?gh_jid=7981429003, Business Development Rep
 https://www.fivetran.com/careers/job?gh_jid=7981431003, Business Development Representative (Sydney), fivetran, bizdev, mid, Sydney
 https://www.fivetran.com/careers/job?gh_jid=7978897003, Director Workplace Operations, fivetran, operations, exec, Oakland
 https://job-boards.greenhouse.io/webflow/jobs/8127083, Communications Lead, webflow, marketing, mid, U.S. Remote
-https://job-boards.greenhouse.io/webflow/jobs/8161684, Senior Communications Manager, webflow, marketing, manager, U.S. Remote
 https://job-boards.greenhouse.io/webflow/jobs/8167866, VP, Revenue Marketing, webflow, sales, exec, U.S. Remote
 https://abacustechnology.com/about/careers/current-vacancies/?gh_jid=7981797003, Marketing Partnership Operations Manager, abacus, bizdev, manager, New York
 https://jobs.ashbyhq.com/ironcladhq/22380e0c-4eb9-4334-aa18-73cea7944239, Senior Director, Global Sales Strategy and Operations, ironcladhq, sales, exec, San Francisco
@@ -5860,7 +5833,7 @@ https://jobs.ashbyhq.com/nango/d6f5196d-6b72-443e-8b0e-dc1b9387902b, Head of Sal
 https://jobs.ashbyhq.com/invopop/2515d6e1-ec4e-4aa7-8cf7-b0325bfe5572, Sales Development Representative, invopop, sales, mid, Madrid
 https://jobs.ashbyhq.com/fortuna-health/9fe5d236-350d-4cc7-9116-0862e89fff0a, Operations Lead, fortuna-health, operations, mid, New York
 https://job-boards.greenhouse.io/flex/jobs/4729123005, Director, Sales Solutions Engineering, flex, sales, exec, New York
-https://jobs.ashbyhq.com/legora/5492a77a-9cb4-4a24-9a36-21118e01b0fe, Enterprise Account Executive - Korea, legora, sales, mid, Seoul
+https://jobs.ashbyhq.com/legora/5492a77a-9cb4-4a24-9a36-21118e01b0fe, Enterprise Account Executive - South Korea, legora, sales, mid, Seoul
 https://jobs.ashbyhq.com/harperinsure/fb090823-feb9-430f-b193-68dee922386b, Engineering Manager, Growth, harperinsure, growth, manager, San Francisco
 https://jobs.ashbyhq.com/afterquery/7df65be5-5338-4d54-bc0a-ac550633618b, Software Engineer - Growth Infrastructure, afterquery, growth, mid, San Francisco
 https://jobs.ashbyhq.com/lark/feebb62f-1817-4777-bf86-ebd1a5ae4bdd, Senior PM, Core App (6-Month Contract), lark, product, senior, Remote
@@ -5967,11 +5940,9 @@ https://job-boards.greenhouse.io/mesh/jobs/5413459008, Director, Japan Business 
 https://job-boards.greenhouse.io/usenourish/jobs/5107597008, Provider Partnerships Associate (Territory Sales), usenourish, bizdev, junior, Atlanta
 https://apply.workable.com/j/5EA3196E44, Finance operations / audit support Evaluator, weekday-1, operations, mid, United States
 https://apply.workable.com/j/1B548F03D5, GTM / RevOps / Sales Expert, weekday-1, bizdev, mid, United States
-https://apply.workable.com/j/35263BB41E, Lead Product manager, weekday-1, product, manager, Mumbai
 https://apply.workable.com/j/56B4EC5B60, Media / journalism / communications Evaluator, weekday-1, marketing, mid, United States
 https://apply.workable.com/j/7856BF91D5, Operations / Program Management Experts, weekday-1, operations, mid, United States
 https://apply.workable.com/j/DA50D96DB0, Real Estate Sales Manager (Navi Mumbai, 1+ yrs Exp), weekday-1, sales, manager, Mumbai
-https://apply.workable.com/j/B25FF03139, Strategy Professional, weekday-1, operations, mid, Mumbai
 https://jobs.ashbyhq.com/encord/1080c689-4b98-46ad-93b8-123bdf493ee4, Senior GTM Recruiter, encord, bizdev, senior, San Francisco
 https://jobs.ashbyhq.com/fable/644c838d-092e-457d-adfe-6266de762962, Account Executive - South East, fable, sales, mid, Remote: Fl
 https://jobs.ashbyhq.com/legionhealth/83a8d5e9-a711-4f96-b29a-554302316e85, Medical Virtual Assistant - Patient Access & Intake Operations [Remote], legionhealth, operations, mid, Remote
@@ -6066,17 +6037,11 @@ https://job-boards.greenhouse.io/cortex/jobs/5413866008, Business Development Re
 https://jobs.ashbyhq.com/cohere/51e0abfb-e4fa-452e-9588-fe10c67467f7, Talent Attraction and Employer Brand Specialist, cohere, marketing, mid, United States
 https://job-boards.greenhouse.io/usenourish/jobs/5413213008, Executive Operations Manager, Tech, usenourish, operations, manager, New York
 https://job-boards.greenhouse.io/usenourish/jobs/5414338008, Product Lead, Care Delivery, usenourish, product, mid, New York
-https://apply.workable.com/j/87BAF32377, AVP - Performance Marketing (Paid Media), weekday-1, marketing, mid, Pune
 https://apply.workable.com/j/8ACB9E2292, Finance / Business Ops Experts, weekday-1, operations, mid, United States
-https://apply.workable.com/j/33C1B6141B, Founding Account Executive (US B2B SaaS), weekday-1, sales, mid, Bangalore
-https://apply.workable.com/j/F7CA288979, Growth Executive - Student Engagement & Memberships, weekday-1, growth, mid, Chennai
 https://apply.workable.com/j/88E2D1AF52, GTM / Marketing Experts, weekday-1, bizdev, mid, United States
 https://apply.workable.com/j/E3A568AB85, Healthcare operations Evaluator, weekday-1, operations, mid, United States
-https://apply.workable.com/j/C2856BA7D7, Operations Executive, weekday-1, operations, mid, Mumbai
 https://apply.workable.com/j/F2D992083C, People ops / recruiting Evaluator, weekday-1, operations, mid, United States
 https://apply.workable.com/j/6FA18F61CC, Public Sector / Legal / GTM Experts, weekday-1, bizdev, mid, United States
-https://apply.workable.com/j/635DA6506C, Senior Account Manager (Project Operations & Client Relationships), weekday-1, sales, manager, India
-https://apply.workable.com/j/4068346892, Senior Operations Manager, weekday-1, operations, manager, Mumbai
 https://jobs.ashbyhq.com/hudu/0b6a40ce-19ec-46f2-a789-b7324ef302fb, Events and Community Coordinator, hudu, marketing, mid, United States
 https://gigs.com/careers?gh_jid=4967199101, Brand Marketing Lead, gigs, marketing, mid, San Francisco
 https://gigs.com/careers?gh_jid=4966532101, Technical Project Manager, Carrier Integrations, gigs, operations, manager, Europe
@@ -6105,11 +6070,12 @@ https://jobs.ashbyhq.com/simple-ai/8f9a0530-db8b-46fe-86bb-a1651ac6f87c, Sales E
 https://jobs.ashbyhq.com/simple-ai/134f24dc-d97b-480e-84b9-e2cd4d92a59b, [MBA] GTM Ops Intern, simple-ai, bizdev, intern, San Francisco
 https://jobs.ashbyhq.com/telli/4a7b87e3-795e-49e1-9a7b-01fa3a9a9101, Founding GTM Lead - France, telli, bizdev, mid, Berlin
 https://jobs.ashbyhq.com/hud/e31e5ee4-48fc-4fdb-8fdb-fda953b7b304, Legal Operations Lead, hud, operations, mid, San Francisco
-https://jobs.ashbyhq.com/answerthis/40d75a37-bce7-4e21-ac25-febd6b69d34e, Founding Marketer / Head of Growth, answerthis, growth, exec, United States
+https://jobs.ashbyhq.com/answerthis/40d75a37-bce7-4e21-ac25-febd6b69d34e, Growth Lead | Paid Acquisition + SEO/AEO, answerthis, growth, mid, United States
 https://dispatch.me/about/careers/apply-now?gh_jid=6179416004, Director, Demand Generation, dispatch, growth, exec, Remote
 https://job-boards.greenhouse.io/openwork/jobs/4391342009, Account Manager, openwork, sales, manager, Houston
 https://job-boards.greenhouse.io/nex/jobs/5413787008, Publishing Operations Specialist (6-month Contract), nex, operations, mid, Hong Kong
 https://jobs.ashbyhq.com/lightfield/8e577037-3ff8-41f7-b2fe-e3a815c4ae43, Growth Operations Lead, lightfield, growth, mid, : San Francisco
+https://www.adzuna.sg/details/5803984769?utm_medium=api&utm_source=ff3fb262, VP, Doc Check Team Lead, Trade Operations, IBG Operations (IBGO), Group COO, DBS Bank, operations, exec, Central
 https://www.themuse.com/jobs/spacex/it-operations-engineer, IT Operations Engineer, SpaceX, operations, mid, Rockledge
 https://www.themuse.com/jobs/spacex/manager-starlink-enterprise-sales-9a40ed, Manager, Starlink Enterprise Sales, SpaceX, sales, manager, El Segundo
 https://job-boards.greenhouse.io/anthropic/jobs/5391340008, Enterprise Account Executive - DNB, anthropic, sales, mid, Seoul
@@ -6147,7 +6113,6 @@ https://app.careerpuck.com/job-board/lyft/job/8780060002?gh_jid=8780060002, Oper
 https://job-boards.greenhouse.io/gusto/jobs/8002008, Business Development Representative, gusto, bizdev, mid, Denver
 https://job-boards.greenhouse.io/gusto/jobs/8175123, Sales Implementation Associate, gusto, sales, junior, Atlanta
 https://job-boards.greenhouse.io/gusto/jobs/8175108, Sales Onboarding Advocate, gusto, sales, mid, Atlanta
-https://boards.greenhouse.io/cloudflare/jobs/8143255?gh_jid=8143255, Business Development Representative, Cantonese Speaking, cloudflare, bizdev, mid, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8161251?gh_jid=8161251, Principal Partner Account Manager, Service Provider, EMEA, cloudflare, sales, exec, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8175620?gh_jid=8175620, Systems Engineer, Growth Engineering, cloudflare, growth, mid, Unknown
 https://www.samsara.com/company/careers/roles/8162034?gh_jid=8162034, Account Executive, Commercial, samsara, sales, mid, Remote
@@ -6193,7 +6158,6 @@ https://jobs.ashbyhq.com/curri/1f55d3a2-e595-41da-a20e-6a8e54199799, Outside Sal
 https://jobs.ashbyhq.com/curri/bcdbc3d1-96f7-429e-8ea6-b8c27fb7cbc9, Outside Sales Representative (Charleston, SC), curri, sales, mid, Charleston
 https://pantheon.io/about/careers/detail?gh_jid=8177795, Business Development Representative, pantheon, bizdev, mid, United States (Remote)
 https://jobs.ashbyhq.com/glimpse/4f0e9098-8d4e-4a63-9af1-da422745df8c, Partnership Manager, glimpse, bizdev, manager, New York
-https://jobs.ashbyhq.com/multiverse/6b217f4f-13f7-4c67-b0b6-b6d201e921c7, Campaigns & Content Specialist, multiverse, marketing, mid, London
 https://jobs.ashbyhq.com/candidhealth/028225d2-3f3b-480f-bdf2-a8dbaad3dd66, Account Executive (Accelerated Path), candidhealth, sales, mid, Remote (Usa)
 https://apply.workable.com/j/24341EAB70, Sales Enablement Lead & GTM Onboarding, riot, bizdev, mid, Paris
 https://jobs.ashbyhq.com/upflow/d119ff1b-bf48-435f-b623-711184024a82, Customer Success Manager (US), upflow, sales, manager, New York
@@ -6207,7 +6171,6 @@ https://apply.workable.com/j/B37582ACA7, Area Sales Manager, weekday-1, sales, m
 https://apply.workable.com/j/1CA56CD979, Performance Marketing Specialist, weekday-1, marketing, mid, Mumbai
 https://apply.workable.com/j/B7419A92A8, Product Manager - WMS, weekday-1, product, manager, Gurugram
 https://apply.workable.com/j/99749BD188, Project Manager, weekday-1, operations, manager, Indore
-https://apply.workable.com/j/84F695EF5D, Sales Development Representative (SDR), weekday-1, sales, mid, Navi Mumbai
 https://jobs.ashbyhq.com/vapi/202bbcae-46eb-4dfc-abe2-d416685291b6, GTM Recruiter, vapi, bizdev, mid, San Francisco
 https://jobs.ashbyhq.com/vapi/17bf1fea-0805-46b7-8f5e-6c1e31beb75b, Revenue Operations Analyst, vapi, sales, mid, San Francisco
 https://jobs.ashbyhq.com/lemfi/51635316-a29e-4901-9282-367d1493c780, Head of Operations - Ireland (COO - PCF-42), lemfi, operations, exec, Dublin
@@ -6262,9 +6225,6 @@ https://jobs.ashbyhq.com/openai/1ae64ddb-505f-4ad2-a731-3a857e94edee, Growth Mar
 https://jobs.ashbyhq.com/linear/26c77e48-b4ef-455d-a02c-3ef68fc6f9f9, Customer Success Manager, Growth, linear, growth, manager, North America
 https://jobs.ashbyhq.com/vanta/2f2ad814-2437-46bc-8829-9413f1840db0, Subject Matter Expert, GTM GRC - Revenue, vanta, bizdev, mid, Remote U.S.
 https://jobs.ashbyhq.com/vanta/7cb1ace2-945a-4768-9ce2-a95d6b725bb8, Subject Matter Expert, GTM GRC - Revenue, vanta, bizdev, mid, Remote U.S.
-https://www.arbeitnow.co.uk/jobs/companies/verve/director-strategic-partnerships-london-18351, Director, Strategic Partnerships, Verve, bizdev, exec, London
-https://www.arbeitnow.co.uk/jobs/companies/tenableinc/public-sector-territory-account-manager-390055, Public Sector Territory Account Manager, Tenableinc, sales, manager, Unknown
-https://www.arbeitnow.co.uk/jobs/companies/airspeed/finance-operations-lead-london-49322, Finance & Operations Lead, Airspeed, operations, mid, London
 https://jobs.ashbyhq.com/close/26b8da1b-702b-4e8e-a485-7b1ba79203fd, Staff GTM Analyst (USA Only, 100% Remote), close, bizdev, staff, Usa
 https://jobs.ashbyhq.com/zapier/80a13be4-f8db-4581-be30-a4a015155496, Sr. Technical Account Manager, zapier, sales, manager, South America
 https://jobs.ashbyhq.com/aptible/3f50c050-2caf-4035-b828-d378f1611ca7, Staff Product Manager, Acquisition, aptible, product, manager, North America (Pt-Et Time Zones)
@@ -6312,12 +6272,6 @@ https://www.alloy.com/about/jobs/detail?gh_jid=8783182002&gh_jid=8783182002, Sen
 https://www.alloy.com/about/jobs/detail?gh_jid=8783122002&gh_jid=8783122002, Senior Revenue Operations Analyst, alloy, sales, senior, New York
 https://job-boards.greenhouse.io/echo/jobs/4389809009, Senior Electronics Technical Program Manager, echo, operations, manager, San Francisco
 https://job-boards.greenhouse.io/echo/jobs/4390082009, Senior Software Technical Program Manager, echo, operations, manager, San Francisco
-https://jobs.lever.co/wingtra-2/ea7c37de-5c45-488a-8c89-e351787c4462, Head of Sales US West, wingtra-2, sales, exec, United States
-https://jobs.lever.co/wingtra-2/7985b1c8-ea4b-4af8-9260-7def37780218, Junior Software Engineer - GTM Products, wingtra-2, bizdev, junior, Zürich
-https://jobs.lever.co/wingtra-2/2fa66566-8b90-49c7-8e0f-ef6e12082902, Regional Sales Manager -  Canada, wingtra-2, sales, manager, Toronto
-https://jobs.lever.co/wingtra-2/c8f6d35a-22ae-457b-a794-59d0870bd59f, Regional Sales Manager -  Canada, wingtra-2, sales, manager, Montreal
-https://jobs.lever.co/wingtra-2/25477898-ab26-4b29-8f71-5629351973f3, Regional Sales Manager -  West Coast, wingtra-2, sales, manager, United States
-https://jobs.lever.co/wingtra-2/58c2d218-8c52-4e90-af4e-f72402555f41, Software Engineer - GTM Products, wingtra-2, bizdev, mid, Eastern Europe
 https://jobs.ashbyhq.com/gigaml/6fcc4288-f57a-4c95-ba15-ea3903e78033, Chief of Staff (Office of the CEO), gigaml, operations, exec, San Francisco
 https://job-boards.greenhouse.io/flex/jobs/4731133005, Senior Director, Product Partnerships, flex, bizdev, exec, New York
 https://jobs.ashbyhq.com/sagecare/b4766539-abb6-4c01-986c-6e11198cfc10, Product Manager, Agent Intelligence, sagecare, product, manager, Unknown
@@ -6327,7 +6281,6 @@ https://jobs.ashbyhq.com/firstwork/920adec9-baf0-4fe8-817b-a419c077cf17, Foundin
 https://jobs.ashbyhq.com/firstwork/a7f38c62-50b0-4b35-9253-39a6cfba4c90, Solutions Consultant, EMEA, firstwork, sales, mid, London
 https://jobs.ashbyhq.com/vibe/7191fb87-2150-4936-b591-e1bcd62f8f7a, Head of Marketing Science, vibe, marketing, exec, New York
 https://jobs.lever.co/distro/08716fac-ec44-4d7b-9821-c4e991e94860, Account Manager, distro, sales, manager, Atlanta
-https://jobs.lever.co/distro/48e218e1-b2d0-48c5-a892-763c7cfd343d, Sales Development Representative, distro, sales, mid, Antioquia
 https://jobs.ashbyhq.com/afterquery/9f549938-e137-4b8c-8f29-6760ca938a7c, Strategic Projects Lead - STEM, afterquery, operations, mid, San Francisco
 https://www.kkr.com/careers/career-opportunities/post?gh_jid=5989339004, Accounting Operations Systems - Senior Analyst, stage, operations, senior, Gurugram
 https://www.kkr.com/careers/career-opportunities/post?gh_jid=6161869004, Investment Operations Associate - Loan Settlements, stage, operations, junior, Boston
@@ -6362,25 +6315,8 @@ https://jobs.ashbyhq.com/hopper/d8583594-b019-4c4d-a1ba-3784f1ec5c15, Senior Ful
 https://jobs.ashbyhq.com/hopper/581c4500-44b3-4198-a806-9c74f009e987, Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform, hopper, sales, senior, Ireland
 https://jobs.ashbyhq.com/hopper/115eebfb-af89-4100-87be-45cf4d1a42ea, Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform, hopper, sales, senior, Spain
 https://www.themuse.com/jobs/spacex/starlink-enterprise-sales-director-north-america, Starlink Enterprise Sales Director (North America), SpaceX, sales, exec, Lockhart
-https://www.themuse.com/jobs/bechtel/environmental-sustainability-community-permits-manager, Environmental, Sustainability, Community & Permits Manager, Bechtel, marketing, manager, Phoenix
 https://stripe.com/jobs/search?gh_jid=7994945, Contracting Operations Specialist, stripe, operations, mid, Bangalore
 https://stripe.com/jobs/search?gh_jid=8175629, Program Manager, Executive Experiences, stripe, operations, manager, San Francisco
-https://www.arbeitnow.co.uk/jobs/companies/illumio/remote-digital-marketing-manager-emea-apac-53593, Digital Marketing Manager - EMEA & APAC, Illumio, marketing, manager, United Kingdom
-https://www.arbeitnow.co.uk/jobs/companies/watershed/account-executive-enterprise-northern-europe-london-475191, Account executive, enterprise, northern Europe, Watershed, sales, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/perk/director-of-go-to-market-engineering-london-457240, Director of Go-to-Market Engineering, Perk, bizdev, exec, London
-https://www.arbeitnow.co.uk/jobs/companies/wppproduction/senior-account-manager-4-month-ftc-watford-456436, Senior Account Manager  [4 month FTC], Wppproduction, sales, manager, Watford
-https://www.arbeitnow.co.uk/jobs/companies/airwallex/account-manager-enterprise-london-140046, Account Manager, Enterprise, Airwallex, sales, manager, Uk
-https://www.arbeitnow.co.uk/jobs/companies/guidepoint/product-manager-ai-product-engineering-london-227150, Product Manager – AI Product Engineering, Guidepoint, product, manager, London
-https://www.arbeitnow.co.uk/jobs/companies/alphasense/account-executive-high-growth-london-greater-london-19410, Account Executive, High Growth, Alphasense, growth, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/wordsmith/sales-development-representative-sdr-edinburgh-307356, Sales Development Representative (SDR), Wordsmith, sales, mid, Edinburgh
-https://www.arbeitnow.co.uk/jobs/companies/pingidentity/strategic-account-executive-uki-125029, Strategic Account Executive (UKI), Pingidentity, sales, mid, Unknown
-https://www.arbeitnow.co.uk/jobs/companies/pingidentity/director-sales-middle-east-304335, Director, Sales (Middle East), Pingidentity, sales, exec, Unknown
-https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/staff-product-manager-physical-ai-robotics-london-203840, Staff Product Manager - Physical AI/Robotics, Coreweaveu, product, manager, London
-https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/staff-product-manager-applied-physical-ai-london-308855, Staff Product Manager, Applied Physical AI, Coreweaveu, product, manager, London
-https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/senior-recruiter-gtm-emea-london-399572, Senior Recruiter, GTM, EMEA, Coreweaveu, bizdev, senior, London
-https://www.arbeitnow.co.uk/jobs/companies/smarkets/vp-commercial-marketing-london-447859, VP Commercial & Marketing, Smarkets, marketing, exec, London
-https://www.arbeitnow.co.uk/jobs/companies/dualentry/business-development-representative-london-34530, Business Development Representative, Dualentry, bizdev, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/ubitricity-gmbh/senior-business-development-partnerships-manager-london-174771, Senior Business Development & Partnerships Manager (m/f/x), Ubitricity Gmbh, bizdev, manager, London
 https://jobs.ashbyhq.com/promise/6627b113-b4e4-4350-aeae-f0f306ccee1c, Account Executive - Public Sector, promise, sales, mid, San Francisco
 https://apply.workable.com/j/EAD95FF07C, Business Development Executive, weekday-1, bizdev, mid, Mumbai
 https://jobs.ashbyhq.com/casco/28697bba-ebba-499c-8a9c-751404012557, Sales Development Representative, casco, sales, mid, San Francisco
@@ -6395,35 +6331,8 @@ https://job-boards.greenhouse.io/flexport/jobs/8184563, Sales Manager, flexport,
 https://boards.greenhouse.io/cloudflare/jobs/8045321?gh_jid=8045321, Senior Named Account Executive, South Africa, cloudflare, sales, senior, Unknown
 https://boards.greenhouse.io/cloudflare/jobs/8168940?gh_jid=8168940, Territory Account Executive, Digital Native (Indonesia), cloudflare, sales, mid, Unknown
 https://jobs.ashbyhq.com/openai/ecd7b6d6-cf20-4e14-a90a-8501cd460557, Strategy & Operations Lead - India, openai, operations, mid, India
-https://www.arbeitnow.com/jobs/companies/argus-search-gmbh/senior-finance-manager-gn-media-marketing-berlin-150708, (Senior) Finance Manager (gn) - Media & Marketing, Argus Search GmbH, marketing, manager, Berlin
-https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/online-marketing-manager-stuttgart-183830, Online Marketing Manager (m/w/d), eFLY Marketplace Services GmbH, marketing, manager, Stuttgart
-https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/pflichtpraktikum-online-marketing-manager-stuttgart-284217, Pflichtpraktikum Online Marketing Manager (m/w/d), eFLY Marketplace Services GmbH, marketing, manager, Stuttgart
-https://www.arbeitnow.com/jobs/companies/lucid-labs/werkstudentin-text-content-berlin-404279, Werkstudent:in Text & Content (m/w/d), Lucid Labs, marketing, mid, Berlin
-https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/influencer-marketing-manager-stuttgart-158988, Influencer Marketing Manager (m/w/d), eFLY Marketplace Services GmbH, marketing, manager, Stuttgart
-https://www.arbeitnow.com/jobs/companies/swiss-life-select/senior-sales-consultant-vollzeit-german-speaking-heitersheim-41076, Senior Sales Consultant - Vollzeit (German Speaking), Swiss Life Select, sales, senior, Heitersheim
-https://www.arbeitnow.com/jobs/companies/strategy-core-ventures-gmbh/consultant-education-sales-operations-hamburg-360835, Consultant Education & Sales Operations (m/w/d), Strategy Core Ventures GmbH, sales, mid, Hamburg
-https://www.arbeitnow.com/jobs/companies/consultport/head-of-sales-berlin-323226, Head of Sales, Consultport, sales, exec, Berlin
-https://www.arbeitnow.com/jobs/companies/checkmk-gmbh/working-student-product-marketing-munich-448599, Working Student (m/f/d) Product Marketing, Checkmk GmbH, marketing, intern, Munich
-https://www.arbeitnow.com/jobs/companies/ramp106-gmbh/praktikantin-e-mail-marketing-crm-performance-marketing-hamburg-469057, Praktikant*In (M/W/D) E-Mail Marketing, Crm & Performance Marketing, Ramp106 Gmbh, marketing, mid, Hamburg
-https://www.arbeitnow.com/jobs/companies/ramp106-gmbh/senior-marketing-operations-managerin-crm-growth-hubspot-hamburg-385005, (Senior) Marketing Operations Manager*In (M/W/D) Crm, Growth, Hubspot, Ramp106 Gmbh, growth, manager, Hamburg
-https://www.arbeitnow.com/jobs/companies/ramp106-gmbh/senior-b2b-marketing-managerin-lead-generation-hamburg-286525, (Senior) B2B Marketing Manager*In (M/W/D) Lead Generation, Ramp106 Gmbh, marketing, manager, Hamburg
-https://www.arbeitnow.com/jobs/companies/ramp106-gmbh/senior-account-managerin-hamburg-155064, (SENIOR) ACCOUNT MANAGER*IN (m/w/d), Ramp106 Gmbh, sales, manager, Hamburg
-https://www.arbeitnow.com/jobs/companies/varm/performance-marketing-manager-berlin-479831, Performance Marketing Manager (m/w/d) - Berlin, VARM, marketing, manager, Berlin
-https://www.arbeitnow.com/jobs/companies/wirelane/werkstudent-technical-operations-munchen-76050, Werkstudent Technical Operations (m/w/d), Wirelane, operations, mid, München
-https://www.arbeitnow.com/jobs/companies/ucmagency/technical-product-manager-berlin-217600, Technical Product Manager (m/w/d), ucm.agency, product, manager, Berlin
-https://www.arbeitnow.com/jobs/companies/ucmagency/chief-product-officer-product-growth-systems-ai-berlin-378308, Chief Product Officer – Product, Growth Systems & AI (m/w/d), ucm.agency, growth, exec, Berlin
-https://www.arbeitnow.com/jobs/companies/aircall/account-executive-dach-market-berlin-office-430069, Account Executive , DACH market, Aircall, sales, mid, Berlin
-https://www.arbeitnow.com/jobs/companies/wortmann-kg-internationale-schuhproduktionen/senior-operations-specialist-e-commerce-retail-detmold-163437, (Senior) Operations Specialist E-Commerce & Retail (m/w/d), Wortmann KG Internationale Schuhproduktionen, operations, senior, Detmold
 https://www.arbeitnow.co.uk/jobs/companies/mirakl/senior-account-manager-londres-236323, Senior Account Manager, Mirakl, sales, manager, Londres
 https://www.arbeitnow.co.uk/jobs/companies/avepoint/mid-market-account-executive-london-88951, Mid-Market Account Executive, Avepoint, sales, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/plexal/senior-lead-government-innovation-and-economic-growth-manchester-245044, Senior Lead, Government Innovation and Economic Growth, Plexal, growth, senior, Manchester
-https://www.arbeitnow.co.uk/jobs/companies/jedox-gmbh/sales-account-executive-enterprise-uki-london-309630, Sales Account Executive - Enterprise, UKI (m/f/d), Jedox GmbH, sales, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/goodlord/enterprise-account-executive-london-131527, Enterprise Account Executive, Goodlord, sales, mid, London
-https://www.arbeitnow.co.uk/jobs/companies/intercom/senior-product-marketing-manager-london-237132, Senior Product Marketing Manager, intercom, marketing, manager, London
-https://www.arbeitnow.co.uk/jobs/companies/intercom/senior-product-marketing-manager-london-55894, Senior Product Marketing Manager, intercom, marketing, manager, London
-https://www.arbeitnow.co.uk/jobs/companies/hubspotjobs/staff-technical-lead-marketing-studio-intelligence-482884, Staff Technical Lead - Marketing Studio Intelligence, hubspotjobs, marketing, staff, Unknown
-https://www.arbeitnow.co.uk/jobs/companies/harvey/head-of-mid-market-sales-london-301941, Head of Mid-Market Sales, Harvey, sales, exec, London
-https://www.arbeitnow.co.uk/jobs/companies/langchain/commercial-account-executive-uk-london-249058, Commercial Account Executive (UK), LangChain, sales, mid, London
 https://www.arbeitnow.fr/jobs/companies/mirakl-labs/product-manager-financial-services-bordeaux-56704, Product Manager - Financial Services, Mirakl - Labs, product, manager, Bordeaux
 https://www.arbeitnow.fr/jobs/companies/mirakl/senior-account-manager-paris-127825, Senior Account Manager, Mirakl, sales, manager, Paris
 https://www.arbeitnow.fr/jobs/companies/jobgether/account-executive-france-176503, Account Executive, Jobgether, sales, mid, France
@@ -6442,66 +6351,6 @@ https://www.arbeitnow.fr/jobs/companies/transperfect/director-business-developme
 https://www.arbeitnow.fr/jobs/companies/payflows/french-speaking-account-executive-paris-221840, French-Speaking Account Executive, Payflows, sales, mid, Paris
 https://www.arbeitnow.fr/jobs/companies/proton/senior-product-manager-geneva-switzerland-paris-215658, Senior Product Manager, Proton, product, manager, Geneva
 https://www.arbeitnow.fr/jobs/companies/fanaticscommerce/senior-manager-retail-operations-paris-241277, Senior Manager, Retail Operations, Fanaticscommerce, operations, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/workana-premium/remote-seo-copywriter-french-market-france-129523, SEO Copywriter - French Market, Workana Premium, marketing, mid, France
-https://www.arbeitnow.fr/jobs/companies/vmlenterprisesolutions/senior-manager-martech-sales-oriented-paris-112887, Senior Manager MarTech - Sales oriented, Vmlenterprisesolutions, sales, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/vmlenterprisesolutions/consultante-senior-transformation-marketing-experience-client-paris-35583, Consultant.e Senior - Transformation, Marketing & Expérience Client, Vmlenterprisesolutions, marketing, senior, Paris
-https://www.arbeitnow.fr/jobs/companies/vmlenterprisesolutions/consultant-developpeur-marketing-technology-crm-data-3-a-5-ans-dexperience-paris-295267, Consultant Développeur Marketing Technology (CRM & Data) – 3 à 5 ans d’expérience, Vmlenterprisesolutions, marketing, mid, Paris
-https://www.arbeitnow.fr/jobs/companies/vmlenterprisesolutions/consultant-data-analyst-marketing-f-h-paris-449933, Consultant Data Analyst Marketing - F/H, Vmlenterprisesolutions, marketing, mid, Paris
-https://www.arbeitnow.fr/jobs/companies/parity/remote-chief-of-staff-for-engineering-1581, Chief of Staff for Engineering, Parity, operations, exec, Remote
-https://www.arbeitnow.fr/jobs/companies/livestorm/remote-account-executive-enterprise-paris-382462, Account Executive Enterprise, Livestorm, sales, mid, Remote Job
-https://www.arbeitnow.fr/jobs/companies/livestorm/remote-account-executive-enterprise-paris-149681, Account Executive Enterprise, Livestorm, sales, mid, Remote Job
-https://www.arbeitnow.fr/jobs/companies/searoutes/remote-chief-of-staff-business-ops-france-115880, Chief of Staff / Business Ops, Searoutes, operations, exec, France
-https://www.arbeitnow.fr/jobs/companies/wundermanthompson/senior-manager-martech-sales-oriented-paris-54368, Senior Manager MarTech - Sales oriented, Wundermanthompson, sales, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/wundermanthompson/consultante-senior-transformation-marketing-experience-client-paris-156346, Consultant.e Senior - Transformation, Marketing & Expérience Client, Wundermanthompson, marketing, senior, Paris
-https://www.arbeitnow.fr/jobs/companies/wundermanthompson/consultant-developpeur-marketing-technology-crm-data-3-a-5-ans-dexperience-paris-120031, Consultant Développeur Marketing Technology (CRM & Data) – 3 à 5 ans d’expérience, Wundermanthompson, marketing, mid, Paris
-https://www.arbeitnow.fr/jobs/companies/wundermanthompson/consultant-data-analyst-marketing-f-h-paris-81857, Consultant Data Analyst Marketing - F/H, Wundermanthompson, marketing, mid, Paris
-https://www.arbeitnow.fr/jobs/companies/wundermanthompson/account-director-paris-300821, Account Director, Wundermanthompson, sales, exec, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/head-of-partner-marketing-france-paris-51549, Head of Partner Marketing France, Deliveroo, marketing, exec, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/account-manager-groceries-retail-paris-31060, Account Manager - Groceries & Retail, Deliveroo, sales, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/business-development-manager-strasbourg-97916, Business Development Manager - Strasbourg, Deliveroo, bizdev, manager, Strasbourg
-https://www.arbeitnow.fr/jobs/companies/deliveroo/business-development-manager-lyon-400262, Business Development Manager - Lyon, Deliveroo, bizdev, manager, Lyon
-https://www.arbeitnow.fr/jobs/companies/deliveroo/business-development-manager-paris-cdd-6-mois-455063, Business Development Manager - Paris (CDD 6 mois), Deliveroo, bizdev, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/senior-social-media-manager-france-paris-271102, Senior Social Media Manager - France, Deliveroo, marketing, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/business-development-manager-montpellier-cdi-paris-65964, Business Development Manager - Montpellier - CDI, Deliveroo, bizdev, manager, France- Home
-https://www.arbeitnow.fr/jobs/companies/deliveroo/account-manager-paris-cdi-342766, Account Manager - Paris - CDI, Deliveroo, sales, manager, Paris
-https://www.arbeitnow.fr/jobs/companies/deliveroo/operations-manager-paris-311884, Operations Manager, Deliveroo, operations, manager, Paris
-https://jobicy.com/jobs/152689-senior-manager-data-strategy-analytics, Senior Manager, Data Strategy & Analytics, Happy Money, operations, manager, Usa
-https://jobicy.com/jobs/152684-field-sales-consultant-self-employed-sofia, Field Sales Consultant (self-employed) - Sofia, SumUp, sales, mid, Bulgaria
-https://jobicy.com/jobs/152683-senior-analyst-care-operations, Senior Analyst, Care Operations, hims &#038; hers, operations, senior, Usa
-https://jobicy.com/jobs/152682-product-owner-card-programs, Product Owner, Card Programs, Flex, product, mid, Brazil
-https://jobicy.com/jobs/152681-territory-account-manager, Territory Account Manager, Tenable, sales, manager, Mexico
-https://jobicy.com/jobs/152679-product-owner-accounting-stack-entire-business-suite, Product Owner, Accounting Stack (entire Business Suite), Flex, product, mid, Brazil
-https://jobicy.com/jobs/152677-director-apac-go-to-market, Director, APAC Go-to-Market, Tailscale, bizdev, exec, Singapore
-https://jobicy.com/jobs/152676-people-ops-manager, People Ops Manager, Flex, operations, manager, Usa
-https://jobicy.com/jobs/152674-lifecycle-marketing-operations-manager, Lifecycle Marketing Operations Manager, Flex, growth, manager, Usa
-https://jobicy.com/jobs/152671-head-of-growth-marketing-2, Head of Growth Marketing, Flex, growth, exec, Usa
-https://jobicy.com/jobs/152670-senior-channel-account-manager, Senior Channel Account Manager, Tenable, sales, manager, Germany
-https://jobicy.com/jobs/152668-security-sales-engineer-sled-public-sector, Security Sales Engineer - SLED/Public Sector, Tenable, sales, mid, Usa
-https://jobicy.com/jobs/152664-principal-solutions-architect-aws-technical-alliances, Principal Solutions Architect (AWS Technical Alliances), Tenable, bizdev, staff, Usa
-https://jobicy.com/jobs/152663-senior-strategic-account-executive, Senior Strategic Account Executive, Upside, sales, senior, Usa
-https://jobicy.com/jobs/152661-business-development-representative-bdr-manager, Business Development Representative (BDR) Manager, Flex, bizdev, manager, Usa
-https://jobicy.com/jobs/152660-strategic-account-manager-3, Strategic Account Manager, Upside, sales, manager, Usa
-https://jobicy.com/jobs/152658-business-development-representative-13, Business Development Representative, Flex, bizdev, mid, Usa
-https://jobicy.com/jobs/152656-director-of-product-marketing-cloud-ot-security, Director of Product Marketing - Cloud & OT Security, Tenable, marketing, exec, Usa
-https://jobicy.com/jobs/152655-account-manager-4, Account Manager, Flex, sales, manager, Usa
-https://jobicy.com/jobs/152654-principal-product-marketing-manager, Principal Product Marketing Manager, Upside, marketing, manager, Usa
-https://jobicy.com/jobs/152653-director-content-marketing, Director, Content Marketing, Tenable, marketing, exec, Usa
-https://jobicy.com/jobs/152650-automations-engineer-post-sales-systems, Automations Engineer, Post Sales Systems, ClickUp, sales, mid, Usa
-https://jobicy.com/jobs/152649-customer-success-manager-asia, Customer Success Manager, Asia, Instructure, sales, manager, Philippines
-https://jobicy.com/jobs/152647-senior-technical-account-manager-strategic-services, Senior Technical Account Manager - Strategic Services, ClickUp, sales, manager, Usa
-https://jobicy.com/jobs/152646-marketing-operations-coordinator, Marketing Operations Coordinator, Instructure, marketing, mid, Mexico
-https://jobicy.com/jobs/152645-staff-product-manager-2, Staff Product Manager, ClickUp, product, manager, Usa
-https://jobicy.com/jobs/152643-senior-account-executive-parchment-k12, Senior Account Executive - Parchment, K12, Instructure, sales, senior, Usa
-https://jobicy.com/jobs/152641-sr-fpa-manager-revenue-saas-metrics, Sr FP&A Manager - Revenue & SaaS Metrics, Instructure, sales, manager, Usa
-https://jobicy.com/jobs/152633-strategic-account-executive-n-a, Strategic Account Executive - N.A., UpBound, sales, mid, Canada
-https://jobicy.com/jobs/152629-vice-president-of-sales-higher-education, Vice President of Sales, Higher Education, Instructure, sales, exec, Usa
-https://jobicy.com/jobs/152626-senior-product-marketing-manager-4, Senior Product Marketing Manager, UpBound, marketing, manager, Canada
-https://jobicy.com/jobs/152622-head-of-growth-marketing, Head of Growth Marketing, UpBound, growth, exec, Canada
-https://himalayas.app/companies/gitlab-com/jobs/new-business-account-executive-netherlands-238004653, New Business Account Executive - Netherlands, GitLab, sales, mid, Netherlands
-https://himalayas.app/companies/rocket-software/jobs/senior-account-executive, Senior Account Executive, Rocket Software, sales, senior, Australia
-https://himalayas.app/companies/givewell/jobs/senior-communications-officer-editorial-production, Senior Communications Officer, Editorial & Production, GiveWell, marketing, senior, United States
-https://himalayas.app/companies/wns-global-services/jobs/associate-operations, Associate - Operations, WNS Global Services, operations, junior, Australia
-https://himalayas.app/companies/clio/jobs/account-manager, Account Manager, Clio, sales, manager, Mexico
 https://news.ycombinator.com/item?id=49595476, Director of Corp Dev · Product Marketing Associate · MLOps Engineer, Lucia, marketing, exec, Remote (Nyc
 https://job-boards.eu.greenhouse.io/hive/jobs/4969557101, Special Operations Manager UK, hive, operations, manager, Stoke-On-Trent
 https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4715389005, Product Manager II, razorpaysoftwareprivatelimited, product, manager, Bangalore
@@ -6522,112 +6371,236 @@ https://job-boards.greenhouse.io/orchestra/jobs/8407783002, Senior Account Execu
 https://job-boards.greenhouse.io/orchestra/jobs/8765212002, Senior Account Executive, Tech & Lifestyle, orchestra, sales, senior, New York
 https://job-boards.greenhouse.io/orchestra/jobs/8555243002, Vice President, Business Development, orchestra, bizdev, exec, New York
 https://job-boards.greenhouse.io/orchestra/jobs/8486064002, Vice President, Influencer Marketing, orchestra, marketing, exec, New York
-https://www.adzuna.co.uk/jobs/land/ad/5826703750?se=ICMq5aqq8RGlI_dq_IL75Q&utm_medium=api&utm_source=ff3fb262&v=AEEAD48D2CF0F8E11A3806B99BD7F79AB85CF54F, Higher Education Account Manager, UK Education, Amazon TA, sales, manager, Bonnyrigg
-https://www.adzuna.co.uk/jobs/land/ad/5837038706?se=EtDp5aqq8RGogquEo3zAlQ&utm_medium=api&utm_source=ff3fb262&v=936FFF57F928863D3FD96E510B91A49D7F545A38, Sales Advisor - Part Time Evenings, EE, sales, mid, Coedpenmaen
-https://www.adzuna.co.uk/jobs/land/ad/5840536048?se=EtDp5aqq8RGogquEo3zAlQ&utm_medium=api&utm_source=ff3fb262&v=4CDAA12DFB52C672E84A4386E283ACF2EDDED403, Sales Advisor, EE, sales, mid, Chirton
-https://www.adzuna.co.uk/jobs/land/ad/5840536087?se=EtDp5aqq8RGogquEo3zAlQ&utm_medium=api&utm_source=ff3fb262&v=707F81C0E5649A0A1F7CD4FF8FB085FB535D537D, Sales Advisor, EE, sales, mid, Hendon
-https://www.adzuna.co.uk/jobs/land/ad/5822403710?se=MC6G5qqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=E281D29339ED1957F5038E441A25663A5CB0A4DC, Apprentice Sales Advisor, EE, sales, intern, Hendon
-https://www.adzuna.co.uk/jobs/land/ad/5860062737?se=MC6G5qqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=84231AFBB53E23A85A9FDEADFD7672B918C97160, Sales Advisor, EE, sales, mid, Hyde Park
-https://www.adzuna.co.uk/jobs/land/ad/5842141757?se=MC6G5qqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=3916F7AE625DE55B54AA09AAA0FC23FF98E2CD6D, Sales Advisor - Part Time, EE, sales, mid, Wellfield
-https://www.adzuna.de/details/5859960692?utm_medium=api&utm_source=ff3fb262, Key Account Manager - Vertriebsinnendienst / Auftragsmanagement (m/w/d), Fröbel GmbH, sales, manager, Blaufelden
-https://www.adzuna.de/details/5867423198?utm_medium=api&utm_source=ff3fb262, Operations Manager / Betriebsleiter (m/w/d) – Systemgastronomie, HAPEKO Deutschland GmbH, operations, manager, Oldenburg
-https://www.adzuna.de/details/5845354421?utm_medium=api&utm_source=ff3fb262, Mitarbeiter Sales / Vertrieb Innendienst (m/w/d), IAB Reinraum-Produkte GmbH, sales, mid, Braunschweig
-https://www.adzuna.de/details/5872254253?utm_medium=api&utm_source=ff3fb262, Account Manager Gebäudekonnektivität (m/w/d), Ranger International & B2B, sales, manager, Berlin
-https://www.adzuna.de/details/5859954575?utm_medium=api&utm_source=ff3fb262, Mitarbeiter (m/w/d) Vertriebsinnendienst / Inside Sales, Geis Gruppe, sales, mid, Polch
-https://www.adzuna.de/details/5865134081?utm_medium=api&utm_source=ff3fb262, Key Account Manager Premium-Feinkost (m/w/d), Di Gennaro Feinkost- und Weinhandelsgesellschaft mbH, sales, manager, Stuttgart
-https://www.adzuna.de/details/5870128126?utm_medium=api&utm_source=ff3fb262, Verkaufsberater (w/m/d) After-Sales, Hofmann Fördertechnik GmbH, sales, mid, Deutschland
-https://www.adzuna.de/details/5861387022?utm_medium=api&utm_source=ff3fb262, IT Incident & Problem Manager – Tier2 Operations (w/m/d), 50Hertz Transmission GmbH, operations, manager, Berlin
-https://www.adzuna.de/details/5871562408?utm_medium=api&utm_source=ff3fb262, Sales Representative - Standort Karlsruhe (m/w/d), JACOB Elektronik GmbH, sales, mid, Karlsruhe
-https://www.adzuna.de/details/5869476694?utm_medium=api&utm_source=ff3fb262, Werkstudent Marketing (m/w/d), evm-Gruppe, marketing, mid, Koblenz
-https://www.adzuna.nl/land/ad/5864588340?se=3g_u7qqq8RGogquEo3zAlQ&utm_medium=api&utm_source=ff3fb262&v=CA573DB3BF48F21F47EF8800A840084253D262D1, Product Owner Next Gen Infrastructure, Schiphol, product, mid, Schiphol
-https://www.adzuna.in/land/ad/5840225388?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=227F76C7FE0072BC4D2BBDC2C8A902CA015D0C60, Territory Manager – Sales, Molbio Diagnostics, sales, manager, Mumbai
-https://www.adzuna.in/land/ad/5872266145?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=EE16BC68B95C2D13D481392171D55CB280450968, VP - Business Development, Vellstone, bizdev, exec, Hyderabad
-https://www.adzuna.in/land/ad/5842123756?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=BA3066D8FE8CAC768005F4FD75142C2B2E4E9DFA, Senior Social Media Manager, TipTop Things Limited, marketing, manager, India
-https://www.adzuna.in/land/ad/5873278042?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=BCF2D70EDFE73A4C0A0879A2EB523F16E366B5B7, Marketing Project Manager, WinnerBrands, marketing, manager, Chennai
-https://www.adzuna.in/land/ad/5873073779?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=69A8D7AD47EF3012A16392B50993275444F99510, Sr Manager Media & Ad Sales, Profile HR Consultants Pvt Ltd., sales, manager, India
-https://www.adzuna.in/land/ad/5857982532?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=1C2A61383B52DF539659ECFFA2512189EC3B3E33, Security Operations Governance & Modernization, AVP, Deutsche Bank, operations, mid, Bangalore
-https://www.adzuna.in/land/ad/5837737706?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=51AE8C631389F065F5F16A42622FC70693C55C9E, Sales Executive, Topsell Marketing, sales, mid, Jalandhar
-https://www.adzuna.in/land/ad/5858113519?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=EE011FDD233B709527AA52B742FC93C0FB4932AE, Medical Sales Representative, Pfizer, sales, mid, Belgaum
-https://www.adzuna.in/land/ad/5790410449?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=6956D21346672E2E99E9269948FA7E5900A333B3, Senior Analyst – Marketing Platform Operations, Novartis, marketing, senior, India
-https://www.adzuna.in/land/ad/5858113820?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=CC3D3B984F6669B59AF450D9AF1D6EF64EFDC83C, Project Manager, FiúnEx, operations, manager, India
-https://www.adzuna.in/land/ad/5840224751?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=91EF63B60522824C901CD26D5C6FBCE29CD8B474, Area Sales Executive, Blue Star Limited, sales, mid, Bangalore
-https://www.adzuna.in/land/ad/5859572353?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=DA1F119E083071474C6F266017C1CCB338147609, Business Development Lead, British Safety Council India, bizdev, mid, Mumbai
-https://www.adzuna.in/land/ad/5845682522?se=gAiJ8Kqq8RGk1YNI7v9OUQ&utm_medium=api&utm_source=ff3fb262&v=F64EA9B8A06D02EF36672EA3F5B19E5A6C0B1956, Business Development Manager, Student Alumni, bizdev, manager, Hyderabad
-https://www.adzuna.in/land/ad/5870527385?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=C248C851A278BDD438FCE911D0807A9424E18A6B, Senior Manager Customer Operations, Decklar, operations, manager, India
-https://www.adzuna.in/land/ad/5871992527?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=3CD88300ACAE7C5A7C67EE8F8DDAE4076D9B15DF, Sales Manager, HappyLocate, sales, manager, Bangalore
-https://www.adzuna.in/land/ad/5858623145?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=7B6B853336F6B7A23A64EDB4D36EFF0A22AF079D, Channel Partnership - EU/UK market, Hexnode, bizdev, mid, Chennai
-https://www.adzuna.in/land/ad/5871991868?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=E66CD64F0EDE5E12726520B5998BEF48D524FE1B, Business Development Manager, InnovyQ, bizdev, manager, Mumbai
-https://www.adzuna.in/land/ad/5861427515?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=765D39E14F87E7ADBDA47E87F6FD200F056BB597, Social Media Manager, Technonex | Software Development Partner for Healthcare & SaaS Leaders, marketing, manager, India
-https://www.adzuna.in/land/ad/5860980711?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=F29BA6B4BE35B31E2F0DB9A41B0A134B5788F239, Release Project Manager, UST, operations, manager, Bangalore
-https://www.adzuna.in/land/ad/5849297094?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=4EA286638DC9164EF04EA6747D248C5D1A43D4F2, Software Product Manager, HP, product, manager, Bangalore
-https://www.adzuna.in/land/ad/5845682502?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=50E88EC8B1B2B3825F14402B34A6BE7BD1D898CF, Academic Counselor : Inside Sales, Codeyoung, sales, mid, Bangalore
-https://www.adzuna.in/land/ad/5873277735?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=06DE30584417D6E28B8DA71BE964589FEFB0FC8D, Content Writer – FinTech and Growth, insureMO, growth, mid, Mumbai
-https://www.adzuna.in/land/ad/5811159043?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=1286EDDEEBE359469DF5D51F41CE023DB71FAE49, Sr Product Owner, BI & Analytics, Invesco, product, senior, India
-https://www.adzuna.in/land/ad/5858113947?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=B0D0ED501474FF1FBD9B42D2D31F0C983DFD23B1, Business Development Partner, NTT DATA, Inc., bizdev, exec, India
-https://www.adzuna.in/land/ad/5867270347?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=E4A88B6EC39B67FBD30BFB14C6BECCCB860FA1C9, Salesforce Sales Cloud Tech Lead, Tata Consultancy Services, sales, manager, India
-https://www.adzuna.in/land/ad/5846298727?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=469377FC9F6FF293A71D4E2A9A376FB3CAD3037B, Social Media Manager, Fay Wear Pvt. Ltd, marketing, manager, India
-https://www.adzuna.in/land/ad/5868794021?se=7D8w8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=A5C09A170AA42779C786F2C5FF05C178ACA24E6D, Customer Success Executive, Beyond Small Talk, sales, mid, Ahmedabad
-https://www.adzuna.in/land/ad/5858113820?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=CC3D3B984F6669B59AF450D9AF1D6EF64EFDC83C, Project Manager, FiúnEx, operations, manager, India
-https://www.adzuna.in/land/ad/5871993110?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=C5AF89C5830028BDBF6B8195C7EBBB32B5ACCA96, Enterprise Account Manager – Buyer Relationships, Flywl, sales, manager, Bangalore
-https://www.adzuna.in/land/ad/5860977875?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=157DF41CCA99F54653CBC723FF3F9849555C8079, Account Manager, BBDO Group India, sales, manager, India
-https://www.adzuna.in/land/ad/5871991113?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=BC8B9CC5961A9C48452545E4020F5886B6439AE9, Area Sales Manager, Baoxhin India Private Limited, sales, manager, New Delhi
-https://www.adzuna.in/land/ad/5849577217?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=EB4738C11E001E15D16AD3223ABF799B40811AC9, Sales Manager – Real Estate, DIYA GREENCITY PRIVATE LIMITED, sales, manager, Ghaziabad
-https://www.adzuna.in/land/ad/5862115394?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=015CAF1F81663DAF4B1661B188967365399F45D0, Sales Executive, HappyLocate, sales, mid, Bangalore
-https://www.adzuna.in/land/ad/5856666918?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=57666F703CD01C7923637DF1813CE5A3E36BDEED, Content Evaluator – Customer Support & LLM Benchmarking, Innodata Inc., marketing, mid, India
-https://www.adzuna.in/land/ad/5848119721?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=FC6B2850A204694559763451582C6A239C450631, Senior Project Manager, World Wide Technology, operations, manager, Mumbai
-https://www.adzuna.in/land/ad/5840225937?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=39D66B21423894191724AA948A93BBA134D0B9DB, Business Development Manager, rewalt:, bizdev, manager, India
-https://www.adzuna.in/land/ad/5867717388?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=76E814E4B69F3CE42C4C0E2697FAA8893CFB5938, Enterprise Product Sales Manager, InovarTech, sales, manager, Hyderabad
-https://www.adzuna.in/land/ad/5821999939?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=F2B2319D9CF36ADEAFD8076B42456849F2E6C60C, Sales Rep (Territory Business Executive), Novartis, sales, mid, Bihar
-https://www.adzuna.in/land/ad/5846663927?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=DA68445AC975E9135691F122F3AB82990970D913, Inside Sales Manager, BDO India, sales, manager, India
-https://www.adzuna.in/land/ad/5873073954?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=36F65927CEC5AEAAC177E2BEB8622503A203AB9A, Technical Sales Specialist, DSS Takara Bio India Pvt Ltd, sales, mid, Ahmedabad
-https://www.adzuna.in/land/ad/5871992027?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=05214A984E19AE47B82CA3AB8A29C5EF5170A8FF, Sales Manager- Heavy industrial- EU, Inovance, sales, manager, Delhi
-https://www.adzuna.in/land/ad/5867038173?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=6EE75E01D83F6E7F667D00462B9036D3488D2087, Key Account Manager, Classplus, sales, manager, Noida
-https://www.adzuna.in/land/ad/5871992680?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=3D08E770FE8BB105683DE4435B31A6EF9EBF03F2, Sales Officer (Freshers), propelld, sales, mid, Bangalore
-https://www.adzuna.in/land/ad/5870526701?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=5D6AFBC463197559820426E1D1E5C2CF9094D437, Sr Regional Sales Manager, A10 Networks, Inc, sales, manager, Mumbai
-https://www.adzuna.in/land/ad/5860973480?se=tv_X8aqq8RGS9tX3gPU9Ng&utm_medium=api&utm_source=ff3fb262&v=3A72E80E7BF4240BB16170C41AF1D706E631DE37, Senior Inside Sales Executive, Tezo, sales, senior, Hyderabad
-https://www.adzuna.es/details/5825430295?utm_medium=api&utm_source=ff3fb262, Scaled Customer Success – AEC Industry Advisor, UK I, Autodesk, sales, mid, España
-https://www.adzuna.es/details/5693526830?utm_medium=api&utm_source=ff3fb262, Social Media & Influencer Marketing specialist with Italian, URIACH, marketing, mid, Sant Cugat Del Vallès
-https://www.adzuna.es/details/5821850591?utm_medium=api&utm_source=ff3fb262, AP Operations with English, , operations, mid, Madrid
-https://www.adzuna.es/details/5868431707?utm_medium=api&utm_source=ff3fb262, Account Executive, Nordics, CrowdStrike, sales, mid, Barcelona
-https://www.adzuna.sg/details/5656055370?utm_medium=api&utm_source=ff3fb262, Senior/ Project Manager (PMP, Large Scale Projects), Talent Trader Group, operations, manager, Central
-https://www.adzuna.sg/details/5835365336?utm_medium=api&utm_source=ff3fb262, Head of Enterprise Sales - India (Remote), Chainguard, sales, exec, Singapore
-https://www.adzuna.sg/details/5731884276?utm_medium=api&utm_source=ff3fb262, Operations Graduate, Alfred H Knight Group, operations, entry, Singapore
-https://www.adzuna.sg/details/5816231931?utm_medium=api&utm_source=ff3fb262, VP of Windows & Private Cloud Operations, GIC Private Limited, operations, exec, Singapore
-https://www.adzuna.sg/details/5819594013?utm_medium=api&utm_source=ff3fb262, Sales Executive Associate - Lead-Provided, High Commissions, CAREER PRODUCTIONS, sales, junior, Singapore
-https://www.adzuna.sg/details/5859271299?utm_medium=api&utm_source=ff3fb262, Entry-Level Sales & Marketing: Training, Travel, Growth, SKILLMATCH RECRUITMENT, growth, entry, Singapore
-https://www.adzuna.sg/details/5870829459?utm_medium=api&utm_source=ff3fb262, Cyber Account Executive, Ensign InfoSecurity, sales, mid, Singapore
-https://www.adzuna.sg/details/5792480337?utm_medium=api&utm_source=ff3fb262, Social Media Marketing Intern, The Learning Lab, Singapore, marketing, intern, Singapore
-https://www.adzuna.sg/details/5873242618?utm_medium=api&utm_source=ff3fb262, SVP - Head of Institutional Sales, DBS Digital Exchange, Global Financial Markets, DBS Bank, sales, exec, Singapore
-https://www.adzuna.sg/details/5846580184?utm_medium=api&utm_source=ff3fb262, Junior Marketing & Promotions Executive (Training Provided), , marketing, junior, Singapore
-https://www.adzuna.sg/details/5860830276?utm_medium=api&utm_source=ff3fb262, APAC Aerospace GM: Growth, Operations & Compliance, GOOD JOB CREATIONS  PTE. LTD., growth, mid, Singapore
-https://www.adzuna.sg/details/5768943385?utm_medium=api&utm_source=ff3fb262, Strategy Manager, APAC, FLINTEX CONSULTING PTE. LTD., operations, manager, Singapore
-https://www.adzuna.sg/details/5833693740?utm_medium=api&utm_source=ff3fb262, Supply Operations Analyst (1 year contract), Terumo Asia Holdings, operations, mid, Singapore
-https://www.adzuna.sg/details/5862336578?utm_medium=api&utm_source=ff3fb262, Sales Manager, STR - Singapore, CoStar Group, sales, manager, Singapore
-https://www.adzuna.sg/details/5861977989?utm_medium=api&utm_source=ff3fb262, Power & Renewables Growth Specialist, Wood Mackenzie Asia Pacific Pte Ltd, growth, mid, Singapore
-https://www.adzuna.sg/details/5852685974?utm_medium=api&utm_source=ff3fb262, Full Stack Software Engineer (Content Processing), Centre for Strategic Infocomm Technologies, marketing, mid, Singapore
-https://www.adzuna.sg/details/5696598816?utm_medium=api&utm_source=ff3fb262, Porsche Consultant (Pre-owned Car Sales), Porsche Asia Pacific, sales, mid, Singapore
-https://www.adzuna.sg/details/5860837253?utm_medium=api&utm_source=ff3fb262, Strategic Partnerships Lead, SEA Growth, 354 Magnite Singapore PTE Ltd, growth, mid, Singapore
-https://www.adzuna.sg/details/5768944938?utm_medium=api&utm_source=ff3fb262, Logistics Operations & Reporting Coordinator, APM Terminals, operations, mid, Singapore
-https://www.adzuna.sg/details/5870530563?utm_medium=api&utm_source=ff3fb262, Head of Product Strategy & Growth, United Overseas Bank Limited, growth, exec, Singapore
-https://www.adzuna.sg/details/5840322337?utm_medium=api&utm_source=ff3fb262, Senior Regional Sales Manager, IP-TRIBE, sales, manager, Singapore
-https://www.adzuna.sg/details/5827610325?utm_medium=api&utm_source=ff3fb262, Senior Regional AI Strategy Product Manager, Shopee, product, manager, Singapore
-https://www.adzuna.sg/details/5768954406?utm_medium=api&utm_source=ff3fb262, Global Maritime Sales Leader — Data-Driven Growth, Focal Search Pte Ltd, growth, mid, Singapore
-https://www.adzuna.sg/details/5840490929?utm_medium=api&utm_source=ff3fb262, Core Ops Corporate Actions Analyst (Corporate Actions & Reference Data Hybrid Role), Capital Group, operations, mid, Singapore
-https://www.adzuna.sg/details/5834409917?utm_medium=api&utm_source=ff3fb262, Head of Organic Marketing, MoneySmart Group, marketing, exec, Singapore
-https://www.adzuna.sg/details/5846588933?utm_medium=api&utm_source=ff3fb262, Assistant Manager, Communications and Marketing, , marketing, manager, Singapore
-https://www.adzuna.sg/details/5849361450?utm_medium=api&utm_source=ff3fb262, Luxury Events Creative Director - Big Ideas & Team Growth, Melior, growth, exec, Singapore
-https://www.adzuna.sg/details/5797595974?utm_medium=api&utm_source=ff3fb262, IT Operations intern (6 months) Singapore Corporate IT, SEA Singapore, operations, intern, Singapore
-https://www.adzuna.sg/details/5846579875?utm_medium=api&utm_source=ff3fb262, Growth Builders Wanted, , growth, mid, Singapore
-https://www.adzuna.sg/details/5816888563?utm_medium=api&utm_source=ff3fb262, Regional Sales Director, CrowdStrike, sales, exec, Singapore
-https://www.adzuna.sg/details/5641050164?utm_medium=api&utm_source=ff3fb262, SR LEAD TECHNICAL ACCOUNT MANAGER, Lumen, sales, manager, Singapore
-https://www.adzuna.sg/details/5841862415?utm_medium=api&utm_source=ff3fb262, Operations Manager (Bunker) - Shipowner, Kerry Consulting, operations, manager, Singapore
-https://www.adzuna.sg/details/5859271279?utm_medium=api&utm_source=ff3fb262, Senior Asssistant Manager / Manager, Corporate Strategy, National University Polyclinics, operations, manager, Singapore
-https://www.adzuna.sg/details/5752511194?utm_medium=api&utm_source=ff3fb262, VP, Senior System Analyst, Group Technology & Ops, United Overseas Bank, operations, exec, Singapore
-https://www.adzuna.sg/details/5636066853?utm_medium=api&utm_source=ff3fb262, Sales Executive (Semiconductor/ Electronics Industry), Talent Trader Group, sales, mid, Central
-https://www.adzuna.sg/details/5780605837?utm_medium=api&utm_source=ff3fb262, Sales, Marketing & Events Intern, Rezonate, sales, intern, Singapore
-https://www.adzuna.sg/details/5859269550?utm_medium=api&utm_source=ff3fb262, Sales & Leadership Trainee – Entry Level Growth, AVARON PTE. LTD., growth, intern, Singapore
-https://www.adzuna.sg/details/5768944602?utm_medium=api&utm_source=ff3fb262, Senior Recruiter — Global Growth, Bonuses & Hybrid, MICHAEL PAGE INTERNATIONAL PTE LTD, growth, senior, Singapore
-https://www.adzuna.sg/details/5873591777?utm_medium=api&utm_source=ff3fb262, Technology Sales Director (ASEAN), TransPerfect, sales, exec, Singapore
-https://www.adzuna.sg/details/5844930045?utm_medium=api&utm_source=ff3fb262, APAC Customer Communications Specialist, UPS, marketing, mid, Singapore
-https://www.adzuna.sg/details/5846592020?utm_medium=api&utm_source=ff3fb262, Project Manager (Digital Assets, Tokenization), , operations, manager, Singapore
-https://www.themuse.com/jobs/bankofamerica/directorvice-president-treasury-sales-officer-fi-sales-global-payments-solutions-hong-kong, Director/Vice President, Treasury Sales Officer (FI Sales), Global Payments Solutions, Hong Kong, Bank of America, sales, exec, Hong Kong
+https://job-boards.greenhouse.io/anthropic/jobs/5391313008, Account Executive, Startups, anthropic, sales, mid, Dublin
+https://stripe.com/jobs/search?gh_jid=8158092, Core Recruiter (Risk, Partnerships, Operations), stripe, bizdev, mid, Singapore
+https://stripe.com/jobs/search?gh_jid=8176724, Sales Manager, Enterprise CEE, stripe, sales, manager, Warsaw
+https://stripe.com/jobs/search?gh_jid=8176730, Sales Manager, SMB, stripe, sales, manager, Dublin
+https://databricks.com/company/careers/open-positions/job?gh_jid=8756144002, Senior Revenue Accountant, databricks, sales, senior, Mountain View
+https://databricks.com/company/careers/open-positions/job?gh_jid=8737167002, Strategic Hunter Account Executive, databricks, sales, mid, Paris
+https://boards.greenhouse.io/figma/jobs/6161021004?gh_jid=6161021004, Account Executive, Mid-Market, Mandarin Speaking (Singapore), figma, sales, mid, Singapore
+https://job-boards.greenhouse.io/flexport/jobs/8184688, Account Manager, flexport, sales, manager, Melbourne
+https://job-boards.greenhouse.io/flexport/jobs/8185109, Global Operations Specialist, flexport, operations, mid, Los Angeles
+https://job-boards.greenhouse.io/flexport/jobs/8184585, Sales Executive, flexport, sales, mid, Melbourne
+https://boards.greenhouse.io/cloudflare/jobs/8173393?gh_jid=8173393, Senior, Majors Account Executive, cloudflare, sales, senior, Unknown
+https://boards.greenhouse.io/cloudflare/jobs/8181043?gh_jid=8181043, Senior Territory Account Executive - Beijing, cloudflare, sales, senior, Unknown
+https://boards.greenhouse.io/cloudflare/jobs/8172582?gh_jid=8172582, Territory Account Executive, Indonesia, cloudflare, sales, mid, Unknown
+https://jobs.ashbyhq.com/openai/19755930-3377-49c2-949c-192629eb4119, Consumer Marketing Manager, Japan, openai, marketing, manager, Tokyo
+https://jobs.ashbyhq.com/openai/fa312d19-bb9e-4569-b5ed-aed8aa45cd3b, Account Director, Mid-Market, openai, sales, exec, India
+https://www.arbeitnow.com/jobs/companies/hellofresh/senior-manager-global-price-discount-strategy-all-genders-berlin-berlin-104086, Senior Manager Global Price & Discount Strategy (all genders), hellofresh, operations, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/raisin/junior-product-manager-growth-platform-berlin-berlin-248988, Junior Product Manager - Growth Platform (m/f/d), raisin, product, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/sanity/remote-enterprise-account-executive-dach-249135, Enterprise Account Executive, DACH, Sanity, sales, mid, Remote In Germany
+https://www.arbeitnow.com/jobs/companies/munsch-chemie-pumpen-gmbh/senior-inside-sales-specialist-technischer-vertriebsinnendienst-pumpentechnik-maschinenbau-dach-ransbach-baumbach-64729, (Senior) Inside Sales Specialist (m/w/d) / Technischer Vertriebsinnendienst – Pumpentechnik | Maschinenbau | DACH, MUNSCH Chemie-Pumpen GmbH, sales, senior, Ransbach-Baumbach
+https://www.arbeitnow.com/jobs/companies/dss/senior-manager-operations-management-consulting-dach-dusseldorf-402090, Senior Manager – Operations Management Consulting- DACH, dss+, operations, manager, Dusseldorf
+https://www.arbeitnow.com/jobs/companies/soulhouse/senior-social-media-manager-in-vollzeit-gesucht-hamburg-332131, Senior Social Media Manager (m/w/d) in Vollzeit gesucht, Soulhouse, marketing, manager, Hamburg
+https://www.arbeitnow.com/jobs/companies/tandem/product-manager-parental-leave-cover-berlin-36609, Product Manager (parental leave cover), Tandem, product, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/vp-verbund-pflegehilfe-gmbh/werkstudent-im-marketing-mainz-359219, Werkstudent im Marketing m/w/d, Vp Verbund Pflegehilfe Gmbh, marketing, mid, Mainz
+https://www.arbeitnow.com/jobs/companies/ryze-digital/senior-sales-manager-ryze-digital-holding-gmbh-mainz-275384, (Senior) Sales Manager (m/w/d), Ryze Digital, sales, manager, Ryze Digital Holding Gmbh Mainz
+https://www.arbeitnow.com/jobs/companies/fact-finder/senior-customer-success-manager-b2b-saas-ecommerce-berlin-munchen-pforzheim-hybrid-111021, (Senior) Customer Success Manager (m/w/d) – B2B SaaS / eCommerce – Berlin, München, Pforzheim (Hybrid), Fact Finder, sales, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/ocumeda-ag/product-owner-medical-ai-munchen-229084, Product Owner (m/f/d) - Medical AI, Ocumeda Ag, product, mid, München
+https://www.arbeitnow.com/jobs/companies/adsquare/product-owner-sdv-data-products-berlin-43195, Product Owner – SDV Data Products (f/m/d), Adsquare, product, mid, Berlin
+https://www.arbeitnow.com/jobs/companies/qstar-gmbh/werkstudentin-creator-marketing-hamburg-462210, Werkstudent:in Creator Marketing (m/w/d), Qstar GmbH, marketing, mid, Hamburg
+https://www.arbeitnow.com/jobs/companies/giata-gmbh/community-social-media-manager-all-genders-teilzeit-max-32-std-woche-berlin-194190, Community & Social Media Manager (all genders) - Teilzeit (max. 32 Std./Woche), GIATA GmbH, marketing, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/giata-gmbh/community-social-media-manager-all-genders-part-time-max-32h-week-berlin-480516, Community & Social Media Manager (all genders) - Part-Time (max. 32h/week), GIATA GmbH, marketing, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/databricks/named-core-account-executive-retail-munich-125506, Named Core Account Executive - Retail, databricks, sales, mid, Munich
+https://www.arbeitnow.com/jobs/companies/zenjob/growth-lead-b2c-b2b-berlin-141796, Growth Lead B2C & B2B (f/m/d), Zenjob, growth, mid, Berlin
+https://www.arbeitnow.com/jobs/companies/zeit-ai/senior-business-development-representative-france-munich-353259, (Senior) Business Development Representative France (f/m/d), Zeit Ai, bizdev, senior, Munich
+https://www.arbeitnow.com/jobs/companies/brandleadership/senior-implementation-consultant-marketing-technology-hamburg-423239, Senior Implementation Consultant – Marketing Technology (d/f/m), Brandleadership, marketing, senior, Hamburg
+https://www.arbeitnow.com/jobs/companies/tablemedia/senior-sales-manager-lizenzvertrieb-berlin-426323, (Senior) Sales Manager Lizenzvertrieb (m/w/d), Tablemedia, sales, manager, Berlin
+https://www.arbeitnow.com/jobs/companies/valuenet-group/praktikant-all-genders-editorial-research-content-marketing-munchen-74326, Praktikant (all genders) Editorial Research & Content Marketing, Valuenet Group, marketing, mid, München
+https://www.arbeitnow.com/jobs/companies/valuenet-group/praktikant-all-genders-6-monate-im-marketing-fokus-events-munchen-303202, Praktikant (all genders) 6 Monate im Marketing – Fokus Events, Valuenet Group, marketing, mid, München
+https://www.arbeitnow.com/jobs/companies/valuenet-group/praktikant-all-genders-3-6-monate-im-creative-content-team-munchen-214949, Praktikant (all genders) 3-6 Monate im Creative Content Team, Valuenet Group, marketing, mid, München
+https://www.arbeitnow.com/jobs/companies/valuenet-group/senior-social-media-manager-all-genders-munchen-198070, (Senior) Social Media Manager (all genders), Valuenet Group, marketing, manager, München
+https://www.arbeitnow.com/jobs/companies/valuenet-group/senior-social-media-manager-all-genders-munchen-56843, (Senior) Social Media Manager (all genders), Valuenet Group, marketing, manager, München
+https://www.arbeitnow.com/jobs/companies/vrame-consult-gmbh/product-owner-all-genders-berlin-317054, Product Owner (all genders), Vrame Consult Gmbh, product, mid, Berlin
+https://www.arbeitnow.com/jobs/companies/planetlabs/remote-director-pre-sales-global-di-313151, Director, Pre-Sales Global D&I, planetlabs, sales, exec, Remote
+https://www.arbeitnow.com/jobs/companies/remotewoman/product-manager-canada-france-spain-or-the-uk-230135, Product Manager, remotewoman, product, manager, Canada
+https://www.arbeitnow.com/jobs/companies/miebach-consulting-gmbh/praktikantin-supply-chain-strategy-und-logistikplanung-ab-november-2026-berlin-471768, Praktikant*in - Supply Chain Strategy und Logistikplanung ab November 2026, Miebach Consulting GmbH, operations, mid, Berlin
+https://www.arbeitnow.co.uk/jobs/companies/deliveroo/senior-product-manager-core-people-technology-london-277821, Senior Product Manager, Core People Technology, Deliveroo, product, manager, London
+https://www.arbeitnow.co.uk/jobs/companies/deliveroo/smb-account-manager-uki-manchester-108287, SMB Account Manager - UKI, Deliveroo, sales, manager, Manchester
+https://www.arbeitnow.co.uk/jobs/companies/precisionmedicinegroup/remote-senior-manager-clinical-operations-clinical-process-owner-327660, Senior Manager, Clinical Operations - Clinical Process Owner, Precisionmedicinegroup, operations, manager, Remote
+https://www.arbeitnow.co.uk/jobs/companies/xyz-reality/account-executive-contech-united-kingdom-256538, Account Executive - ConTech, Xyz Reality, sales, mid, United Kingdom
+https://www.arbeitnow.co.uk/jobs/companies/xyz-reality/strategic-account-executive-london-137290, Strategic Account Executive, Xyz Reality, sales, mid, London
+https://www.arbeitnow.co.uk/jobs/companies/seccl/group-product-manager-london-335983, Group product manager, Seccl, product, manager, London
+https://www.arbeitnow.co.uk/jobs/companies/seccl/operations-analyst-payments-edinburgh-34553, Operations analyst - Payments, Seccl, operations, mid, Edinburgh
+https://www.arbeitnow.co.uk/jobs/companies/seccl/operations-delivery-lead-pension-bath-401506, Operations delivery lead - Pension, Seccl, operations, mid, Bath
+https://www.arbeitnow.co.uk/jobs/companies/primerio/security-engineer-iii-security-operations-united-kingdom-19370, Security Engineer III - Security Operations, Primer.io, operations, mid, United Kingdom
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/sales-development-representative-french-speaking-europe-amsterdam-186597, Sales Development Representative - French Speaking (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/account-executive-german-speaking-europe-amsterdam-402386, Account Executive - German Speaking (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/remote-account-executive-uk-356884, Account Executive (UK), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/enterprise-sales-development-representative-europe-amsterdam-67490, Enterprise Sales Development Representative (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/enablement-and-conversion-manager-revenue-operations-amsterdam-327217, Enablement and Conversion Manager, Revenue Operations, Nivoda, sales, manager, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/account-executive-french-speaking-europe-amsterdam-347347, Account Executive - French Speaking (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/sales-development-representative-german-speaking-europe-amsterdam-152927, Sales Development Representative - German Speaking (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/sales-development-representative-italian-speaking-europe-amsterdam-227443, Sales Development Representative - Italian Speaking (Europe), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/nivoda/remote-sales-development-representative-uk-135226, Sales Development Representative (UK), Nivoda, sales, mid, Remote
+https://www.arbeitnow.co.uk/jobs/companies/wppproduction/business-director-global-coffee-brand-london-119200, Business Director - Global Coffee Brand, Wppproduction, marketing, exec, London
+https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-product-data-analyst-consumer-growth-london-103485, Senior Product Data Analyst - Consumer Growth, SumUp, growth, senior, London
+https://www.arbeitnow.co.uk/jobs/companies/chainalysis/sr-product-marketing-manager-united-kingdom-429175, Sr Product Marketing Manager, Chainalysis, marketing, manager, United Kingdom
+https://www.arbeitnow.co.uk/jobs/companies/filigran/senior-customer-success-manager-cybersecurity-emea-united-kingdom-77538, Senior Customer Success Manager - Cybersecurity (EMEA), Filigran, sales, manager, United Kingdom
+https://www.arbeitnow.co.uk/jobs/companies/iwoca/marketing-acquisition-lead-credit-compass-london-283073, Marketing Acquisition Lead - Credit Compass, iwoca, marketing, mid, London
+https://www.arbeitnow.co.uk/jobs/companies/iwoca/junior-data-scientist-sales-marketing-london-52590, Junior Data Scientist - Sales & Marketing, iwoca, sales, junior, London
+https://www.arbeitnow.co.uk/jobs/companies/transperfect/account-executive-financial-services-london-186084, Account Executive - Financial Services, TransPerfect, sales, mid, London
+https://www.arbeitnow.co.uk/jobs/companies/wundermanthompson/associate-director-commercial-strategy-health-london-251067, Associate Director , Commercial Strategy - Health, Wundermanthompson, operations, exec, London
+https://www.arbeitnow.co.uk/jobs/companies/amplitude/senior-customer-success-architect-london-114193, Senior Customer Success Architect, Amplitude, sales, staff, London
+https://www.arbeitnow.co.uk/jobs/companies/wpp-production/business-director-global-coffee-brand-london-278150, Business Director - Global Coffee Brand, WPP Production, marketing, exec, London
+https://www.arbeitnow.co.uk/jobs/companies/jobgether/account-executive-uk-17298, Account Executive, Jobgether, sales, mid, Uk
+https://www.arbeitnow.fr/jobs/companies/archimed/ai-product-owner-lyon-france-paris-483806, AI Product Owner (Lyon, France), Archimed, product, mid, Paris
+https://www.arbeitnow.fr/jobs/companies/archimed/ai-product-owner-lyon-france-363201, AI Product Owner (Lyon, France), Archimed, product, mid, Lyon
+https://www.arbeitnow.fr/jobs/companies/biggie/senior-salesforce-ops-specialist-freelance-paris-149587, Senior Salesforce Ops Specialist - FREELANCE (H/F/X), Biggie, operations, senior, Paris
+https://www.arbeitnow.fr/jobs/companies/n2jsoft/remote-product-manager-confirme-h-f-saas-fintech-lyon-122525, Product Manager confirmé H/F - SaaS - Fintech, N2JSoft, product, manager, Poste À Distance
+https://www.arbeitnow.fr/jobs/companies/mistralai/customer-success-emea-paris-203444, Customer Success, EMEA, Mistral.ai, sales, mid, Paris
+https://www.arbeitnow.fr/jobs/companies/mistralai/solution-operations-manager-value-realization-paris-254054, Solution Operations Manager, Value Realization, Mistral.ai, operations, manager, Paris
+https://jobicy.com/jobs/152765-manager-field-channel-marketing-namer, Manager, Field & Channel Marketing - NAMER, Tines, marketing, manager, Canada
+https://jobicy.com/jobs/152758-account-executive-16, Account Executive, Appen, sales, mid, Usa
+https://jobicy.com/jobs/152753-regional-sales-manager-ohio, Regional Sales Manager - Ohio, BigID, sales, manager, Usa
+https://jobicy.com/jobs/152750-software-engineer-ii-mobile-developer-android-kotlin-mobile-app-growth, Software Engineer II (Mobile Developer - Android/Kotlin) - Mobile App Growth, Klaviyo, growth, mid, Usa
+https://jobicy.com/jobs/152749-pre-post-sales-solutions-architect, Pre/Post Sales Solutions Architect, Gremlin, sales, staff, Usa
+https://jobicy.com/jobs/152748-regional-sales-manager-minnesota, Regional Sales Manager - Minnesota, BigID, sales, manager, Usa
+https://jobicy.com/jobs/152747-senior-product-manager-profiles-platform, Senior Product Manager, Profiles Platform, Klaviyo, product, manager, Usa
+https://jobicy.com/jobs/152744-product-manager-4-day-week-remote, Product Manager - 4 Day Week + Remote, Laminar Projects, product, manager, Poland
+https://jobicy.com/jobs/152735-sr-technical-account-manager-west, Sr Technical Account Manager - West, Dataiku, sales, manager, Usa
+https://jobicy.com/jobs/152732-senior-product-manager-catalog, Senior Product Manager, Catalog, SeatGeek, product, manager, Usa
+https://jobicy.com/jobs/152731-sr-technical-account-manager-east, Sr Technical Account Manager - East, Dataiku, sales, manager, Usa
+https://jobicy.com/jobs/152730-enterprise-sales-executive, Enterprise Sales Executive, Datadog, sales, mid, Usa
+https://jobicy.com/jobs/152729-client-strategy-manager-corporate-brands-retail, Client Strategy Manager - Corporate Brands & Retail, YipitData, operations, manager, Usa
+https://jobicy.com/jobs/152725-enterprise-sales-engineer-rockies, Enterprise Sales Engineer - Rockies, Datadog, sales, mid, Usa
+https://jobicy.com/jobs/152724-client-strategy-manager, Client Strategy Manager, YipitData, operations, manager, Usa
+https://jobicy.com/jobs/152723-outbound-sales-development-representative, Outbound Sales Development Representative, Fleetio, sales, mid, Usa
+https://jobicy.com/jobs/152721-senior-account-executive-public-sector-germany, Senior Account Executive, Public Sector Germany, Dataiku, sales, senior, Germany
+https://jobicy.com/jobs/152720-enterprise-sales-engineer-fed, Enterprise Sales Engineer - FED, Datadog, sales, mid, Usa
+https://jobicy.com/jobs/152718-outbound-sales-development-manager, Outbound Sales Development Manager, Fleetio, sales, manager, Usa
+https://jobicy.com/jobs/152716-product-manager-business-applications, Product Manager – Business Applications, Dataiku, product, manager, France
+https://jobicy.com/jobs/152710-director-enterprise-sales-engineering-us-central, Director, Enterprise Sales Engineering - US Central, Datadog, sales, exec, Usa
+https://jobicy.com/jobs/152708-client-success-manager-2, Client Success Manager, SeatGeek, sales, manager, Usa
+https://jobicy.com/jobs/152706-director-enterprise-sales-3, Director, Enterprise Sales, Datadog, sales, exec, Usa
+https://jobicy.com/jobs/152704-senior-demand-generation-manager, Senior Demand Generation Manager, DataGrail, growth, manager, Usa
+https://jobicy.com/jobs/152703-cyber-security-gtm-leader, Cyber Security GTM Leader, Databricks, bizdev, mid, Usa
+https://jobicy.com/jobs/152700-mid-market-account-executive-3, Mid Market Account Executive, DataGrail, sales, mid, Usa
+https://jobicy.com/jobs/152696-customer-success-manager-44, Customer Success Manager, DataGrail, sales, manager, Usa
+https://himalayas.app/companies/drips/jobs/client-success-manager-183856310, Client Success Manager, Drips, sales, manager, United States
+https://himalayas.app/companies/lifelancer/jobs/medical-technology-advanced-services-sales-director, Medical Technology Advanced Services, Sales Director, Lifelancer, sales, exec, United States
+https://himalayas.app/companies/debthammer/jobs/sales-representative-argentina-6618819470, Sales Representative Argentina, DebtHammer, sales, mid, Argentina
+https://himalayas.app/companies/debthammer/jobs/sales-representative-work-from-home-philippines-5262567520, Sales Representative (Work from Home) Philippines, DebtHammer, sales, mid, Philippines
+https://himalayas.app/companies/talentuch/jobs/channel-product-marketing-manager, Channel & Product Marketing Manager, Talentuch, marketing, manager, United States
+https://himalayas.app/companies/foxelli-group/jobs/brand-manager-e-commerce-100-remote-eu, Brand Manager | E-Commerce | 100% Remote EU, Foxelli Group, marketing, manager, Albania
+https://himalayas.app/companies/coalescence-cloud/jobs/account-executive-7812163450, Account Executive, Coalescence Cloud, sales, mid, United States
+https://himalayas.app/companies/vald/jobs/client-success-manager-germany, Client Success Manager - Germany, VALD, sales, manager, Germany
+https://job-boards.greenhouse.io/amplitude/jobs/8785256002, Senior Customer Success Architect, amplitude, sales, staff, London
+https://jobs.ashbyhq.com/skydropx/9cdfbc87-de6e-4a90-81c7-2f81a91afb70, Product Manager Sr, skydropx, product, manager, Argentina
+https://jobs.ashbyhq.com/ashby/08b6342c-d5c0-4864-a4db-28027d241cbe, Technical Solutions Consultant - Americas, ashby, sales, mid, Remote
+https://job-boards.greenhouse.io/alpaca/jobs/6161890004, Trading Operations Associate - West Coast, alpaca, operations, junior, Remote
+https://job-boards.greenhouse.io/able/jobs/8785511002, Operations Analyst (Finance), able, operations, mid, Remote
+https://job-boards.greenhouse.io/able/jobs/8610714002, Technical Program Manager, able, operations, manager, Remote
+https://apply.workable.com/j/FD8BD62E71, Digital Marketing Head / Digital Brand marketing manager, weekday-1, marketing, manager, Noida
+https://apply.workable.com/j/844804038F, Engineering / manufacturing / technical operations Evaluator, weekday-1, operations, mid, United States
+https://apply.workable.com/j/B2EAD69876, IT Sales Manager, weekday-1, sales, manager, Goa
+https://apply.workable.com/j/610C834BBE, Nonprofit / philanthropy / community programs Evaluator, weekday-1, marketing, mid, United States
+https://apply.workable.com/j/9C0BB6C5A0, Partner Growth Manager, weekday-1, growth, exec, India
+https://apply.workable.com/j/24A619D4DD, Pricing / ROI / revenue economics Evaluator, weekday-1, sales, mid, United States
+https://apply.workable.com/j/FAF242595C, Sales Manager, weekday-1, sales, manager, Hyderabad
+https://apply.workable.com/j/107DFCBB72, Senior Product Manager - Presales, weekday-1, product, manager, Bangalore
+https://www.prospa.com/about-us/careers?gh_jid=8185377, New Business Sales Consultant, prospa, sales, mid, Sydney
+https://jobs.ashbyhq.com/firecrawl/b1db13d1-402c-40e9-95fa-4ac67bacb078, Legal Operations Manager, firecrawl, operations, manager, San Francisco
+https://jobs.ashbyhq.com/concoursetech/f9199b51-d3b3-4a17-9eda-989fe3aae43f, Founding GTM Engineer, concoursetech, bizdev, mid, New York
+https://jobs.ashbyhq.com/concoursetech/d26b9592-5fc0-4502-b3df-dd13ec14bffb, Forward Deployed Product Manager, concoursetech, product, manager, New York
+https://jobs.ashbyhq.com/concoursetech/01fbce6b-e4ce-4b8b-a432-91b918b77ce7, Deployment Operations & Customer Success Manager, concoursetech, sales, manager, New York
+https://jobs.ashbyhq.com/concoursetech/575d0679-3860-4a3e-8a2d-45c3d13d63d3, Biz Ops, Growth, concoursetech, growth, mid, New York
+https://jobs.ashbyhq.com/legora/42f62bc1-edef-4406-ab82-2dc8a09de327, Enterprise Account Executive - Japan, legora, sales, mid, Tokyo
+https://jobs.ashbyhq.com/phonely/308f5118-ead1-4cb3-a9b3-21d9cd2da5de, Founding Content Marketing Lead, phonely, marketing, mid, San Francisco
+https://jobs.ashbyhq.com/zeit-ai/4ccc5f79-d2ba-49cb-853c-23344499c12f, (Senior) Business Development Representative France (f/m/d), zeit-ai, bizdev, senior, Munich
+https://jobs.ashbyhq.com/nox-metals/ba9f45c8-88ff-49c7-9195-4f7f6b3687ea, Senior Operations, nox-metals, operations, senior, United States
+https://www.adzuna.co.uk/jobs/land/ad/5874285809?se=vI9zW26r8RG9N4UXtMJj8A&utm_medium=api&utm_source=ff3fb262&v=9D066D05766654C53AA19819774F1A03FD08598E, Business Development Executive (Sussex/Kent), Sky, bizdev, mid, Isleworth
+https://www.adzuna.co.uk/jobs/land/ad/5842141759?se=fnIeXG6r8RGsJNkd9qy0NQ&utm_medium=api&utm_source=ff3fb262&v=A468E9CD0FE3C1DB5C43A6F252B90FB308CB4F49, Sales Agent, EE, sales, mid, Pelaw
+https://www.adzuna.co.uk/jobs/land/ad/5840536045?se=fnIeXG6r8RGsJNkd9qy0NQ&utm_medium=api&utm_source=ff3fb262&v=C5C76FF17B7BE2F7AE54EEC079C4490500105717, Sales Operator, EE, sales, mid, Great Usworth
+https://www.adzuna.de/land/ad/5861926648?se=pkLxXm6r8RGZIuV4ZMp6cg&utm_medium=api&utm_source=ff3fb262&v=1EA10849BBE98500E4C19D639EC33B37A54F934C, Account Manager (m/w/d) Outgoing Funk Alliance Division, Funk - Internationaler Versicherungsmakler und Risk Consultant, bizdev, manager, Hamburg
+https://www.adzuna.de/land/ad/5858005042?se=kKNzX26r8RGH3IjHe2oBVQ&utm_medium=api&utm_source=ff3fb262&v=A98E0B94953639A050342EF2728D008B9537450C, Account Manager / Vertriebsmitarbeiter Gebäudeautomation (m/w/d) im Bereich Systems, SAUTER Deutschland Sauter-Cumulus GmbH, sales, manager, Gera
+https://www.adzuna.de/land/ad/5874313673?se=kKNzX26r8RGH3IjHe2oBVQ&utm_medium=api&utm_source=ff3fb262&v=4D1C804FC8EA2186D72463BE0633F92850FF8EB8, Praktikant*in International Rental Sales Mercedes-Benz PKW (Pflicht-Praktikum), Mercedes-Benz AG, sales, mid, Stuttgart
+https://www.adzuna.nl/land/ad/5864588291?se=RH1VY26r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=B5A548CC08BBC67A2FB1131866A1811630F2E5CC, Product Owner NGI, Schiphol, product, mid, Schiphol
+https://www.adzuna.in/land/ad/5827735804?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=71030B9134410DD6A95167EDE8D9EF3BA1B43567, Senior Business Development Executive, Alp Consulting Ltd., bizdev, senior, Bangalore
+https://www.adzuna.in/land/ad/5874818380?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=87D8679662C943385821244B524F724163E440B3, Specialist, Center of Excellence Revenue Accounting, S&P Global, sales, mid, Hyderabad
+https://www.adzuna.in/land/ad/5860981856?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=AAD9A5290579971997C34C9B4C9A6A1E58A5D8FD, Inside Sales Representative, NEXUS CONSULTING SOLUTIONS, sales, mid, Bangalore
+https://www.adzuna.in/land/ad/5840225193?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=82F63D55430A8AE3366FCB6F365385E916BD69CA, Business Development Manager, Lubi Electronics, bizdev, manager, Ahmedabad
+https://www.adzuna.in/land/ad/5849297094?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=4EA286638DC9164EF04EA6747D248C5D1A43D4F2, Software Product Manager, HP, product, manager, Bangalore
+https://www.adzuna.in/land/ad/5852763553?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=67A89D0BF6B983FEC863E19650E1512509025EAB, Demand Generation Executive, On Direct Marketing Services, growth, mid, India
+https://www.adzuna.in/land/ad/5860984304?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=C985C90399498E8DFC16D9B1BB6DE115E7857860, Project Manager, Mastech Digital, operations, manager, Chennai
+https://www.adzuna.in/land/ad/5871992140?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=33E9E1EA088058D7C1CE5CB0365D52480680A408, Senior Executive - Ad Ops, Dentsu India, operations, senior, Mumbai
+https://www.adzuna.in/land/ad/5840224725?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=836D795A8C372C15197435378161309F680BB1A0, Business Development Executive, DEV ABRASIVE PRIVATE LIMITED, bizdev, mid, India
+https://www.adzuna.in/land/ad/5870529189?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=F11F348CFCDED9E23F66AF16479A0F5E297F65E1, Social Media Manager, Pepper, marketing, manager, Mumbai
+https://www.adzuna.in/land/ad/5845682675?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=D5535B26EF304FD11F60EFA622F597F4153AFD75, Regional Sales Manager, Savino Del Bene, sales, manager, New Delhi
+https://www.adzuna.in/land/ad/5857169058?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=20CF73FBC19A1A317942CD0D554FE8D5B7FE6A19, Mobility Sales Lead, Jio, sales, mid, Dimapur
+https://www.adzuna.in/land/ad/5849577090?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=87E722DA1336B0E0FC451E70CF3A9D5AF0AD95B6, Regional Sales Manager, Taggd, sales, manager, Bangalore
+https://www.adzuna.in/land/ad/5873074762?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=F160C8E7634462C4FBFCC482DCB953C39B800E52, Sales Development Representative, Edenred, sales, mid, Mumbai
+https://www.adzuna.in/land/ad/5875419848?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=AF29197D25F87F088386E42E3EC8C56BA1348005, Sales Performance Manager-Automobile(OEM)-Mumbai/Bangalore, UNISON INTERNATIONAL CONSULTING, sales, manager, Mumbai
+https://www.adzuna.in/land/ad/5852477118?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=665DDA26E9452E1459E697A8977FD23CE8D84DEA, Sales Account Manager, airtel, sales, manager, Ahmedabad
+https://www.adzuna.in/land/ad/5867037781?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=F0740BD2FBE93D2CDBA5C770AAC3E36E16A18ED9, Business Development Executive, RDT Technology, bizdev, mid, Jaipur
+https://www.adzuna.in/land/ad/5857168340?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=B77B056EBEA6AC98165C2B0FDD7A120BA2F11A15, Deputy Manager/Manager - Channel Sales (Inside), Hero Vired, sales, manager, India
+https://www.adzuna.in/land/ad/5801399726?se=_o_WZW6r8RGyxtY0rUukWA&utm_medium=api&utm_source=ff3fb262&v=5A5A559FCD3A0251175493D0154C8602D402449E, Business Development, Grace International India, bizdev, mid, West Delhi
+https://www.adzuna.in/land/ad/5875419794?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=9EDDF7A5B1456D0987F371DC9AD97E75F2B84C86, Partnership Manager (SaaS), Loop Subscriptions, bizdev, manager, India
+https://www.adzuna.in/land/ad/5867037531?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=75BCC1D52990BA6FCE958E9BAC20D9176DB2EFD9, Business Development Executive, TecSight, bizdev, mid, Mumbai
+https://www.adzuna.in/land/ad/5850906601?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=960732EF7EF430A5E93F5D755DAA5F8C87FC8C6A, Invoice Operations, NCT, Deutsche Bank, operations, mid, Jaipur
+https://www.adzuna.in/land/ad/5838134045?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=CB6E702EFB33C07AEBCA7B494E960D26EBD40DDA, Customer Success Associate (KAM), Unicommerce, sales, junior, Mumbai
+https://www.adzuna.in/land/ad/5849889294?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=E08C2C1A4CE36236C0431294E9ED68CF7AB1293D, Java Customer Success Specialist (NA region), Oracle, sales, mid, Noida
+https://www.adzuna.in/land/ad/5868793047?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=E6E5AF97640840BC302728FE402006B1D1BA29A7, US Sales Tax Lead, IHG Hotels & Resorts, sales, mid, India
+https://www.adzuna.in/land/ad/5873074025?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=F3DE4F4A31D7090E1F79744EDF5F55F2C365F3E6, Senior Manager Strategic Projects - CEO's Office, GUS Global Services India Pvt. Ltd., operations, exec, New Delhi
+https://www.adzuna.in/land/ad/5840224761?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=274655A8E1BAA7CFE95099D2AC7F7C85A189C24E, Business Development Manager, Rose International, bizdev, manager, India
+https://www.adzuna.in/land/ad/5831966190?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=C9140CCCE18AB98F683F271319552C7EA52DCE8F, Implementation Project Manager, TMF Group, operations, manager, India
+https://www.adzuna.in/land/ad/5846299584?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=319FADD5C33738C88E890C2C873C8C6CEEF7535F, Associate Sales Consultant, Policybazaar.com, sales, junior, India
+https://www.adzuna.in/land/ad/5867037432?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=DC874E68059E05A12A0353667C191E3505F3A7E2, Business Development Executive (Fresher), Algonox Technologies, bizdev, mid, Hyderabad
+https://www.adzuna.in/land/ad/5862123223?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=7E2398E2B5498D45418ED3FAEBDEF3588B3079E5, Sales Engineer, Manufacturing Excellence Solutions LLP, sales, mid, India
+https://www.adzuna.in/land/ad/5801404502?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=5454867959E7A8FBF15AB12D14562218C4CAE0CF, Business Development Manager - North America, Elevati Infotech Pvt Ltd, bizdev, manager, India
+https://www.adzuna.in/land/ad/5846662731?se=qHhIZm6r8RGl-_JRamYmYw&utm_medium=api&utm_source=ff3fb262&v=58CD86A9D25BB9BBA0A9AE4DCDCA65636855B1CF, Account Manager, Pintola, sales, manager, Ahmedabad
+https://www.adzuna.in/land/ad/5870858896?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=F15F2C3D3631F0184011D2ADC85CC145882BC089, Techno Commercial Sales Specialist, Next Digital Recruitment, sales, mid, India
+https://www.adzuna.in/land/ad/5869425874?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=0BF5BDA7BC266345948279E894002B2499944234, Senior Sales Manager – University Partnerships (Food & Cafeteria Solutions), FOOD TECH COMPANY, bizdev, manager, India
+https://www.adzuna.in/land/ad/5867036114?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=EFBCA727546E61345DC1AA47488488856ADBC021, Creative Project Manager [T500-29026], Albertsons Companies India, operations, manager, Bangalore
+https://www.adzuna.in/land/ad/5801395273?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=97A513484D180F1AB676CC10441BACDE3D489E98, Account Manager - Metrology - India, SHINING 3D, sales, manager, New Delhi
+https://www.adzuna.in/land/ad/5871353258?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=7D3FC26399E93FCCB7D05339344D2E56DA708889, Academic Counselor – EdTech Sales | Student Counseling & Admissions | Campus Location: Pandian Nagar, Dindigul, Tamil Nadu., Boston Institute of Analytics, sales, mid, Dindigul
+https://www.adzuna.in/land/ad/5870527052?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=D5A8FEFF41EE909D5D8E92ACF14F612E78BFB3DA, Sales manager (credit rating), Intellectual Capital HR Consulting Pvt. Ltd., sales, manager, Mumbai
+https://www.adzuna.in/land/ad/5859571549?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=940B414421D94D0D0EEEE68BE4C1DBC4B7EC359D, Executive- Content Writer & Editor, UDIT - University of Design, Innovation and Technology, marketing, mid, India
+https://www.adzuna.in/land/ad/5855006985?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=8CA78DAC1756FE22955D27BDEE54034B4CA55F49, Microsoft Global Alliance Business Development, Infrastructure Modernization, Kyndryl, bizdev, mid, Bangalore
+https://www.adzuna.in/land/ad/5859574097?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=220B8D554C6DDA1277EF8B828F4599EA17800777, Tour Operations Executive, Finest Journeys Of India, operations, mid, Mumbai
+https://www.adzuna.in/land/ad/5871992589?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=5ED889FCE90B6EFEAA65C088FAD6480E758EE8A1, Head of Business Development, RIKUN MANUFACTURING PVT LTD, bizdev, exec, India
+https://www.adzuna.in/land/ad/5845683340?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=B362BA58CAA2BF2079A23DA6F3EFFD62E1A55398, Account Manager, Experis India, sales, manager, India
+https://www.adzuna.in/land/ad/5867036015?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=369402503077C2BE70963610196DB76F8F048A87, Business Development Manager, The Leaders Hive, bizdev, manager, Bangalore
+https://www.adzuna.in/land/ad/5840637210?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=F1AF5A851E4F3E4BA5FFB31D32F676DC94D00008, Project Manager-Oracle Cloud ERP Testing Implementation, Opkey, operations, manager, Noida
+https://www.adzuna.in/land/ad/5858113903?se=cFOgZm6r8RG3C7W4H6Pk-A&utm_medium=api&utm_source=ff3fb262&v=52B639DD4755D1EC7CA1C9EEBC0888F8A61866E1, Account Manager- Marketplace / Quick Commerce, Decathlon, sales, manager, Noida
+https://www.adzuna.es/details/5807568479?utm_medium=api&utm_source=ff3fb262, Content Manager, STANDBY.es, marketing, manager, España
+https://www.adzuna.sg/land/ad/5864115231?se=3GKuaW6r8RGH3IjHe2oBVQ&utm_medium=api&utm_source=ff3fb262&v=DA7FA07C5CC994075BA4E69D8631239A141343B2, Marketing Executive, Tech Data, marketing, mid, Singapore
+https://www.adzuna.sg/details/5846589042?utm_medium=api&utm_source=ff3fb262, Manager, Corporate Communications & Marketing, , marketing, manager, Singapore
+https://www.adzuna.sg/details/5868798730?utm_medium=api&utm_source=ff3fb262, P2P Partner Operations Director, OKX, operations, exec, Singapore
+https://www.adzuna.sg/details/5812362310?utm_medium=api&utm_source=ff3fb262, Data Product Manager Lead, Hytech, product, manager, Singapore
+https://www.adzuna.sg/details/5859268889?utm_medium=api&utm_source=ff3fb262, Legal Project Lead — Law Firm Ops & Tech, Kerry Consulting, operations, mid, Singapore
+https://www.adzuna.sg/details/5842749641?utm_medium=api&utm_source=ff3fb262, Product Owner, Sourcing Technology, VF Corporation, product, mid, Singapore
+https://www.adzuna.sg/details/5768953191?utm_medium=api&utm_source=ff3fb262, Director, Global Digital Transformation & Operations, Ultra Clean Technology, operations, exec, Singapore
+https://www.adzuna.sg/details/5473151352?utm_medium=api&utm_source=ff3fb262, Assoc Mgr, Lab Operations, IQVIA, operations, manager, Singapore
+https://www.adzuna.sg/details/5873695186?utm_medium=api&utm_source=ff3fb262, Sales Support Coordiator / Officer ( EDI & Billing ), Flintex Consulting Pte Ltd, sales, mid, Singapore
+https://www.adzuna.sg/details/5854143845?utm_medium=api&utm_source=ff3fb262, Strategic SAP Procurement & Transformation Director, DELOITTE SINGAPORE T&T PTE. LTD., operations, exec, Singapore
+https://www.adzuna.sg/details/5727033241?utm_medium=api&utm_source=ff3fb262, Senior/ Project Manager (Construction/Design Industry), Talent Trader Group, operations, manager, Central
+https://www.adzuna.sg/details/5857939185?utm_medium=api&utm_source=ff3fb262, Growth Lead, GTM, Google Cloud, SEA, Google, growth, mid, Singapore
+https://www.adzuna.sg/details/5768949247?utm_medium=api&utm_source=ff3fb262, Senior Director, Customer Governance & Contract Strategy, AirTrunk, operations, exec, Singapore
+https://www.adzuna.sg/details/5843279358?utm_medium=api&utm_source=ff3fb262, Corporate Development & Strategy Intern, Ingredion, operations, intern, Singapore
+https://www.adzuna.sg/details/5854976776?utm_medium=api&utm_source=ff3fb262, Cybersecurity Engineer: Threat & Risk, Security Operations, NSEARCH GLOBAL PTE. LTD., operations, mid, Singapore
+https://www.adzuna.sg/details/5871904190?utm_medium=api&utm_source=ff3fb262, Commercial Operations Director APAC, Medtronic plc, operations, exec, Singapore
+https://www.adzuna.sg/details/5870529784?utm_medium=api&utm_source=ff3fb262, Head of Branded Residences Operations, multi wealth  pte. ltd., operations, exec, Singapore
+https://www.adzuna.sg/details/5207687290?utm_medium=api&utm_source=ff3fb262, Asst Mgr/Mgr/Snr Mgr (Hub Strategy-Maritime Economics), Maritime and Port Authority of Singapore, operations, manager, Singapore
+https://www.adzuna.sg/details/5848140421?utm_medium=api&utm_source=ff3fb262, Assistant PR & Influencer Marketing Manager - APAC, Huda Beauty, marketing, manager, Singapore
+https://www.adzuna.sg/details/5784530796?utm_medium=api&utm_source=ff3fb262, Area Sales Ops Specialist, 3M, sales, mid, Singapore
+https://www.adzuna.sg/details/5636068503?utm_medium=api&utm_source=ff3fb262, PMP, Project Manager (LTA, Construction), Talent Trader Group, operations, manager, Central
+https://www.adzuna.sg/details/5811871177?utm_medium=api&utm_source=ff3fb262, Agentic AI Data Scientist — Planning & Operations, Micron Memory Malaysia Sdn Bhd, operations, mid, Singapore
+https://www.adzuna.sg/details/5798341378?utm_medium=api&utm_source=ff3fb262, Sales Executive / Account Manager, AvePoint, sales, manager, Singapore
+https://www.adzuna.sg/details/5847906854?utm_medium=api&utm_source=ff3fb262, APAC Trade Compliance, Sr PM, Amazon Leo- Global Trade & Compliance, Amazon Kuiper Singapore Private Limited, product, senior, Singapore
+https://www.adzuna.sg/details/5772040818?utm_medium=api&utm_source=ff3fb262, Sr Sales Manager, Sciences, Thermo Fisher Scientific, sales, manager, Singapore
+https://www.adzuna.sg/details/5864356169?utm_medium=api&utm_source=ff3fb262, Senior Tosca Automation Product Manager, NSEARCH GLOBAL PTE. LTD., product, manager, Singapore
+https://www.adzuna.sg/details/5871904191?utm_medium=api&utm_source=ff3fb262, Head of Product Solution Design — UX Strategy & Innovation, coins.xyz brasil, operations, exec, Singapore
+https://www.adzuna.sg/details/5846592162?utm_medium=api&utm_source=ff3fb262, Product Manager, Fixed Domestic Services, , product, manager, Singapore
+https://www.adzuna.sg/details/5846588375?utm_medium=api&utm_source=ff3fb262, Accounts & Operations Manager, , operations, manager, Singapore
+https://www.adzuna.sg/details/5752511294?utm_medium=api&utm_source=ff3fb262, Senior Community Executive, Charles & Keith, marketing, senior, Singapore
+https://www.adzuna.sg/details/5842749316?utm_medium=api&utm_source=ff3fb262, Global Purchasing Strategic Project Manager,Commercial Building Service, Grundfos, operations, manager, Singapore
+https://www.adzuna.sg/details/5846588050?utm_medium=api&utm_source=ff3fb262, Information Technology - Systems Engineer (Security Operations), , operations, mid, Singapore
+https://www.adzuna.sg/details/5874277654?utm_medium=api&utm_source=ff3fb262, Senior Product Developer (Product Manager), Razer, product, manager, Singapore
+https://www.adzuna.sg/details/5710661073?utm_medium=api&utm_source=ff3fb262, Bids & Project Manager, Thales, operations, manager, Singapore
+https://www.adzuna.sg/details/5846585711?utm_medium=api&utm_source=ff3fb262, Assistant Manager / Manager, Procurement (based at Tengah General and Community Hospital), , marketing, manager, Singapore
+https://www.adzuna.sg/details/5830126583?utm_medium=api&utm_source=ff3fb262, APAC Regional Head of Legal & Compliance Strategy, Sumitomo Mitsui Banking Corporation, operations, exec, Singapore
+https://www.adzuna.sg/details/5820152325?utm_medium=api&utm_source=ff3fb262, Sales Advisor – Entry-Level | Training Provided, Believe Extraordinary, sales, entry, Singapore
+https://www.adzuna.sg/details/5864365800?utm_medium=api&utm_source=ff3fb262, Aesthetics Doctor: Guided Perceptorship & Clinical Growth, SGP HEALTHCARE INVESTMENTS PTE. LTD., growth, mid, Singapore
+https://www.adzuna.sg/details/5861331090?utm_medium=api&utm_source=ff3fb262, Marketing Manager (12 months Fixed Term Contract), Amazon Flex AU/SG, Amazon, marketing, manager, Singapore
+https://www.adzuna.sg/details/5636068114?utm_medium=api&utm_source=ff3fb262, Assistant Sales Engineer (Semicon/Instrument Product), Talent Trader Group, sales, mid, Central
